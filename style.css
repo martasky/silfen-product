@@ -49,7 +49,7 @@ h4 {
 p {
   font-family: var(--secondary-font);
   font-size: 1.25rem;
-  line-height: 31;
+  line-height: 2rem;
 }
 
 button {
@@ -64,6 +64,7 @@ button {
   font-size: 1.5rem;
   display: block;
   margin: 0 auto;
+  letter-spacing: 6px;
 }
 .green-button {
   width: 60%;

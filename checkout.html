@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="robots" content="noindex, nofollow" />
+</head>
+<body id="checkoutpage">
+    <header></header>
+    <main>
+        <section class=breadcrumbs>
+           <p>Cart > Checkout</p>
+        </section>
+
+        <section class=information>
+            <h2>Personal information</h2>
+            <form>
+                <label for="name">Name</label> <input type="text" id="name" name="customer-name">
+                <label for="surname">Surname</label> <input type="text" id="surname" name="customer-surname">
+                <label for="email">Email</label> <input type="email" id="email" name="customer-email">
+            </form>
+        </section>
+        <section class=shipping>
+            <h2>Shipping information</h2>
+            <form>
+                <label for="street">Street</label> <input type="text" id="street" name="delivery-street">
+                <label for="street-number">Number</label> <input type="number" id="street-number" name="customer-street-number">
+                <label for="floor-apt">Floor/Apt</label> <input type="text" id="floor-apt" name="customer-floor-apt">
+                <label for="zip-code">ZIP code</label> <input type="number" id="zip-code" name="customer-zip-code">
+                <label for="city">City</label> <input type="text" id="city" name="customer-city">
+                <label for="country">Country</label> <input type="text" id="country" name="customer-country">
+            </form>
+
+        </section>
+        <section class=payment>
+            <h2>Payment</h2>
+            <p>All transactions are secured and encrypted</p>
+            <img alt="epay information" src="img/e-pay-information.jpg">
+    <section class="purchase-summary">
+            <div id=item1>
+                <img src="https://silfenstudio.com/wp-content/uploads/2021/02/516910_WATERFALL_FRONT.jpg">
+                <div class="product-details">
+                    <h3>ULRIKKE RECYCLED</h3>
+                    <div class="other-product-info">
+                        <p class=color>Black</p>
+                        <p class=size>One size</p>
+                        <p class=price><span>199,00</span> DKK</p>
+                    </div></div></div>
+                    <hr>
+                    <div class=discount-code>
+                        <form>
+                            <input type="text" id="discount-code" name="coupon"><button type="submit">Apply</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class=amounts>
+                        <div class=subtotal><p>Subtotal</p> <p><span>199,00</span> DKK</p></div>
+                        <div class=shipping><p>Shipping</p> <p><span>7,00</span> DKK</p></div>
+                    </div>
+                    <hr>
+                    <div class=total>
+                        <div><p>TOTAL</p> <p><span>206,00</span> DKK</p></div>
+                    </div>
+    </section>
+    <div class=checkboxes>
+        <form>
+            <input type="checkbox" id="terms-conditions" name="terms-accept"> <label for="terms-conditions">I have read and accept the <a href=terms-conditions.html>terms and conditions</a></label>
+            <input type="checkbox" id="sign-up" name="newsletter-signup"> <label for="sign-up">I want Silfen to keep me posted about new collections, sales, and other commercial information.</a></label>
+            <button type="submit">COMPLETE ORDER</button>
+        </form>
+    </div>
+    </section></main>
+    <footer></footer>
+</body>
+</html>
