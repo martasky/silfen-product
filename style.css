@@ -32,24 +32,24 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
 }
 h1 {
   font-size: 2.3125rem;
 }
 h2 {
-  font-size: 2.5rem;
-}
-h3 {
   font-size: 1.75rem;
 }
+h3 {
+  font-size: 1.5rem;
+}
 h4 {
-  font-size: 1.625rem;
+  font-size: 1rem;
 }
 p {
-  font-family: var(--secondary-font);
-  font-size: 1.25rem;
-  line-height: 31;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 button {
@@ -64,6 +64,7 @@ button {
   font-size: 1.5rem;
   display: block;
   margin: 0 auto;
+  letter-spacing: 6px;
 }
 .green-button {
   width: 60%;
@@ -78,3 +79,96 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+/* ---------------------------------CART PAGE------------------------------------ */
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#cartpage {
+  margin: 0 1.2rem 0 1.2rem;
+}
+
+#cartpage header h1{
+  text-align: center; 
+}
+
+#cartpage .productwrapper {
+display: grid; 
+grid-template-columns: 2fr 3fr;
+margin-top: 10vh;
+grid-gap: 7vw;
+}
+
+#cartpage img {
+  border: solid black 1px;
+}
+
+#cartpage .productinfo{
+  display: flex; 
+  flex-direction: column;
+}
+
+
+#cartpage .additems {
+  margin: 2vh 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#cartpage .additems input {
+  max-width: 15vw;
+  border: none;
+  outline : none;
+  text-align: center;
+}
+
+#cartpage .additems .buttonsadd {
+  display: flex;
+  flex-direction: row;
+}
+
+#cartpage .additems .buttonsadd button{
+  background-color: white;
+  color: black
+}
+
+#cartpage #total {
+  margin-top: 5vh;
+  text-align: right;
+}
+
+#cartpage #total h2 {
+  margin-bottom: 2vh;
+}
+
+#cartpage #total #checkoutbutton {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+
+#cartpage #totalline {
+  color: var(--green-color);
+  background-color: var(--green-color);
+  border-width: 0;
+  height: 5px;
+}
+
+/* <hr>
+<section id=total>
+    <h1>TOTAL: DKK <span id=totalprice>1.500,00</span></h1>
+    <p>Tax are included. Shipping will be calculated at checkout.</p>
+    <button id=checkoutbutton>CHECKOUT</button>
+</section> */
+
+

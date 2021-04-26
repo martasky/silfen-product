@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yout cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body id="cartpage">
+    <header>
+      <h1>YOUR CART</h1>
+    </header>
+    <main>
+      <section class="cartproducts">
+        <!--this will go into the template later on-->
+        <div class="productwrapper">
+          <img src=https://silfenstudio.com/wp-content/uploads/2021/01/517310_WATERGREEN_FRONT.jpg alt="Name of the product">
+          <div class="productinfo">
+            <h3>ULRIKKE</h3>
+            <p class="productcolor">WATERGREEN</p>
+            <p class="price">DKK <span>499,00</span></p>
+            <div class="additems">
+              <div class="buttonsadd"> <button class="minus" type="button">-</button>
+              <input type="number" name="numero" id="selected-number" min="0">
+              <button class="plus" type="button">+</button></div>
+              <a class="remove" href="#"><p>REMOVE</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="productwrapper">
+            <img src=https://silfenstudio.com/wp-content/uploads/2021/01/517310_WATERGREEN_FRONT.jpg alt="Name of the product">
+            <div class="productinfo">
+              <h3>ULRIKKE</h3>
+              <p class="productcolor">WATERGREEN</p>
+              <p class="price">DKK <span>499,00</span></p>
+              <div class="additems">
+                <div class="buttonsadd"> <button class="minus" type="button">-</button>
+                <input type="number" name="numero" id="selected-number" min="0">
+                <button class="plus" type="button">+</button></div>
+                <a class="remove" href="#"><p>REMOVE</p></a>
+              </div>
+            </div>
+          </div>
+          <hr id=totalline>
+          <section id=total>
+              <h2>TOTAL: DKK <span id=totalprice>1.500,00</span></h2>
+              <p>Shipping is calculated at checkout.</p>
+              <p>Total price includes taxes.</p>
+              <button id=checkoutbutton>CHECKOUT</button>
+          </section>
+          
+        <!--here it will finish the template-->
+      </section>
+    </main>
+  </body>
+</html>
