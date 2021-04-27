@@ -18,6 +18,7 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 html {
   font-size: 100%;
   font-family: var(--primary-font);
@@ -48,7 +49,7 @@ h4 {
 }
 p {
   font-family: var(--primary-font);
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 2rem;
 }
 
@@ -71,7 +72,6 @@ button {
   background: var(--green-color);
   border: none;
   color: var(--main-text-color);
-
   text-transform: uppercase;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -82,14 +82,13 @@ button {
 
 /* ---------------------------------CART PAGE------------------------------------ */
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-} 
+}
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -97,26 +96,25 @@ input[type=number] {
   margin: 0 1.2rem 0 1.2rem;
 }
 
-#cartpage header h1{
-  text-align: center; 
+#cartpage header h1 {
+  text-align: center;
 }
 
 #cartpage .productwrapper {
-display: grid; 
-grid-template-columns: 2fr 3fr;
-margin-top: 10vh;
-grid-gap: 7vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 10vh;
+  grid-gap: 7vw;
 }
 
 #cartpage img {
   border: solid black 1px;
 }
 
-#cartpage .productinfo{
-  display: flex; 
+#cartpage .productinfo {
+  display: flex;
   flex-direction: column;
 }
-
 
 #cartpage .additems {
   margin: 2vh 0 0 0;
@@ -128,7 +126,7 @@ grid-gap: 7vw;
 #cartpage .additems input {
   max-width: 15vw;
   border: none;
-  outline : none;
+  outline: none;
   text-align: center;
 }
 
@@ -137,9 +135,9 @@ grid-gap: 7vw;
   flex-direction: row;
 }
 
-#cartpage .additems .buttonsadd button{
+#cartpage .additems .buttonsadd button {
   background-color: white;
-  color: black
+  color: black;
 }
 
 #cartpage #total {
@@ -156,7 +154,6 @@ grid-gap: 7vw;
   margin-bottom: 5vh;
 }
 
-
 #cartpage #totalline {
   color: var(--green-color);
   background-color: var(--green-color);
@@ -170,5 +167,214 @@ grid-gap: 7vw;
     <p>Tax are included. Shipping will be calculated at checkout.</p>
     <button id=checkoutbutton>CHECKOUT</button>
 </section> */
+/*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 
+#checkoutpage {
+  margin: 0 1.2rem 0 1.2rem;
+}
 
+#checkoutpage #breadcrumbs,
+.information,
+.shipping,
+.payment {
+  margin: 2rem 0 2rem 0;
+}
+
+#checkoutpage .shipping p {
+  font-size: 0.7rem;
+}
+
+#checkoutpage .information p {
+  font-size: 0.7rem;
+}
+
+#checkoutpage .information form {
+  display: grid;
+  grid-template: 1fr 1fr;
+  grid-template-areas: "form input";
+  grid-gap: 0.5rem;
+}
+
+#checkoutpage .shipping form {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-gap: 0.5rem;
+}
+
+#checkoutpage .shipping input {
+  height: 4vh;
+  width: 100%;
+}
+
+#checkoutpage .shipping label:first-of-type {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+#checkoutpage .shipping #street {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+}
+
+#checkoutpage .shipping label:nth-of-type(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+
+#checkoutpage .shipping #number {
+  grid-column: 2 / span 1;
+  grid-row: 2;
+}
+
+#checkoutpage .shipping label:nth-of-type(3) {
+  grid-column: 3 / span 1;
+  grid-row: 2;
+}
+
+#checkoutpage .shipping #floor-apt {
+  grid-column: 4 / span 1;
+  grid-row: 2;
+}
+
+#checkoutpage .shipping label:nth-of-type(4) {
+  grid-column: 1 / span 1;
+  grid-row: 3;
+}
+
+#checkoutpage .shipping #zip-code {
+  grid-column: 2 / span 1;
+  grid-row: 3;
+}
+
+#checkoutpage .shipping label:nth-of-type(5) {
+  grid-column: 3 / span 1;
+  grid-row: 3;
+}
+
+#checkoutpage .shipping #city {
+  grid-column: 4 / span 1;
+  grid-row: 3;
+}
+
+#checkoutpage .shipping label:nth-of-type(6) {
+  grid-column: 1 / span 1;
+  grid-row: 4;
+}
+
+#checkoutpage .shipping #country {
+  grid-column: 2 / span 3;
+  grid-row: 4;
+}
+
+#checkoutpage .payment p {
+  font-size: 0.7rem;
+}
+
+#checkoutpage .payment #epay {
+  border: solid black 1px;
+  margin: 2vh 0 2vh 0;
+}
+
+#checkoutpage .purchase-summary {
+  background-color: #f2f2f2;
+  padding: 3rem 1.2rem 3rem 1.2rem;
+}
+
+#checkoutpage .purchase-summary .item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0.7rem;
+}
+
+#checkoutpage .purchase-summary .item .other-product-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 2rem;
+}
+
+#checkoutpage .purchase-summary .item .other-product-info .size {
+  line-height: 0.5;
+}
+
+#checkoutpage .purchase-summary .discount-code form {
+  margin: 2vh 0 2vh 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#checkoutpage .purchase-summary .discount-code form input {
+  max-width: 100%;
+  height: 4vh;
+}
+
+#checkoutpage .purchase-summary .discount-code form button {
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#checkoutpage .purchase-summary .amounts {
+  margin: 1vh 0 1vh 0;
+}
+#checkoutpage .purchase-summary .amounts .subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#checkoutpage .purchase-summary .amounts .shipping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#checkoutpage .purchase-summary .total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#checkoutpage .checkboxes form {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: 4 * 1fr;
+  grid-gap: 0.5rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+#checkoutpage .checkboxes form input:first-of-type {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  width: 80%;
+}
+
+#checkoutpage .checkboxes form input:nth-of-type(2) {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+  width: 80%;
+}
+
+#checkoutpage .checkboxes form label:first-of-type {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  font-size: 0.8rem;
+}
+
+#checkoutpage .checkboxes form label:nth-of-type(2) {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  font-size: 0.8rem;
+}
+
+#checkoutpage .checkboxes form button {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  width: 100%;
+  letter-spacing: 2px;
+  font-weight: 550;
+}
