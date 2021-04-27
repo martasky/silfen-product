@@ -561,6 +561,94 @@ input[type="number"] {
   letter-spacing: 2px;
   font-weight: 550;
 }
+
+/* ------------------------THANK YOU PAGE----------------- */
+
+#thankyoupage {
+    margin: 0 1.2rem 0 1.2rem;
+}
+
+#thankyoupage h1 {
+  text-align: center;
+}
+
+#thankyoupage img:first-of-type{
+  display: block;
+  margin: 2rem auto 2rem auto;
+  max-width: 30%;
+}
+
+#thankyoupage h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#thankyoupage #checkemail {
+  display:grid;  
+}
+
+#thankyoupage #checkemail > * {
+grid-column: 1/-1;
+grid-row: 1/-1;
+margin-top: 5vh;
+}
+
+#thankyoupage #checkemail #background {
+  background-color: #F6FE7F;
+  transform: translate(10px, 25px);
+  z-index: -1;
+}
+
+/* #thankyoupage #checkemail img:first-of-type{
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+} */
+
+#thankyoupage #checkemail #content-wrapper {
+  margin-top: 2rem;
+  border: solid #F6FE7F 5px;
+  background-color: white;
+  padding: 2rem 2rem 27rem 2rem ;
+  grid-column: 1;
+  grid-row: 1;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 5fr;
+}
+
+#thankyoupage #checkemail #content-wrapper h3 {
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  text-align: center;
+  margin:0;
+  line-height: 0.3;
+}
+
+#thankyoupage #checkemail #content-wrapper img {
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  max-width: 20%;
+  margin: -20vh, auto, -20vh auto;
+  padding:0;
+  align-self: middle;
+}
+
+#thankyoupage #checkemail #content-wrapper #text {
+  grid-column: 1;
+  grid-row: 3 / span 1;
+  margin-top: 0.3rem;
+}
+
+#thankyoupage #checkemail #content-wrapper #text p {
+  line-height: 2;
+  margin:0;
+}
+
+
+
+
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 #about {
   text-transform: uppercase;
@@ -582,3 +670,5 @@ input[type="number"] {
   box-shadow: -19px 19px 0px 0px #d6ead8;
   margin: 2rem;
 }
+
+
