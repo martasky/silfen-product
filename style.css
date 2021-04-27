@@ -609,4 +609,31 @@ footer {
 
 footer div {
   padding-bottom: 1rem;
+  width: 100%;
+}
+
+footer section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
+
+@media screen and (min-width: 700px) {
+  footer div {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    margin: 4rem 7rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  footer {
+    margin: 5rem 9rem;
+  }
 }
