@@ -548,20 +548,21 @@ input[type="number"] {
   margin: 0 1.2rem 0 1.2rem;
 }
 
-#cartpage header h1 {
+#cartpage h1 {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 #cartpage .productwrapper {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  margin-top: 10vh;
+  margin-top: 2rem;
   grid-gap: 7vw;
 }
 
-#cartpage img {
+/* #cartpage img {
   border: solid black 1px;
-}
+} */
 
 #cartpage .productinfo {
   display: flex;
@@ -613,12 +614,7 @@ input[type="number"] {
   height: 5px;
 }
 
-/* <hr>
-<section id=total>
-    <h1>TOTAL: DKK <span id=totalprice>1.500,00</span></h1>
-    <p>Tax are included. Shipping will be calculated at checkout.</p>
-    <button id=checkoutbutton>CHECKOUT</button>
-</section> */
+
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 
 #checkoutpage {
@@ -656,6 +652,7 @@ input[type="number"] {
 #checkoutpage .shipping input {
   height: 4vh;
   width: 100%;
+  font-size: 4rem;
 }
 
 #checkoutpage .shipping label:first-of-type {
@@ -890,18 +887,115 @@ footer section {
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 
 @media screen and (min-width: 700px) {
+
+  /* ----------CART PAGE----------- */
+#cartpage main{
+  margin: 0 4rem 0 4rem;
+}
+
+#cartpage #totalline {
+  margin: 2rem 0 2rem 0
+}
+
+#cartpage #total p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+#cartpage #total {
+  margin-bottom: 6rem;
+}
+
+/* ------------FOOTER-------------- */
+
   footer div {
     width: 20%;
   }
 }
 
 @media screen and (min-width: 900px) {
+
+  /* ----------CART PAGE----------- */
+ #cartpage .thinline {
+  margin-top: 3rem;
+  background-color: black;
+  border-color: none;
+  height: 1px;
+ }
+
+ #cartpage .productwrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+ }
+
+ #cartpage .productinfo {
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   line-height: 1rem;
+ }
+
+ #cartpage .productinfo h3 {
+   grid-column: 1 /span 1;
+   grid-row: 2 /span 1
+ }
+
+ #cartpage .productinfo .productcolor {
+  grid-column: 1 /span 1;
+  grid-row: 3 /span 1
+}
+
+#cartpage .productinfo .price {
+  grid-column: 1 /span 1;
+  grid-row: 4 /span 1
+}
+
+#cartpage .productinfo .additems {
+  grid-column: 2 /span 1;
+  grid-row: 2 /span 2;
+  display:flex;
+  flex-direction: column;
+}
+
+#cartpage .productinfo .additems .remove {
+  margin:0;
+  align-self: center;
+}
+
+ #cartpage .productwrapper img {
+   max-width: 100%;
+   border:none ;
+ }
+
+
+ #cartpage #total .aligned-left {
+   display: flex;
+   justify-content: flex-end;
+ }
+
+ #cartpage #total button{
+  margin:0;
+  max-width: 50%;
+}
+
+
+  /* ------------FOOTER-------------- */
   footer {
     margin: 4rem 7rem;
   }
 }
 
 @media screen and (min-width: 1100px) {
+
+  #cartpage main{
+    margin: 0 20rem 0 20rem;
+  }
+
+  #cartpage #total h2 {
+    font-size: 2rem;
+  }
+  
   footer {
     margin: 5rem 9rem;
   }
