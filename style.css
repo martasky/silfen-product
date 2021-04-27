@@ -476,6 +476,10 @@ img {
   text-transform: uppercase;
   letter-spacing: 3.2px;
 }
+.newsletter-small-text {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
 #newsletter-form form input[type="text"] {
   width: 100%;
 }
@@ -994,6 +998,48 @@ footer section {
   footer div {
     width: 20%;
   }
+
+  /*--------------HOMEPAGE--------*/
+
+  #newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+  #newsletter-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+  }
+  #newsletter-form h3 {
+    margin-top: 1.5rem;
+    text-align: right;
+    width: 100%;
+  }
+  .news-high {
+    order: 1;
+  }
+  .news-high2 {
+    width: 36px;
+    height: 20px;
+    background: linear-gradient(
+      180deg,
+      transparent 60%,
+      var(--yellow-color) 40%
+    );
+    transform: translate(-32px, -19.5px);
+  }
+  #newsletter-form p {
+    font-size: 0.8rem;
+    letter-spacing: 0.12px;
+    padding-bottom: 1rem;
+  }
+  .newsletter-small-text {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -1064,6 +1110,73 @@ footer section {
   /* ------------FOOTER-------------- */
   footer {
     margin: 4rem 7rem;
+  }
+
+  /*--------------HOMEPAGE--------*/
+  #newsletter {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+  }
+  #newsletter-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  #newsletter-form h3 {
+    order: 1;
+    margin-top: 1.5rem;
+    text-align: right;
+    width: 100%;
+  }
+  #newsletter-form p {
+    font-size: 0.8rem;
+    letter-spacing: 0.12px;
+    padding-bottom: 1rem;
+  }
+  .newsletter-small-text {
+    font-size: 0.5rem;
+    margin-bottom: 0;
+  }
+  #silfen-stories {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .some-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .some-wrapper img {
+    width: 20%;
+  }
+  .some-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(
+      180deg,
+      transparent 60%,
+      var(--light-blue-color) 40%
+    );
+    width: max-content;
+    margin-left: 3rem;
+  }
+  .some-title h3.half-highlight-light-blue {
+    background: none;
+    line-height: initial;
+  }
+  #silfen-stories h4 {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    padding-left: 2rem;
   }
 }
 
