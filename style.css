@@ -837,16 +837,12 @@ input[type="number"] {
   line-height: 34px;
   padding: 1.5rem;
 }
-.about-silfen h4 {
-  text-decoration: underline 8px solid #bcd7e9;
-}
+
 .about-silfen-img {
   box-shadow: 19px 19px 0px 0px #bcd7e9;
   margin: 2rem;
 }
-.about-sustainability h4 {
-  text-decoration: underline 8px solid #d6ead8;
-}
+
 .about-sustainability-img {
   box-shadow: -19px 19px 0px 0px #d6ead8;
   margin: 2rem;
@@ -905,4 +901,83 @@ footer section {
   footer {
     margin: 5rem 9rem;
   }
+}
+.highlight-green {
+  max-width: 90%;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+
+.highlight-blue {
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--light-blue-color) 40%
+  );
+  max-width: 60%;
+}
+
+/* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
+
+#aboutsilfen-page {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+
+.aboutsilfen-page-img {
+  box-shadow: 15px 30px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.aboutsilfen-text p {
+  padding-top: 2rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.thefounders-img {
+  box-shadow: 24px 9px 0px 5px #bcd7e9;
+  margin: 2rem;
+}
+.thefounders-text p {
+  padding-top: 2rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.meettheteam-title h2 {
+  padding-top: 1rem;
+}
+
+.team-boxes {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.theteam-img-daniel {
+  box-shadow: 15px 30px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-celine {
+  box-shadow: 26px -25px 0px 1px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-nikolaj {
+  box-shadow: 0px 18px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-emma {
+  box-shadow: 30px -40px 0px 1px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-siri {
+  box-shadow: 8px 20px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-yasmin {
+  box-shadow: 26px -25px 0px 0px #bcd7e9;
+  margin: 2rem;
 }
