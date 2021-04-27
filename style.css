@@ -304,6 +304,7 @@ input[type="number"] {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 #cartpage .additems input {
@@ -317,6 +318,10 @@ input[type="number"] {
   display: flex;
   flex-direction: row;
 }
+
+#cartpage .remove p {
+ font-size: 1rem;
+ }
 
 #cartpage .additems .buttonsadd button {
   background-color: white;
@@ -344,12 +349,7 @@ input[type="number"] {
   height: 5px;
 }
 
-/* <hr>
-<section id=total>
-    <h1>TOTAL: DKK <span id=totalprice>1.500,00</span></h1>
-    <p>Tax are included. Shipping will be calculated at checkout.</p>
-    <button id=checkoutbutton>CHECKOUT</button>
-</section> */
+
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 
 #checkoutpage {
@@ -530,16 +530,16 @@ input[type="number"] {
   margin: 1.5rem 0 1.5rem 0;
 }
 
-#checkoutpage .checkboxes form input:first-of-type {
+#checkoutpage .checkboxes form #terms-conditions {
   grid-column: 1 / span 1;
   grid-row: 1;
-  width: 80%;
+  height: 4vh;
 }
 
-#checkoutpage .checkboxes form input:nth-of-type(2) {
+#checkoutpage .checkboxes form #sign-up {
   grid-column: 1 / span 1;
   grid-row: 2;
-  width: 80%;
+  height: 4vh;
 }
 
 #checkoutpage .checkboxes form label:first-of-type {
