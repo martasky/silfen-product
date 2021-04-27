@@ -435,7 +435,10 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
+
 #homepage-video {
+}
+.hp-video {
   background-image: url(/assets/sustainabke.png);
   background-size: cover;
   height: 300px;
@@ -1177,6 +1180,28 @@ footer section {
     padding-bottom: 0;
 
     padding-left: 2rem;
+  }
+
+  #homepage-video {
+  }
+  #homepage-sustainability {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+  #homepage-sustainability article {
+    padding: 2rem;
+  }
+
+  #homepage-sustainability h3 {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  #homepage-sustainability p {
+    font-size: 0.8rem;
+  }
+  button.white-button {
+    color: var(--darker-green-color);
   }
 }
 
