@@ -377,4 +377,24 @@ input[type="number"] {
   width: 100%;
   letter-spacing: 2px;
   font-weight: 550;
+/* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
+#about{
+  text-transform:uppercase; 
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+.about-silfen h4{ 
+  text-decoration: underline 8px solid #BCD7E9;
+}
+.about-silfen-img{
+  box-shadow: 19px 19px 0px 0px #BCD7E9;
+  margin: 2rem; 
+}
+.about-sustainability h4{
+  text-decoration: underline 8px solid #D6EAD8;
+}
+.about-sustainability-img{
+  box-shadow: -19px 19px 0px 0px #D6EAD8;
+  margin: 2rem; 
 }
