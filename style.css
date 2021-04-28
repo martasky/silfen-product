@@ -890,19 +890,164 @@ footer section {
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 
 @media screen and (min-width: 700px) {
+
+ /* -------------CHECKOUT PAGE--------- */
+#checkoutpage main {
+  margin: 0 4rem 0 4rem;
+}
+
+#checkoutpage form {
+  margin: 2rem 0 2rem 0;
+}
+
+#checkoutpage .information form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0.5rem;
+}
+
+#checkoutpage .information p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+#checkoutpage .shipping p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+#checkoutpage .payment p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
   footer div {
     width: 20%;
   }
 }
 
 @media screen and (min-width: 900px) {
+
+  /* -------------CHECKOUT PAGE--------- */
+
+  #checkoutpage .information form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0.5rem;
+  }
+
+  #checkoutpage main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6*1fr;
+    grid-gap:2rem
+  }
+#checkoutpage .breadcrumbs {
+  grid-column: 1/ span 2;
+  grid-row: 1/ span 1
+}
+
+#checkoutpage .information {
+  grid-column: 1/ span 1;
+  grid-row: 2/ span 1;
+  margin: 0;
+}
+
+#checkoutpage .shipping {
+  grid-column: 1/ span 1;
+  grid-row: 3/ span 2;
+  margin: 0;
+}
+
+#checkoutpage .payment {
+  grid-column: 1/ span 1;
+  grid-row: 5/ span 1;
+  margin: 0;
+}
+
+#checkoutpage .purchase-summary {
+  grid-column: 2/ span 1;
+  grid-row: 2/ span 5
+}
+
+#checkoutpage .checkboxes {
+  grid-column: 1/ span 1;
+  grid-row: 6/ span 1
+}
+#checkoutpage .information {
+  line-height: 3rem;;
+}
+
+#checkoutpage .shipping form {
+  margin:0;
+}
+
+#checkoutpage .shipping p{
+  margin:1rem 0 2rem 0;
+}
+#checkoutpage .payment #epay {
+  margin:0;
+}
+
+#checkoutpage .payment p{
+  margin:1rem 0 2rem 0;
+}
+
+
+/*------------------------------FOOTER-------------------------------- */
   footer {
     margin: 4rem 7rem;
   }
-}
+
 
 @media screen and (min-width: 1100px) {
+  /* -------------CHECKOUT PAGE--------- */
+  #checkoutpage main {
+    margin: 0 5rem 0 5rem;}
+
+    #checkoutpage .purchase-summary hr {
+      margin: 2rem 0 2rem 0
+    }
+
+
+
   footer {
     margin: 5rem 9rem;
   }
+}
+
+@media screen and (min-width: 1600px) {
+#checkoutpage .information {
+  margin-right: 3rem;
+}
+
+#checkoutpage .shipping {
+  margin-right: 3rem;
+}
+#checkoutpage .payment  {
+  margin-right: 3rem;
+}
+
+#checkoutpage .checkboxes {
+  margin-right: 3rem;
+}
+
+#checkoutpage .purchase-summary {
+  padding: 4rem 7rem 4rem 7rem
+}
+
+#checkoutpage .purchase-summary .discount-code form button {
+  font-size: 1rem;
+}
+
+#checkoutpage .purchase-summary .item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0.7rem;
+}
+
+#checkoutpage #checkboxes form label {
+  line-height: 5rem;
+}
+
 }
