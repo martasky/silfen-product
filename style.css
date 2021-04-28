@@ -1396,3 +1396,21 @@ font-weight: 400;
   text-transform:none;
   padding-top: 1rem;
 }
+/* ~~~~~~~~~~~~terms page~~~~~~~~~~~~ */
+
+#terms {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+.highlight-green-terms{
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+#terms p{
+  text-transform:none;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+}
