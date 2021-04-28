@@ -150,7 +150,7 @@ img {
 .hero {
   display: grid;
   grid-template-columns: 20px 30px 50px 50px 100px 70px;
-  grid-template-rows: 30px 40px 50px 30px 80px 1fr 1fr;
+  grid-template-rows: 30px 40px 50px 30px 90px 1fr 1fr;
   justify-content: center;
 }
 /* .hero {
@@ -176,7 +176,7 @@ img {
   grid-row: 3 / span 2;
   border: 3px solid var(--green-color);
   width: 270px;
-  height: 205px;
+  height: 200px;
 }
 .hero-img:nth-child(4) {
   grid-row: 4 / 5;
@@ -193,6 +193,7 @@ img {
 
 .half-highlight {
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  line-height: 80%;
 }
 .half-highlight-blue {
   background: linear-gradient(180deg, transparent 60%, var(--blue-color) 40%);
@@ -219,7 +220,7 @@ img {
   display: block;
 } */
 #recycled-collection {
-  background-image: url(/assets/recycled-collection.png);
+  background-image: url(/assets/recycled-collection.webp);
   background-size: cover;
   background-position: 50% 50%;
   height: 250px;
@@ -289,7 +290,7 @@ img {
   justify-items: center;
 }
 .shop-by-category-img:nth-child(1) {
-  background-image: url(/assets/category1.png);
+  background-image: url(/assets/category1.webp);
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -315,7 +316,7 @@ img {
 }
 
 .shop-by-category-wrapper2 .shop-by-category-img:nth-child(1) {
-  background-image: url(/assets/category2.png);
+  background-image: url(/assets/category2.webp);
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -340,7 +341,7 @@ img {
   padding-bottom: 2rem;
 }
 .shop-by-category-wrapper3 .shop-by-category-img:nth-child(1) {
-  background-image: url(/assets/category3.png);
+  background-image: url(/assets/category3.webp);
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -366,7 +367,7 @@ img {
 }
 
 .shop-by-category-wrapper4 .shop-by-category-img:nth-child(1) {
-  background-image: url(/assets/category4.png);
+  background-image: url(/assets/category4.webp);
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -391,7 +392,7 @@ img {
   padding-bottom: 2rem;
 }
 .shop-by-category-wrapper5 .shop-by-category-img:nth-child(1) {
-  background-image: url(/assets/category5.png);
+  background-image: url(/assets/category5.webp);
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -445,7 +446,7 @@ img {
   background-position: center;
 }
 .newsletter-img {
-  background-image: url(/assets/newsletter.png);
+  background-image: url(/assets/newsletter.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -1278,7 +1279,7 @@ footer section {
   }
 
   .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category1.png);
+    background-image: url(/assets/category1.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -1298,7 +1299,7 @@ footer section {
   }
 
   .shop-by-category-wrapper2 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category2.png);
+    background-image: url(/assets/category2.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -1324,7 +1325,7 @@ footer section {
     transform: translateY(-52px);
   }
   .shop-by-category-wrapper3 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category3.png);
+    background-image: url(/assets/category3.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -1350,7 +1351,7 @@ footer section {
   }
 
   .shop-by-category-wrapper4 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category4.png);
+    background-image: url(/assets/category4.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -1376,7 +1377,7 @@ footer section {
     transform: translateY(-240px);
   }
   .shop-by-category-wrapper5 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category5.png);
+    background-image: url(/assets/category5.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
