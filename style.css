@@ -136,7 +136,7 @@ img {
 /* newsletter popup */
 
 .newsletter-popup {
-  width: 400px;
+  width: 360px;
   padding: 1rem;
   padding-top: 0;
   padding-bottom: 0.5rem;
@@ -144,9 +144,30 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
+  right: 0;
+  top: 15%;
+  background: white;
+}
+
+.show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hidden {
+  visibility: hidden;
 }
 .newsletter-popup .newsletter-small-text {
   margin-top: 0.3rem;
+  font-size: 0.5rem;
 }
 .newsletter-popup h3 {
   text-transform: uppercase;
@@ -189,6 +210,7 @@ img {
 .x-sign {
   width: 13px;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 #homepage {
