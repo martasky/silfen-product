@@ -133,6 +133,64 @@ img {
   grid-column: 4 /5;
 } */
 
+/* newsletter popup */
+
+.newsletter-popup {
+  width: 400px;
+  padding: 1rem;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  border: 5px solid var(--yellow-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newsletter-popup .newsletter-small-text {
+  margin-top: 0.3rem;
+}
+.newsletter-popup h3 {
+  text-transform: uppercase;
+}
+.newsletter-popup p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.newsletter-popup form input[type="text"] {
+  width: 100%;
+}
+.newsletter-popup form {
+  margin-top: 0.5rem;
+}
+.newsletter-popup form input {
+  padding: 0.4rem;
+  color: grey;
+  border: 1px solid black;
+}
+.form-email {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+.newsletter-popup form input[type="email"] {
+  width: 70%;
+  margin-right: 0.5rem;
+}
+.newsletter-popup form input[type="submit"] {
+  background: black;
+  border: none;
+  width: 30%;
+  color: var(--secondary-text-color);
+
+  text-transform: uppercase;
+
+  font-size: 0.875;
+}
+.x-sign {
+  width: 13px;
+  align-self: flex-end;
+}
+
 #homepage {
   margin: 0;
 }
