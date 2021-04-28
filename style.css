@@ -1083,6 +1083,7 @@ footer section {
 .highlight-green {
   max-width: 90%;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  width: max-content;
 }
 
 .highlight-blue {
@@ -1091,7 +1092,8 @@ footer section {
     transparent 60%,
     var(--light-blue-color) 40%
   );
-  max-width: 60%;
+  /* max-width: 60%; */
+  width: max-content;
 }
 
 /* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
@@ -1182,8 +1184,9 @@ footer section {
 }
 
 .highlight-green-care {
-  max-width: 40%;
+  /* max-width: 40%; */
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  width: max-content;
 }
 .we-care-boxes {
   margin: 2rem;
