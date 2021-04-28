@@ -1379,3 +1379,20 @@ font-weight: 400;
 .sus-shipping-text p{
   text-transform: none;
 }
+
+/* ~~~~~~~~~~~~privacy page~~~~~~~~~~~~ */
+#privacy {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+.highlight-yellow-privacy{
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
+}
+#privacy p{
+  text-transform:none;
+  padding-top: 1rem;
+}
