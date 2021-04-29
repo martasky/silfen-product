@@ -2439,3 +2439,25 @@ font-weight: 400;
   padding-top: 2rem;
   font-size: 0.8rem;
 }
+/* ~~~~~~~~~~~~ Delivery & Returns page~~~~~~~~~~~~ */
+#delivery-return {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+.highlight-blue-delivery{
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--light-blue-color) 40%);
+}
+#delivery-return p{
+  text-transform:none;
+  padding-top: 2rem;
+}
+.highlight-green-return{
+  margin-top: 2rem;
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
