@@ -1078,7 +1078,7 @@ input[type="number"] {
   justify-content: center;
   padding-bottom: 1rem;
 }
-.product-card {
+#catalogue .product-card {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1087,7 +1087,7 @@ input[type="number"] {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
 }
-.product-name {
+#catalogue .product-name {
   padding: 2rem 0 0 0;
   width: 100%;
   display: flex;
@@ -1097,7 +1097,7 @@ input[type="number"] {
   font-weight: lighter;
   line-height: 0.5;
 }
-.product-price {
+#catalogue .product-price {
   padding: 1rem 0;
   width: 100%;
   display: flex;
@@ -1223,6 +1223,13 @@ input[type="number"] {
   font-weight: bolder;
   text-transform: uppercase;
   padding-top: 1rem;
+}
+#product-page .product-price {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+  padding-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 #product-page .product-colors {
   width: 30%;
