@@ -730,14 +730,14 @@ input[type="number"] {
 
 #checkoutpage .information form {
   display: grid;
-  grid-template: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "form input";
   grid-gap: 0.5rem;
 }
 
 #checkoutpage .shipping form {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0.5rem;
 }
 
@@ -883,20 +883,20 @@ input[type="number"] {
 #checkoutpage .checkboxes form {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: 4 * 1fr;
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 0.5rem;
   margin: 1.5rem 0 1.5rem 0;
 }
 
-#checkoutpage .checkboxes form #terms-conditions {
+#checkoutpage .checkboxes #terms-conditions {
   grid-column: 1 / span 1;
-  grid-row: 1;
+  grid-row: 1 /span 1;
   height: 4vh;
 }
 
 #checkoutpage .checkboxes form #sign-up {
   grid-column: 1 / span 1;
-  grid-row: 2;
+  grid-row: 2  /span 1;;
   height: 4vh;
 }
 
@@ -917,7 +917,7 @@ input[type="number"] {
   grid-row: 3;
   width: 100%;
   letter-spacing: 2px;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 /* ------------------------THANK YOU PAGE----------------- */
@@ -988,9 +988,8 @@ input[type="number"] {
   grid-column: 1;
   grid-row: 2 / span 1;
   max-width: 20%;
-  margin: -20vh, auto, -20vh auto;
+  margin: -20vh auto -20vh auto;
   padding: 0;
-  align-self: middle;
 }
 
 #thankyoupage #checkemail #content-wrapper #text {
@@ -1281,7 +1280,7 @@ footer section {
   #cartpage .thinline {
     margin-top: 3rem;
     background-color: black;
-    border-color: none;
+    border: none;
     height: 1px;
   }
 
@@ -1383,12 +1382,12 @@ footer section {
   #checkoutpage main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6*1fr;
-    grid-gap:2rem
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 2rem;
   }
 #checkoutpage .breadcrumbs {
   grid-column: 1/ span 2;
-  grid-row: 1/ span 1
+  grid-row: 1/ span 1;
 }
 
 #checkoutpage .information {
@@ -1399,13 +1398,13 @@ footer section {
 
 #checkoutpage .shipping {
   grid-column: 1/ span 1;
-  grid-row: 3/ span 2;
+  grid-row: 3/ span 1;
   margin: 0;
 }
 
 #checkoutpage .payment {
   grid-column: 1/ span 1;
-  grid-row: 5/ span 1;
+  grid-row: 4/ span 1;
   margin: 0;
 }
 
@@ -1416,7 +1415,7 @@ footer section {
 
 #checkoutpage .checkboxes {
   grid-column: 1/ span 1;
-  grid-row: 6/ span 1
+  grid-row: 5/ span 1
 }
 #checkoutpage .information {
   line-height: 3rem;;
@@ -1827,7 +1826,7 @@ footer section {
   #catalogue button {
     width: 22%;
     font-size: 1.1rem;
-  }
+  }}
 
   /* -----FOOTER----- */
 
@@ -2262,7 +2261,6 @@ font-weight: 400;
 }
 
 
-
 @media screen and (min-width: 1600px) {
 #checkoutpage .information {
   margin-right: 3rem;
@@ -2296,5 +2294,4 @@ font-weight: 400;
 #checkoutpage #checkboxes form label {
   line-height: 5rem;
 }
-
 }
