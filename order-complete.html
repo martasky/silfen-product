@@ -11,30 +11,44 @@
 <body id=thankyoupage>
     <header>
         <nav class=desktop-nav>
-            <div class=logo><img src="img/silfen-logo-black.svg"></div>
-            <ul class=pages>
+            <div class=logo><img src="assets/silfen-logo-black.svg"></div>
+            <div class=burger-menu-wrapper><div class=close-burguer><img src="assets/burger.png"></div>
+            <ul class="dont-display" class=pages>
                 <li><a href="#">NEW ARRIVALS</a>
-                <li class=drop><a href="#" >SHOP</a>
-                <ul class=dropdown-content>
+                <li><a id=shop class=drop href="#">SHOP</a>
+                <ul class="dont-display dropdown-content">
                   <li><a href="catalogue.html">ALL PRODUCTS</a></li>
-                  <li><a href="catalogue.html">COLLECTIONS</a></li>
-                  <li><a href="catalogue.html">BAGS</a></li>
+                  <li id=collections class=drop-two>COLLECTIONS
+                    <ul  class="dont-display dropdown-secondary-content">
+                  <li><a href="catalogue.html">SNOW QUEEN</a></li>
+                  <li><a href="catalogue.html">RECYCLE</a></li>
+                  <li><a href="catalogue.html">CLASSICS</a></li>
+                  </ul>                    
+                  </li>
+                  <li id=bagsdrop class=drop-two>BAGS
+                    <ul id=bagsdropdown class="dont-display dropdown-bags">
+                      <li><a href="catalogue.html">SHOULDER BAGS</a></li>
+                      <li><a href="catalogue.html">CROSSBODY BAGS</a></li>
+                      <li><a href="catalogue.html">TOTE BAGS</a></li>
+                      <li><a href="catalogue.html">MINI BAGS</a></li>
+                      <li><a href="catalogue.html">BUMBAGS</a></li>
+                      </ul> </li>
                   <li><a href="catalogue.html">WALLETS</a></li>
                   <li><a href="catalogue.html">CARE PRODUCTS</a></li>
                 </ul></li>
                 </li>
                 <li><a class=sale href="#">SALE</a></li>
-                <li class=drop><a href="about.html">ABOUT</a>
-                  <ul class=dropdown-content>
+                <li id=aboutdrop class=drop>ABOUT
+                  <ul class="dont-display dropdown-content-two">
                     <li><a href="aboutsilfen.html">ABOUT SILFEN</a></li>
                     <li><a href="sustainable.html">SUSTAINABILITY</a></li>
                   </ul></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
             <div class="nav-icons">
-                <div class="search"><img src="img/search.png"></div>
-                <div class="cart-icon"><a href="cart.html"><img src="img/cart-icon.png"></a><div class=item-added></div>
-            </div>
+                <div class="search"><img src="assets/search.png"></div>
+                <div class="cart-icon"><a href="cart.html"><img src="assets/cart-icon.png"></a><div class=item-added></div>
+            </div></div>
         </nav>
     </header>
     <main>
@@ -102,5 +116,6 @@
           <img src="assets/paymentmethods.png" alt="payment methods" />
         </div>
       </footer>
+      <script src="burger-menu.js"></script>
 </body>
 </html>
