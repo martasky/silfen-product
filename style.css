@@ -934,6 +934,95 @@ input[type="number"] {
   margin: 2rem;
 }
 
+/*------------------------------------- CATALOGUE PAGE ----------------------------------------------- */
+
+#catalogue main {
+  margin: 2rem 1rem;
+}
+#catalogue .breadcrumbs p {
+  font-size: 1rem;
+}
+#catalogue-title {
+  width: max-content;
+  line-height: 80%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2rem 0;
+}
+#catalogue-forms {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+#catalogue-products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.product-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid rgb(51, 51, 51);
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.product-name {
+  padding: 2rem 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: 0.5;
+}
+.product-price {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 1;
+}
+.product-colors {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+}
+.color1,
+.color2,
+.color3,
+.color4 {
+  height: 19px;
+  width: 19px;
+  border: 1px solid rgb(51, 51, 51);
+}
+.color1 {
+  background-color: black;
+}
+.color2 {
+  background-color: pink;
+}
+.color3 {
+  background-color: blue;
+}
+.color4 {
+  background-color: green;
+}
+#catalogue button {
+  font-size: 1.2rem;
+}
+
 /*------------------------------------- footer ----------------------------------------------- */
 
 footer a,
@@ -946,23 +1035,19 @@ footer h4 {
   line-height: 1.5rem;
   font-size: 0.9rem;
 }
-
 .footer-title {
   font-weight: bolder;
   text-transform: uppercase;
   line-height: 3rem;
   font-size: 0.9rem;
 }
-
 footer {
   margin: 3rem 1rem;
 }
-
 footer div {
   padding-bottom: 1rem;
   width: 100%;
 }
-
 footer section {
   width: 100%;
   display: flex;
@@ -970,9 +1055,12 @@ footer section {
 }
 
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
+/*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
+/*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
+/*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 
 @media screen and (min-width: 700px) {
-  /* ----------CART PAGE----------- */
+  /* ---CART PAGE---- */
   #cartpage main {
     margin: 0 4rem 0 4rem;
   }
@@ -988,16 +1076,31 @@ footer section {
   #cartpage #total {
     margin-bottom: 6rem;
   }
+  /* ----CATALOGUE PAGE---- */
+  .product-card {
+    width: 40%;
+    padding: 1.2rem 1.2rem;
+    margin-right: 2rem;
+  }
+  .product-colors {
+    width: 60%;
+  }
+  #catalogue main {
+    margin: 2rem 6rem;
+  }
+  #catalogue button {
+    width: 40%;
+    font-size: 1.1rem;
+  }
 
-  /* ------------FOOTER-------------- */
-
+  /* ----FOOTER--- */
   footer div {
     width: 20%;
   }
 }
 
 @media screen and (min-width: 900px) {
-  /* ----------CART PAGE----------- */
+  /* ----CART PAGE----- */
   #cartpage .thinline {
     margin-top: 3rem;
     background-color: black;
@@ -1061,7 +1164,36 @@ footer section {
     max-width: 50%;
   }
 
-  /* ------------FOOTER-------------- */
+  /* ----CATALOGUE PAGE---- */
+  .product-card {
+    width: 25%;
+    padding: 1.2rem 1.2rem;
+  }
+  #catalogue main {
+    margin: 2rem 5rem;
+  }
+  .product-name,
+  .product-price {
+    font-size: 1rem;
+  }
+  .product-colors {
+    width: 60%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .color1,
+  .color2,
+  .color3,
+  .color4 {
+    height: 15px;
+    width: 15px;
+  }
+  #catalogue button {
+    width: 25%;
+    font-size: 1.1rem;
+  }
+
+  /* -----FOOTER----- */
   footer {
     margin: 4rem 7rem;
   }
@@ -1071,15 +1203,55 @@ footer section {
   #cartpage main {
     margin: 0 20rem 0 20rem;
   }
-
   #cartpage #total h2 {
     font-size: 2rem;
   }
 
+  /* ----CATALOGUE PAGE---- */
+  .product-card {
+    width: 26%;
+    padding: 1.2rem 1.2rem;
+  }
+  #catalogue main {
+    margin: 2rem 6rem;
+  }
+  .product-colors {
+    width: 55%;
+  }
+  #catalogue button {
+    width: 22%;
+    font-size: 1.1rem;
+  }
+
+  /* -----FOOTER----- */
   footer {
     margin: 5rem 9rem;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  /* ----CATALOGUE PAGE---- */
+  .product-card {
+    width: 21%;
+    padding: 1.2rem 1.2rem;
+  }
+  #catalogue main {
+    margin: 2rem 9rem;
+  }
+  .product-colors {
+    width: 55%;
+  }
+  #catalogue button {
+    width: 21%;
+    font-size: 1.1rem;
+  }
+}
+/*-------------------------------------  ----------------------------------------------- */
+/*------------------------------------ END ----------------------------------------------- */
+/*-----------------------------------  END----------------------------------------------- */
+/*-----------------------------------  END ----------------------------------------------- */
+
+/* ---------WHERE IS THIS FROM??? --------*/
 .highlight-green {
   max-width: 90%;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
