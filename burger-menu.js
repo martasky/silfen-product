@@ -1,6 +1,10 @@
-window.addEventListener("load", burgerMenu);
-let burgermenu = 0;
+screensize = window.screen.width;
 
+
+if (screensize <= 1100){
+let burgermenu = 0;
+console.log (screensize)
+burgerMenu();
 function burgerMenu() {
 if (burgermenu == 0) {
 document.querySelector(".close-burguer").addEventListener("click", displayBurguer);
@@ -44,4 +48,4 @@ function displaySecondDrop () {
     
 }
 }
-}
+}}
