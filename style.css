@@ -1050,15 +1050,20 @@ input[type="number"] {
 #catalogue main {
   margin: 2rem 1rem;
 }
-#catalogue .breadcrumbs p {
+#catalogue .breadcrumbs p,
+#catalogue .breadcrumbs a {
   font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
 }
-#catalogue-title {
+#catalogue-title h2 {
   width: max-content;
   line-height: 80%;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 2rem 0;
+  margin-bottom: 1.5rem;
 }
 #catalogue-forms {
   width: 100%;
