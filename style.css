@@ -2073,6 +2073,7 @@ footer section {
 .highlight-green {
   max-width: 90%;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  width: max-content;
 }
 
 .highlight-blue {
@@ -2081,7 +2082,8 @@ footer section {
     transparent 60%,
     var(--light-blue-color) 40%
   );
-  max-width: 60%;
+  /* max-width: 60%; */
+  width: max-content;
 }
 
 /* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
@@ -2173,8 +2175,9 @@ footer section {
 }
 
 .highlight-green-care {
-  max-width: 40%;
+  /* max-width: 40%; */
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  width: max-content;
 }
 .we-care-boxes {
   margin: 2rem;
@@ -2229,7 +2232,8 @@ footer section {
 }
 
 .highlight-yellow-working{
-  max-width: 80%;
+  /* max-width: 80%; */
+  width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
 }
 .working-img{
@@ -2249,7 +2253,8 @@ footer section {
 }
 
 .highlight-green-materials{
-  max-width: 40%;
+  /* max-width: 40%; */
+  width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
 
@@ -2352,7 +2357,8 @@ font-weight: 400;
   margin: 2rem;
 }
 .highlight-green-sus{
-  max-width: 40%;
+  /* max-width: 40%; */
+  width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
 .sus-shipping-img{
@@ -2399,4 +2405,37 @@ font-weight: 400;
 #checkoutpage #checkboxes form label {
   line-height: 5rem;
 }
+/* ~~~~~~~~~~~~privacy page~~~~~~~~~~~~ */
+#privacy {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+.highlight-yellow-privacy{
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
+}
+#privacy p{
+  text-transform:none;
+  padding-top: 1rem;
+}
+/* ~~~~~~~~~~~~terms page~~~~~~~~~~~~ */
+
+#terms {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+.highlight-green-terms{
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+#terms p{
+  text-transform:none;
+  padding-top: 2rem;
+  font-size: 0.8rem;
 }
