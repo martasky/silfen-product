@@ -174,7 +174,22 @@ ul #pageslist {
   grid-row: 2/span 2;
   
 }
+.desktop-nav .nav-icons .cart-icon {
+  display:grid;
+}
+.desktop-nav .nav-icons .cart-icon > * {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
 
+.item-added {
+  background-color: #EDFF00;
+  height: 15px;
+  width: 15px;
+  border: solid #EDFF00 1px;
+  border-radius: 15px;
+  transform: translate(10px, 10px)
+}
 
 /* Homepage */
 
@@ -1890,14 +1905,7 @@ footer section {
 
 /* --------------------------TOP MENU-------------------- */
 
-.item-added {
-  background-color: #EDFF00;
-  height: 15px;
-  width: 15px;
-  border: solid #EDFF00 1px;
-  border-radius: 15px;
-  transform: translate(12px, 12px)
-}
+
 
 header {
   background-color: white;
@@ -1920,13 +1928,7 @@ header {
   margin-left: 0;
   max-width: 40%;
   }
-  .desktop-nav .nav-icons .cart-icon {
-    display:grid;
-  }
-  .desktop-nav .nav-icons .cart-icon > * {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-  }
+
 
   .desktop-nav a:link {
     text-decoration: none;
