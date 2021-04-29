@@ -39,7 +39,6 @@ function displaySecondDrop () {
         document.querySelector("ul .dropdown-content-two").classList.add("dont-display");
 
         burgermenu = 0
-
         burgerMenu ()        
     }
     
