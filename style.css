@@ -1026,9 +1026,24 @@ input[type="number"] {
   box-shadow: 19px 19px 0px 0px #bcd7e9;
   margin: 2rem;
 }
+
 .about-sustainability-img {
   box-shadow: -19px 19px 0px 0px #d6ead8;
   margin: 2rem;
+}
+.highlight-green {
+  max-width: 90%;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  width: max-content;
+}
+.highlight-blue {
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--light-blue-color) 40%
+  );
+  /* max-width: 60%; */
+  width: max-content;
 }
 
 /*------------------------------------- CATALOGUE PAGE ----------------------------------------------- */
@@ -1212,22 +1227,6 @@ footer section {
   /* max-width: 40%; */
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
-
-/* ---------WHERE IS THIS FROM??? --------*/
-.highlight-green {
-  max-width: 90%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-  width: max-content;
-}
-.highlight-blue {
-  background: linear-gradient(
-    180deg,
-    transparent 60%,
-    var(--light-blue-color) 40%
-  );
-  /* max-width: 60%; */
-  width: max-content;
 }
 
 /* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
@@ -1624,6 +1623,51 @@ font-weight: 400;
   .recycled-wrapper {
     padding: 4rem;
   }
+    /*----ABOUT PAGE------*/
+    
+    .about-silfen-img, .about-sustainability-img{
+      width: 80%;
+      margin-bottom: -20px;
+    }
+    .about-sustainability{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr ;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      justify-items: center; 
+      align-items: center; 
+    } 
+.about-silfen{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center; 
+    align-items: center; 
+}
+.about-silfen h2{
+  display: grid;
+  order: 1; 
+}
+.about-sustainability-img{
+  display: grid;
+  order: 2; 
+}
+.highlight-blue{
+  width: 120%; 
+}
+.about-silfen h2{
+  padding-left: 3rem;
+} 
+.highlight-green{
+width: 120%; 
+margin-left: 5rem;
+}
+.about-sustainability h2{
+  padding-left: 0.5rem;
+}
 }
 
 @media screen and (min-width: 900px) {
@@ -2113,6 +2157,17 @@ font-weight: 400;
     grid-column-start: 5;
     border-left: 3px solid var(--green-color);
   }
+  /* ~~~~ABOUT PAGE~~~~~ */
+  .highlight-green{
+    width: 120%; 
+    margin-left: 6rem;
+    }
+    .about-sustainability h2{
+      padding-left: 6rem;
+    }
+    .about-silfen h2{
+      padding-left: 6rem;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2138,6 +2193,18 @@ font-weight: 400;
     width: 22%;
     font-size: 1.1rem;
   }
+  /* ~~~~ABOUT PAGE~~~~~ */
+  .highlight-green{
+    width: 120%; 
+    margin-left: 12rem;
+    }
+    .about-sustainability h2{
+      padding-right: 5rem;
+      font-size: 2.5rem;
+    }
+    .about-silfen h2{
+      font-size: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2244,6 +2311,15 @@ font-weight: 400;
     width: 1060px;
     grid-template-columns: 70% 30%;
   }
+   /* ~~~~ABOUT PAGE~~~~~ */
+   .highlight-green{
+    width: 120%; 
+    margin-left: 12rem;
+    }
+    .about-sustainability h2{
+      padding-left: 12rem;
+      font-size: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -2292,6 +2368,21 @@ font-weight: 400;
   #checkoutpage #checkboxes form label {
     line-height: 5rem;
   }
+   /* ~~~~ABOUT PAGE~~~~~ */
+   .highlight-green{
+    width: 120%; 
+    margin-left: 12rem;
+    }
+    .about-sustainability h2{
+      padding-right: 5rem;
+      font-size: 3rem;
+    }
+    .about-silfen h2{
+      font-size: 3rem;
+    }
+    .highlight-green{
+      width: 120%; 
+      margin-left: 15rem;
 }
 /*-------------------------------------  ----------------------------------------------- */
 /*------------------------------------ END ----------------------------------------------- */
