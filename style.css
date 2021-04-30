@@ -98,12 +98,11 @@ button {
 
 header {
   background-color: white;
-  position:fixed;
   width: 100%;
-  margin:0;
 }
 
 .desktop-nav {
+  margin-left: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -158,7 +157,7 @@ header a:active{
   justify-content: space-around;
   margin: 0 1rem 0 1rem;
 }
-/* positioning the dropdown menu in the menu-wrapper gris*/
+/* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
   z-index: 1;
   grid-column: 1/span 1;
@@ -202,8 +201,17 @@ header a:active{
   transform: translate(10px, 10px)
 }
 
+/* to fix the menu on scroll class sticky */
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
+.sticky + .content {
+  padding-top: 10rem;
+}
 
 /* Homepage */
 
@@ -1034,7 +1042,11 @@ input[type="number"] {
 /* ------------------------THANK YOU PAGE----------------- */
 
 #thankyoupage {
-  margin: 0 1.2rem 0 1.2rem;
+  margin: 0;
+}
+
+#thankyoupage main {
+  margin: 6rem 2rem;
 }
 
 #thankyoupage h1 {
@@ -1920,6 +1932,13 @@ footer section {
 
 /* --------------------------TOP MENU-------------------- */
 
+header {
+  background-color: white;
+  width: 100%;
+  margin-top:-5rem;
+  padding-bottom: 5rem;
+}
+
 .desktop-nav .close-burguer{
   display:none;
 }
@@ -1928,6 +1947,7 @@ footer section {
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10rem 1fr;
+  background-color: white;
 }
 .desktop-nav .burger-menu-wrapper {
 display:grid;
@@ -1987,13 +2007,6 @@ grid-template-columns: 3fr 1fr;
 
 
 /*-------- CARTPAGE------------ */
-
-header {
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  max-height: 27%;
-}
 
 
   #cartpage main {
