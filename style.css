@@ -1016,6 +1016,10 @@ input[type="number"] {
 }
 
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
+.breadcrumbs{
+  display: none;
+}
+
 #about {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1668,6 +1672,10 @@ margin-left: 5rem;
 .about-sustainability h2{
   padding-left: 0.5rem;
 }
+.breadcrumbs{
+  display: inherit;
+  margin: 2rem; 
+}
 }
 
 @media screen and (min-width: 900px) {
@@ -2168,6 +2176,10 @@ margin-left: 5rem;
     .about-silfen h2{
       padding-left: 6rem;
     }
+    .breadcrumbs{
+      display: inherit;
+      margin: 2rem; 
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2383,6 +2395,7 @@ margin-left: 5rem;
     .highlight-green{
       width: 120%; 
       margin-left: 15rem;
+}
 }
 /*-------------------------------------  ----------------------------------------------- */
 /*------------------------------------ END ----------------------------------------------- */
