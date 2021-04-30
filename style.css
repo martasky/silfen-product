@@ -112,6 +112,9 @@ header {
   text-decoration: none;
   font-weight:600;
 }
+.desktop-nav .sale{
+  max-width: 90%;
+  background: linear-gradient(180deg, transparent 60%, #EDFF0080)}
 
 header a {
   text-decoration: none;
@@ -1919,6 +1922,9 @@ footer section {
 display:grid;
 grid-template-columns: 3fr 1fr;
 }
+.desktop-nav ul {
+  font-weight: 800;
+}
 
 #pageslist {
   grid-column: 1;
@@ -1934,6 +1940,7 @@ grid-template-columns: 3fr 1fr;
 
 .desktop.nav #shop {
   position: absolute;
+  margin: 0 1rem 0 1rem;
 }
 
 .dropdown-content {
@@ -1944,120 +1951,30 @@ grid-template-columns: 3fr 1fr;
   position: absolute;
   flex-flow: nowrap;
   background-color: white;
+  font-size:0.7em;
+  line-height: 2rem;
 }
 
 .desktop.nav #aboutdrop {
   position: absolute;
+  margin: 0 1rem 0 1rem;
 }
 
 .dropdown-content-two {
   z-index: 1;
   margin-left: 0;
-  padding-left: 0;
+  padding: 0;
   margin-top:3rem auto 0 auto;
   position: absolute;
   flex-flow: nowrap;
   background-color: white;
+  font-size:0.7em;
+  line-height: 2rem;
 }
 
 
 
-/* 
-
-
-.desktop-nav .nav-icons {
-  display:flex;
-  justify-content: space-around;
-  grid-column: 8 / span 1;
-  grid-row: 2/ span 1;
-  align-self: start;
-  margin-right: 2rem;
-}
-
-.desktop-nav .nav-icons div img {
-  padding-left: 0;
-  margin-left: 0;
-  max-width: 40%;
-  }
-
-  .desktop-nav a:link {
-    text-decoration: none;
-    color: black;
-  }
-  .desktop-nav a:visited {
-    text-decoration: none;
-    color: black;
-  }
-  .desktop-nav a:hover {
-    text-decoration: none;
-    color: var(--green-color);
-    cursor: pointer;
-  }
-  
-  .desktop-nav ul{
-    list-style: none;
-   }
-   
-  .desktop-nav .sale{
-    max-width: 90%;
-    background: linear-gradient(180deg, transparent 60%, #EDFF0080)}
-  
-  .desktop-nav {
-    font-size: 1rem;
-    font-weight: 800;
-    display:grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr 1fr;
-   }
-   .desktop-nav .logo {
-  grid-column: 1/ span 8;
-  grid-row: 1/ span 1;
-  margin: 2rem auto 2rem auto;
-  max-width: 40%;
-   }
-  .desktop-nav .pages {
-    display:flex;
-    justify-content: space-between;
-    grid-column: 1 / span 6;
-    grid-row: 2/ span 1;
-    align-self: start;
-    font-size: 1rem;
-  }
-  
-  .desktop-nav .pages .dropdown-content {
-  display: none;
-  margin-left: -2.5rem;
-  margin-top:0.5rem;
-  z-index: 1;
-  font-weight: 500;
-  }
-  
-  .drop:hover .dropdown-content{
-    display: block;
-  }
-
-  .desktop-nav .pages .dropdown-secondary-content {
-    display: none;
-    margin-left: -2.5rem;
-    margin-top:0.5rem;
-    z-index: 2;
-    font-weight: 500;
-    }
-    
-    .drop:hover .dropdown-secondary-content{
-      display: block;
-    }
-
-  .desktop-nav .nav-icons .search {
-    margin:0;
-  }
-  .desktop-nav .nav-icons img {
-    margin:0;
-    padding: 0;
-    align-self: flex-start;
-  }
- */
-  /* -------------TOP MENU--------------- */
+/*-------- CARTPAGE------------ */
 
 header {
   background-color: white;
