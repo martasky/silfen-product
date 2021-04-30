@@ -3,7 +3,6 @@ burgerMenu();
 
 function burgerMenu() {
 
-
 document.querySelector(".close-burguer").addEventListener("click", displayBurguer);
 function displayBurguer () {
     document.querySelector(".close-burguer img").src = "assets/exit.png";
