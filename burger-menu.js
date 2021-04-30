@@ -73,7 +73,6 @@ const header = document.querySelector("header");
 const sticky = header.offsetTop;
 
 function moveMenu () {
-    console.log("scrolldown")
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky")
     }

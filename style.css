@@ -209,9 +209,9 @@ header a:active{
   width: 100%
 }
 
-.sticky + .content {
+/* .sticky + main {
   padding-top: 10rem;
-}
+} */
 
 /* Homepage */
 
@@ -1046,7 +1046,10 @@ input[type="number"] {
 }
 
 #thankyoupage main {
-  margin: 6rem 2rem;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr;
+  margin: 10rem 2rem 5rem 2rem;
 }
 
 #thankyoupage h1 {
@@ -1065,6 +1068,7 @@ input[type="number"] {
 }
 
 #thankyoupage #checkemail {
+  grid-row: 2;
   display: grid;
 }
 
@@ -1079,12 +1083,6 @@ input[type="number"] {
   transform: translate(10px, 25px);
   z-index: -1;
 }
-
-/* #thankyoupage #checkemail img:first-of-type{
-  grid-column: 1;
-  grid-row: 1;
-  max-width: 100%;
-} */
 
 #thankyoupage #checkemail #content-wrapper {
   margin-top: 2rem;
@@ -1111,7 +1109,6 @@ input[type="number"] {
   grid-column: 1;
   grid-row: 2 / span 1;
   max-width: 20%;
-  margin: -20vh auto -20vh auto;
   padding: 0;
 }
 
@@ -1925,7 +1922,20 @@ footer section {
     grid-column-start: 5;
     border-left: 3px solid var(--green-color);
   }
+
+  /* ----------------THANK YoU PAGE------------------------ */
+
+#thankyoupage main {
+  margin-top: 15rem;
 }
+
+#thankyoupage #checkemail {
+margin: 0 5rem 0 5rem;
+}
+}
+
+
+
 
 @media screen and (min-width: 1100px) {
 
@@ -1935,8 +1945,7 @@ footer section {
 header {
   background-color: white;
   width: 100%;
-  margin-top:-5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 
 .desktop-nav .close-burguer{
@@ -2030,9 +2039,22 @@ grid-template-columns: 3fr 1fr;
   #catalogue button {
     width: 22%;
     font-size: 1.1rem;
-  }}
+  }
 
-  /* -----FOOTER----- */
+
+  /* ----------THANKYOU PAGE-------------- */
+  #thankyoupage main {
+    margin: 20rem 10rem 10rem 10rem;
+  }
+  
+  #thankyoupage #checkemail {
+  margin: 0 7rem 0 7rem;
+  }
+ 
+}
+
+
+  
 
 @media screen and (min-width: 1100px) {
   /* -------------CHECKOUT PAGE--------- */
@@ -2497,4 +2519,17 @@ font-weight: 400;
 #checkoutpage #checkboxes form label {
   line-height: 5rem;
 }
+
+#thankyoupage #checkemail {
+  margin: 0 20rem 0 20rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #thankyoupage #email {
+margin-bottom: 0;
+  }
+  #thankyoupage #checkemail {
+    margin: 5rem 40rem 5rem 40rem;
+  }
 }
