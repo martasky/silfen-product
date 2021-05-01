@@ -1037,13 +1037,12 @@ input[type="number"] {
   width: max-content;
 }
 .highlight-blue {
+  width: max-content;
   background: linear-gradient(
     180deg,
     transparent 60%,
     var(--light-blue-color) 40%
   );
-  /* max-width: 60%; */
-  width: max-content;
 }
 
 /*------------------------------------- CATALOGUE PAGE ----------------------------------------------- */
@@ -1237,6 +1236,20 @@ footer section {
   line-height: 34px;
   padding: 1.5rem;
 }
+.highlight-blue-aboutsilfen {
+  width: max-content;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--light-blue-color) 40%
+  );
+}
+
+.aboutsilfen-text p{
+ text-align: left;
+  justify-content: left;
+}
+
 .aboutsilfen-page-img {
   box-shadow: 15px 30px 0px 0px #bcd7e9;
   margin: 2rem;
@@ -1244,8 +1257,12 @@ footer section {
 .aboutsilfen-text p {
   padding-top: 2rem;
   margin: 1rem;
-  font-size: 1rem;
 }
+
+.founders h1{
+  margin-bottom: 2rem;
+}
+
 .thefounders-img {
   box-shadow: 24px 9px 0px 5px #bcd7e9;
   margin: 2rem;
@@ -1253,40 +1270,53 @@ footer section {
 .thefounders-text p {
   padding-top: 2rem;
   margin: 1rem;
-  font-size: 1rem;
+  text-align: left; 
 }
-.meettheteam-title h2 {
-  padding-top: 1rem;
+
+.meettheteam-title{
+  margin-top: 5rem;
 }
-.team-boxes {
-  display: inline-block;
+
+.container-1{
+padding-top: 2rem;
+}
+
+.container-1 h3, p{
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin: 1rem;
 }
-.theteam-img-daniel {
-  box-shadow: 15px 30px 0px 0px #bcd7e9;
+.container-1 p{
+  font-weight: 300;
+}
+
+.container-1 div{
+  /* border: 1px #ccc solid; */
+  margin: 2rem;
+  padding-bottom: 1rem;
+}
+
+.theteam-img-daniel{
+  box-shadow: -26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
+
 .theteam-img-celine {
   box-shadow: 26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
 .theteam-img-nikolaj {
-  box-shadow: 0px 18px 0px 0px #bcd7e9;
+  box-shadow: -26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
 .theteam-img-emma {
-  box-shadow: 30px -40px 0px 1px #bcd7e9;
+  box-shadow: 26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
 .theteam-img-siri {
-  box-shadow: 8px 20px 0px 0px #bcd7e9;
+  box-shadow: -26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
 .theteam-img-yasmin {
-  box-shadow: 26px -25px 0px 0px #bcd7e9;
+  box-shadow: 26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
 
@@ -1668,6 +1698,36 @@ margin-left: 5rem;
 .about-sustainability h2{
   padding-left: 0.5rem;
 }
+/* ~~~~~~~About Silfen Page~~~~~~~ */
+  .container-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .container-1 div{
+    padding-bottom: 1px;
+  }
+
+  .box-1, .box-2, .box-3,
+  .box-4, .box-5, .box-6
+  {
+    width: 40%; 
+  }
+
+.theteam-img-daniel,
+.theteam-img-celine,  
+.theteam-img-nikolaj,
+.theteam-img-emma, 
+.theteam-img-siri,
+.theteam-img-yasmin
+{
+  box-shadow: none; 
+}
+
 }
 
 @media screen and (min-width: 900px) {
@@ -2168,6 +2228,25 @@ margin-left: 5rem;
     .about-silfen h2{
       padding-left: 6rem;
     }
+    /* ~~~~~~~About Silfen Page~~~~~~~ */
+
+  .container-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .container-1 div{
+    padding-bottom: 1px;
+  }
+
+  .box-1, .box-2, .box-3,
+  .box-4, .box-5, .box-6
+  {
+    width: 25%; 
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2320,6 +2399,37 @@ margin-left: 5rem;
       padding-left: 12rem;
       font-size: 2.5rem;
     }
+    /* ~~~~ABOUT SILFEN PAGE~~~~~ */
+    .grid-container{
+      display: grid; 
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+     }
+     .aboutsilfen-text p{
+      font-size: 1rem;
+     }
+     .grid-container2{
+      display: grid; 
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+     }
+     .thefounders-text p{
+      font-size: 1.1rem;
+    }
+     .thefounders-img{
+      box-shadow: none;
+      display: grid;
+      width: 80%; 
+      align-self: center;
+    }
+    .aboutsilfen-page-img{
+      box-shadow: none;
+      display: grid;
+      order: 2; 
+      width: 90%; 
+      align-self: center;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -2337,6 +2447,12 @@ margin-left: 5rem;
   #catalogue button {
     width: 21%;
     font-size: 1.1rem;
+  }
+  .thefounders-img{
+    width: 70%; 
+  }
+  .aboutsilfen-page-img{
+    width: 70%; 
   }
 }
 
@@ -2383,6 +2499,7 @@ margin-left: 5rem;
     .highlight-green{
       width: 120%; 
       margin-left: 15rem;
+}
 }
 /*-------------------------------------  ----------------------------------------------- */
 /*------------------------------------ END ----------------------------------------------- */
