@@ -1326,6 +1326,10 @@ padding-top: 2rem;
   letter-spacing: 2px;
   line-height: 34px;
 }
+#sustainability-page p {
+  text-align: left;
+  font-size: 1.5rem;
+}
 .about-sustainability {
   padding: 1.5rem;
 }
@@ -1333,7 +1337,6 @@ padding-top: 2rem;
   margin: 1rem;
 }
 .sustainability-text p {
-  /* font-size: 1rem; */
   margin: 1rem;
   text-transform: none;
 }
@@ -1341,50 +1344,70 @@ padding-top: 2rem;
   padding: 1.5rem;
 }
 .highlight-green-care {
-  /* max-width: 40%; */
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
   width: max-content;
 }
-.we-care-boxes {
+.we-care-boxes{
   margin: 2rem;
   font-weight: 500;
   text-transform: none;
 }
-.box1-border {
-  outline: 5px solid #2cabff;
-  outline-offset: 10px;
+.we-care-boxes h2{ 
+  font-size: 2.5rem;
+  line-height: 3rem;
+justify-content: center;
+align-items: center;
+padding: 2rem;
 }
-/* .box2-border {
+
+.box1-border h2{
+  outline: 5px solid #2cabff;
+  outline-offset: 20px;
+}
+.box2-border {
   outline: 5px solid #d6ead8;
+  outline-offset: 20px;
+}
+.box3-border h2{
+  outline: 5px solid #F6FE7F;
   outline-offset: 15px;
-} */
+}
+.box4-border h2{
+  outline: 5px solid #BCD7E9;
+  outline-offset: 15px;
+}
+.box2, .box3{
+  margin: 1rem; 
+}
+
 .box1 h2 {
   margin: 2rem;
   font-weight: 500;
 }
 .box2 h2 {
-  margin: 3rem;
+  margin: 1rem;
   font-weight: 500;
 }
 .box3 h2 {
-  /* margin: 2rem; */
   font-weight: 500;
 }
 .box4 h2 {
-  margin: 2rem;
+  margin: 0.5rem;
   font-weight: 500;
 }
 .water {
   padding: 1.5rem;
+  margin-top: 5rem; 
 }
 .highlight-blue-care {
-  max-width: 40%;
+  width: max-content;
   background: linear-gradient(
     180deg,
     transparent 60%,
     var(--light-blue-color) 40%
   );
 }
+
 .water-img {
   margin: 2rem;
 }
@@ -1392,7 +1415,6 @@ padding-top: 2rem;
   margin: 1rem;
 }
 .water-text p {
-  /* font-size: 1.2rem; */
   margin: 1rem;
   text-transform: none;
 }
@@ -1400,7 +1422,6 @@ padding-top: 2rem;
   padding: 1.5rem;
 }
 .highlight-yellow-working {
-  /* max-width: 80%; */
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
 }
@@ -1411,7 +1432,6 @@ padding-top: 2rem;
   margin: 1rem;
 }
 .working-text p {
-  /* font-size: 1.2rem; */
   margin: 1rem;
   text-transform: none;
 }
@@ -1419,7 +1439,6 @@ padding-top: 2rem;
   margin: 1.5rem;
 }
 .highlight-green-materials {
-  /* max-width: 40%; */
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
@@ -1447,18 +1466,6 @@ padding-top: 2rem;
 .shop-vegan-btn a {
   text-decoration: none;
 }
-
-/* .shop-vegan-text{
-  outline: 8px solid var(--green-color);
-  width: 80%;
-  background-color: var(--green-color);
-  margin: auto;
-} */
-/* .shop-vegan-text h3{
-  box-shadow: 20px 20px 0px 0px var(--green-color); 
-  padding: 1rem;
-font-weight: 400;
-} */
 
 .cotton-img {
   margin: 2rem;
@@ -1490,23 +1497,10 @@ font-weight: 400;
   margin: 2rem;
   text-align: center;
   font-weight: 500;
-  /* background-color: var(--green-color); */
 }
 .shop-recycled-btn a {
   text-decoration: none;
 }
-
-/* .shop-recycled-text{
-  outline: 8px solid var(--green-color);
-  width: 80%;
-  background-color: var(--green-color);
-  margin: auto;
-} */
-/* .shop-recycled-text h3{
-  box-shadow: 20px 20px 0px 0px var(--green-color); 
-  padding: 1rem;
-font-weight: 400;
-} */
 
 .leather {
   padding-top: 2rem;
@@ -2247,6 +2241,17 @@ margin-left: 5rem;
   {
     width: 25%; 
   }
+   /* ~~~~~~~sustainable page~~~~~~~ */
+   .sub-section-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+  }
+  .wesustainable-img{
+    order: 1; 
+    box-shadow: 0px; 
+    margin:2rem; 
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2429,6 +2434,15 @@ margin-left: 5rem;
       width: 90%; 
       align-self: center;
     }
+/* ~~~~~~Sustainable Page~~~~~~~~ */
+.grid-water {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; 
+}
+.water-img{
+  align-self: center;
+}
 
 }
 
@@ -2453,6 +2467,18 @@ margin-left: 5rem;
   }
   .aboutsilfen-page-img{
     width: 70%; 
+  }
+  /* ~~~~sustainable page~~~~~ */
+.sustainability-text p{
+  margin: 2rem; 
+}
+
+  .wesustainable-img{
+margin-left: 20rem;
+margin-right: 20rem;
+margin-bottom: 5rem;
+margin-top: 5rem;
+
   }
 }
 
