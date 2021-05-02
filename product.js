@@ -72,7 +72,7 @@ const CART = {
       console.log("We found the cart. Wuhuuuu!!!!");
     } else {
       CART.contents = [];
-      console.log("Fuck. this shit sucks, man!!!!");
+      console.log("Where are you?");
     }
     //I want to update the
     //this.updateDOM(); //lacj!!! use this when we're not hardcoding the contents, and the content is read from localStorage

@@ -9,7 +9,7 @@ const CART = {
       console.log("We found the cart. Wuhuuuu!!!!");
     } else {
       CART.contents = [];
-      console.log("Fuck. this shit sucks, man!!!!");
+      console.log("Where are you?");
     }
     CART.sync();
   },
