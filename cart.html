@@ -13,35 +13,54 @@
       <h1 class="half-highlight">YOUR CART</h1>
     </header>
     <main>
-      <h1>YOUR CART</h1>
+      
       <section class="cartproducts">
         <hr class="thinline" />
         <!--this will go into the template later on-->
-        <div class="productwrapper">
-          <img
-          src=https://silfenstudio.com/wp-content/uploads/2021/01/517310_WATERGREEN_FRONT.jpg
-          alt="Name of the product">
-          <div class="productinfo">
-            <h3>ULRIKKE</h3>
-            <p class="productcolor">WATERGREEN</p>
-            <p class="price"><span>499,00</span>DKK</p>
-            <div class="additems">
-              <div class="buttonsadd">
-                <button class="minus" type="button">-</button>
-                <input
-                  type="number"
-                  name="numero"
-                  id="selected-number"
-                  min="0"
-                />
-                <button class="plus" type="button">+</button>
+        <template id="cart-item-template">
+          <!-- <div class="cart-item">
+            <label for="fid-">Name</label>
+            <input type="number" name="name" id="fid-" min="0" max="20" />
+            <p class="price-row">DKK <span></span></p>
+            <p class="price-each">DKK <span></span></p>
+          </div> -->
+          <div class="productwrapper">
+            <img
+            src=https://silfenstudio.com/wp-content/uploads/2021/01/517310_WATERGREEN_FRONT.jpg
+            alt="Name of the product">
+            <div class="productinfo">
+              <h3>ULRIKKE</h3>
+              <!-- <label for="fid-">Name</label>
+              <input type="number" name="name" id="fid-" min="0" max="20" /> -->
+              <p class="productcolor">WATERGREEN</p>
+              <p class="price"><span>499,00</span>DKK</p>
+              <div class="additems">
+                <div class="buttonsadd">
+                  <button class="minus" type="button">-</button>
+                  <input
+                    type="number"
+                    name="numero"
+                    id="selected-number"
+                    min="0"
+                  />
+                  <button class="plus" type="button">+</button>
+                </div>
+                <a class="remove" href="#"><p>REMOVE</p></a>
               </div>
-              <a class="remove" href="#"><p>REMOVE</p></a>
-            </div>
+            </div> 
           </div>
-        </div>
+          </template>
+        <div class="cart">
+          <form action="#">
+            <div class="cart-content">
+              <h2>The cart is empty</h2>
+            </div>
+            
+          </form>
+        
+      
         <hr class="thinline" />
-        <div class="productwrapper">
+        <!-- <div class="productwrapper">
           <img
           src=https://silfenstudio.com/wp-content/uploads/2021/01/517310_WATERGREEN_FRONT.jpg
           alt="Name of the product">
@@ -63,14 +82,15 @@
               <a class="remove" href="#"><p>REMOVE</p></a>
             </div>
           </div>
-        </div>
-        <hr id="totalline" />
+        </div> -->
+        <!-- <hr id="totalline" /> -->
         <section id="total">
           <h2>TOTAL: <span id="totalprice">1.500,00</span> DKK</h2>
           <p>Shipping is calculated at checkout.</p>
           <p>Total price includes taxes.</p>
           <div class="aligned-left">
-            <button id="checkoutbutton">CHECKOUT</button>
+            <button type="sumbit" id="checkoutbutton">CHECKOUT</button>
+          </div>
           </div>
         </section>
 
@@ -123,5 +143,6 @@
         <img src="assets/paymentmethods.png" alt="payment methods" />
       </div>
     </footer>
+    <script src="cart.js"></script>
   </body>
 </html>

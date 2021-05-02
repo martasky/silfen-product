@@ -397,6 +397,7 @@ img {
 .half-highlight {
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
   line-height: 80%;
+  max-width: max-content;
 }
 .half-highlight-blue {
   background: linear-gradient(180deg, transparent 60%, var(--blue-color) 40%);
@@ -803,6 +804,15 @@ input[type="number"] {
   background-color: var(--green-color);
   border-width: 0;
   height: 5px;
+}
+.cart-content h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+#addtocart a {
+  text-decoration: none;
+  color: white;
 }
 
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
