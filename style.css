@@ -127,6 +127,7 @@ header {
 
 header a {
   text-decoration: none;
+  color:black;
 }
 header a:visited {
   text-decoration: none;
@@ -220,6 +221,55 @@ header a:active {
 /* .sticky + main {
   padding-top: 10rem;
 } */
+
+.desktop-nav #searchbar {
+  width: 100%;
+  grid-row: 3;
+  justify-self: end;
+  /* display: flex; 
+  flex-direction: row;
+  justify-content: flex-end; */
+}
+
+.search-hiden {
+  position:absolute;
+  top:-30rem;
+}
+.desktop-nav #searchbar form{
+  display: grid;
+  grid-template-columns: 8fr 3fr 1fr;
+  margin: 1rem;
+} 
+
+.desktop-nav #searchbar input:focus{
+  grid-column: 1; 
+  border-color: 2px solid #edff00;
+}
+
+.desktop-nav #searchbar form button{
+  grid-column:2;
+  margin-left: 0.3rem;
+  padding-left: 0.5rem;
+  font-size:0.7rem
+} 
+
+.desktop-nav #searchbar form img {
+  width: 13px;
+  height: 13px;
+}
+
+.desktop-nav #searchbar form button a{
+text-decoration: none;
+color:white;
+} 
+
+.desktop-nav #searchbar form button a:visited{
+  text-decoration: none;
+  color:white;
+  }     
+  
+
+
 
 /* 
 --------------------HOMEPAGE-----------------------
@@ -1803,6 +1853,95 @@ footer section {
   text-transform: none;
 }
 
+
+/* -------------------------------------SEARCH PAGE--------------------------------------------- */
+
+#search-page #empty-search{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-gap:2rem;
+  margin: 7rem 2rem 2rem 2rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#search-page #empty-search img {
+  max-width: 50%;
+  margin: 1rem auto 1rem auto;
+}
+
+
+#search-page main {
+  margin: 2rem 1rem;
+}
+#search-page .breadcrumbs p,
+#search-page .breadcrumbs a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+#search-title h2 {
+  width: max-content;
+  line-height: 80%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+#search-forms {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+#search-products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+#search-page .product-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid rgb(51, 51, 51);
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+#search-page .product-name {
+  padding: 2rem 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: 0.5;
+}
+#search-page .product-price {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 1;
+}
+#search-page .product-colors {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+}
+
+
+
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
@@ -2617,6 +2756,24 @@ footer section {
     box-shadow: 0px;
     margin: 2rem;
   }
+
+/* ----------------------------SEARCH PAGE -------------------*/
+
+  #search-page #empty-search img {
+    max-width: 20%;
+    margin: 1rem auto 1rem auto;
+  }
+
+#search-page main {
+  margin: 12rem 5rem 2rem 5rem;
+}
+
+#search-page #search-products{
+  display:grid;
+grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+grid-gap: 2rem;}
+
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -3012,6 +3169,18 @@ footer section {
 }
 
 @media screen and (min-width: 1600px) {
+ 
+  /* -----------------TOP MENU SEARCH -------------*/
+
+  #searchbar {
+
+  max-width: 70%;
+  line-height: 3rem;
+  }
+
+
+
+
   /* ----CHECKOUT PAGE---- */
   #checkoutpage .information {
     margin-right: 3rem;
@@ -3091,6 +3260,8 @@ footer section {
     width: 120%;
     margin-left: 15rem;
   }
+
+
 }
 /*-------------------------------------  ----------------------------------------------- */
 /*------------------------------------ END ----------------------------------------------- */
