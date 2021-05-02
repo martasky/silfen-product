@@ -2486,7 +2486,7 @@ footer section {
     grid-row-start: 2;
   }
   .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category1.webp);
+    background-image: url(assets/category1.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -2505,7 +2505,7 @@ footer section {
     transform: translateY(200px);
   }
   .shop-by-category-wrapper2 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category2.webp);
+    background-image: url(assets/category2.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -2530,7 +2530,7 @@ footer section {
     transform: translateY(-52px);
   }
   .shop-by-category-wrapper3 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category3.webp);
+    background-image: url(assets/category3.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -2554,7 +2554,7 @@ footer section {
     padding-bottom: 2rem;
   }
   .shop-by-category-wrapper4 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category4.webp);
+    background-image: url(assets/category4.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
@@ -2579,7 +2579,7 @@ footer section {
     transform: translateY(-240px);
   }
   .shop-by-category-wrapper5 .shop-by-category-img:nth-child(1) {
-    background-image: url(/assets/category5.webp);
+    background-image: url(assets/category5.webp);
     height: 200px;
     width: 150px;
     background-size: cover;
