@@ -18,7 +18,8 @@ fetch("https://kea21-4d62.restdb.io/rest/silfenproducts?q={}&filter=" + q, {
   });
 
 function showProducts(data) {
-    if (data.length >= 1) {
+  document.querySelector("#search-title h2").textContent = q
+      if (data.length >= 1) {
   console.log(data);
   data.forEach((product) => {
     showProduct(product);
@@ -61,5 +62,5 @@ function showProduct(product) {
   //     cart.add(product);
   //   });
 
-  const prod = document.querySelector("#catalogue-products");
+  const prod = document.querySelector("#search-products");
   prod.appendChild(clone);}

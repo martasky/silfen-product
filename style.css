@@ -2724,10 +2724,13 @@ p {
   }
 
 #search-page main {
-  margin: 2rem 5rem;
-  display: grid;
-  grid-template-columns: (repeat(auto))
+  margin: 12rem 5rem 2rem 5rem;
 }
+
+#search-page #search-products{
+  display:grid;
+grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+grid-gap: 2rem;}
 
 
 }
