@@ -106,23 +106,92 @@ button {
 }
 header {
   background-color: white;
-  position: fixed;
   width: 100%;
-  max-height: 27%;
 }
-.desktop-nav .nav-icons {
+
+.desktop-nav {
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.desktop-nav ul {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 600;
+}
+.desktop-nav .sale {
+  max-width: 90%;
+  background: linear-gradient(180deg, transparent 60%, #edff0080);
+}
+
+header a {
+  text-decoration: none;
+}
+header a:visited {
+  text-decoration: none;
+  color: black;
+}
+header a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.dont-display {
+  display: none;
+}
+
+.desktop-nav .logo {
+  grid-row: 1;
+}
+
+.desktop-nav .burger-menu-wrapper {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 1fr;
+  margin: 0 2rem 0 0;
+}
+
+.desktop-nav .burger-menu-wrapper .burger-close {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.desktop-nav .burger-menu-wrapper .nav-icons {
+  grid-column: 3/4;
+  grid-row: 1;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  grid-column: 8 / span 1;
-  grid-row: 2 / span 1;
-  align-self: start;
-  margin-right: 2rem;
+  margin: 0 1rem 0 1rem;
 }
-.desktop-nav .nav-icons div img {
-  padding-left: 0;
+/* positioning the dropdown menu in the menu-wrapper grid*/
+.desktop-nav .burger-menu-wrapper #pageslist {
+  z-index: 1;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
   margin-left: 0;
+  padding-left: 1rem;
+}
+.desktop-nav .burger-menu-wrapper #pageslist li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.desktop-nav .burger-menu-wrapper .nav-icons .search {
+  margin-right: 1rem;
+}
+
+.desktop-nav .logo {
+  margin: 1rem auto 1rem auto;
   max-width: 40%;
 }
+
+.desktop-nav .burger-menu-wrapper .nav-icons img {
+  max-width: 70%;
+}
+
 .desktop-nav .nav-icons .cart-icon {
   display: grid;
 }
@@ -130,68 +199,32 @@ header {
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
-.desktop-nav a:link {
-  text-decoration: none;
-  color: black;
+
+.item-added {
+  background-color: #edff00;
+  height: 15px;
+  width: 15px;
+  border: solid #edff00 1px;
+  border-radius: 15px;
+  transform: translate(10px, 10px);
 }
-.desktop-nav a:visited {
-  text-decoration: none;
-  color: black;
+
+/* to fix the menu on scroll class sticky */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.desktop-nav a:hover {
-  text-decoration: none;
-  color: var(--green-color);
-  cursor: pointer;
-}
-.desktop-nav ul {
-  list-style: none;
-}
-.desktop-nav .sale {
-  max-width: 90%;
-  background: linear-gradient(180deg, transparent 60%, #edff0080);
-}
-.desktop-nav {
-  font-size: 1rem;
-  font-weight: 800;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr 1fr;
-}
-.desktop-nav .logo {
-  grid-column: 1 / span 8;
-  grid-row: 1 / span 1;
-  margin: 2rem auto 2rem auto;
-  max-width: 40%;
-}
-.desktop-nav .pages {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 1 / span 6;
-  grid-row: 2 / span 1;
-  align-self: start;
-  font-size: 1rem;
-}
-.desktop-nav .pages .dropdown-content {
-  display: none;
-  margin-left: -2.5rem;
-  margin-top: 0.5rem;
-  z-index: 1;
-  font-weight: 500;
-}
-.drop:hover .dropdown-content {
-  display: block;
-}
-.desktop-nav .nav-icons .search {
-  margin: 0;
-}
-.desktop-nav .nav-icons img {
-  margin: 0;
-  padding: 0;
-  align-self: flex-start;
-}
-/* --------------------------------- HOMEPAGE ----------------------------- */
-/* --------------------------------- HOMEPAGE ----------------------------- */
-/* --------------------------------- HOMEPAGE ----------------------------- */
+
+/* .sticky + main {
+  padding-top: 10rem;
+} */
+
+/* 
+--------------------HOMEPAGE-----------------------
+--------------------HOMEPAGE-----------------------
+--------------------HOMEPAGE----------------------- */
 
 /* .container {
   width: 100%;
@@ -957,7 +990,14 @@ input[type="number"] {
 /* --------------------------------THANK YOU PAGE------------------------- */
 
 #thankyoupage {
-  margin: 0 1.2rem 0 1.2rem;
+  margin: 0;
+}
+
+#thankyoupage main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 10rem 2rem 5rem 2rem;
 }
 #thankyoupage h1 {
   text-align: center;
@@ -972,6 +1012,7 @@ input[type="number"] {
   font-size: 1.5rem;
 }
 #thankyoupage #checkemail {
+  grid-row: 2;
   display: grid;
 }
 #thankyoupage #checkemail > * {
@@ -989,6 +1030,7 @@ input[type="number"] {
   grid-row: 1;
   max-width: 100%;
 } */
+
 #thankyoupage #checkemail #content-wrapper {
   margin-top: 2rem;
   border: solid #f6fe7f 5px;
@@ -1012,7 +1054,6 @@ input[type="number"] {
   grid-column: 1;
   grid-row: 2 / span 1;
   max-width: 20%;
-  margin: -20vh auto -20vh auto;
   padding: 0;
 }
 #thankyoupage #checkemail #content-wrapper #text {
@@ -2325,10 +2366,94 @@ font-weight: 400;
     grid-column-start: 5;
     border-left: 3px solid var(--green-color);
   }
+
+  /* ----------------THANK YoU PAGE------------------------ */
+
+  #thankyoupage main {
+    margin-top: 15rem;
+  }
+
+  #thankyoupage #checkemail {
+    margin: 0 5rem 0 5rem;
+  }
 }
 
 @media screen and (min-width: 1100px) {
-  /* ----CART PAGE---- */
+  /* --------------------------TOP MENU-------------------- */
+
+  header {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .desktop-nav .close-burguer {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr;
+    background-color: white;
+  }
+  .desktop-nav .burger-menu-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .desktop-nav ul {
+    font-weight: 800;
+  }
+
+  .desktop-nav .burger-menu-wrapper #pageslist {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+  }
+
+  .desktop.nav .burger-menu-wrapper .nav-icons {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .desktop.nav #shop {
+    position: absolute;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .dropdown-content {
+    z-index: 1;
+    margin-left: 0;
+    padding-left: 0;
+    margin: 1rem auto 0 auto;
+    position: absolute;
+    flex-flow: nowrap;
+    background-color: white;
+    font-size: 0.7em;
+    line-height: 2rem;
+  }
+
+  .desktop.nav #aboutdrop {
+    position: absolute;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .dropdown-content-two {
+    z-index: 1;
+    padding: 0;
+    margin: 1rem auto 0 auto;
+    position: absolute;
+    flex-flow: nowrap;
+    background-color: white;
+    font-size: 0.7em;
+    line-height: 2rem;
+  }
+
+  /*-------- CARTPAGE------------ */
+
   #cartpage main {
     margin: 0 20rem 0 20rem;
   }
@@ -2349,6 +2474,30 @@ font-weight: 400;
   #catalogue button {
     width: 22%;
     font-size: 1.1rem;
+  }
+
+  /* ----------THANKYOU PAGE-------------- */
+  #thankyoupage main {
+    margin: 20rem 10rem 10rem 10rem;
+  }
+
+  #thankyoupage #checkemail {
+    margin: 0 7rem 0 7rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  /* -------------CHECKOUT PAGE--------- */
+  #checkoutpage main {
+    margin: 0 5rem 0 5rem;
+  }
+
+  #checkoutpage .purchase-summary hr {
+    margin: 2rem 0 2rem 0;
+  }
+
+  footer {
+    margin: 5rem 9rem;
   }
   /*---PRODUCT PAGE----*/
   #product-page main {
@@ -2603,3 +2752,351 @@ font-weight: 400;
 /*------------------------------------ END ----------------------------------------------- */
 /*-----------------------------------  END----------------------------------------------- */
 /*-----------------------------------  END ----------------------------------------------- */
+
+/* ---------WHERE IS THIS FROM??? --------*/
+.highlight-green {
+  max-width: 90%;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+
+.highlight-blue {
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--light-blue-color) 40%
+  );
+  max-width: 60%;
+}
+
+/* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
+
+#aboutsilfen-page {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+
+.aboutsilfen-page-img {
+  box-shadow: 15px 30px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.aboutsilfen-text p {
+  padding-top: 2rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.thefounders-img {
+  box-shadow: 24px 9px 0px 5px #bcd7e9;
+  margin: 2rem;
+}
+.thefounders-text p {
+  padding-top: 2rem;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.meettheteam-title h2 {
+  padding-top: 1rem;
+}
+
+.team-boxes {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.theteam-img-daniel {
+  box-shadow: 15px 30px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-celine {
+  box-shadow: 26px -25px 0px 1px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-nikolaj {
+  box-shadow: 0px 18px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-emma {
+  box-shadow: 30px -40px 0px 1px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-siri {
+  box-shadow: 8px 20px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+.theteam-img-yasmin {
+  box-shadow: 26px -25px 0px 0px #bcd7e9;
+  margin: 2rem;
+}
+
+/* ~~~~~~~~~~~~about sustainability page~~~~~~~~~~~~ */
+#sustainability-page {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+}
+
+.about-sustainability {
+  padding: 1.5rem;
+}
+.sustainability-text {
+  margin: 1rem;
+}
+.sustainability-text p {
+  /* font-size: 1rem; */
+  margin: 1rem;
+  text-transform: none;
+}
+.care-sustainability {
+  padding: 1.5rem;
+}
+
+.highlight-green-care {
+  max-width: 40%;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+.we-care-boxes {
+  margin: 2rem;
+  font-weight: 500;
+  text-transform: none;
+}
+.box1-border {
+  outline: 5px solid #2cabff;
+  outline-offset: 10px;
+}
+/* .box2-border {
+  outline: 5px solid #d6ead8;
+  outline-offset: 15px;
+} */
+.box1 h2 {
+  margin: 2rem;
+  font-weight: 500;
+}
+.box2 h2 {
+  margin: 3rem;
+  font-weight: 500;
+}
+.box3 h2 {
+  /* margin: 2rem; */
+  font-weight: 500;
+}
+.box4 h2 {
+  margin: 2rem;
+  font-weight: 500;
+}
+
+.water {
+  padding: 1.5rem;
+}
+.highlight-blue-care {
+  max-width: 40%;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--light-blue-color) 40%
+  );
+}
+.water-img {
+  margin: 2rem;
+}
+.water-text {
+  margin: 1rem;
+}
+.water-text p {
+  /* font-size: 1.2rem; */
+  margin: 1rem;
+  text-transform: none;
+}
+.working-conditions {
+  padding: 1.5rem;
+}
+
+.highlight-yellow-working {
+  max-width: 80%;
+  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
+}
+.working-img {
+  margin: 2rem;
+}
+.working-text {
+  margin: 1rem;
+}
+.working-text p {
+  /* font-size: 1.2rem; */
+  margin: 1rem;
+  text-transform: none;
+}
+
+.materials h3 {
+  margin: 1.5rem;
+}
+
+.highlight-green-materials {
+  max-width: 40%;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+
+.materials-img {
+  box-shadow: 20px -20px 0px 0px var(--green-color);
+  margin: 2.5rem;
+}
+.materials-text {
+  margin: 1rem;
+}
+.materials-text p {
+  margin: 1rem;
+}
+.materials-text p {
+  text-transform: none;
+}
+.uppercase-vegan p {
+  text-transform: uppercase;
+}
+.shop-vegan-btn {
+  margin: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.shop-vegan-btn a {
+  text-decoration: none;
+}
+
+/* .shop-vegan-text{
+  outline: 8px solid var(--green-color);
+  width: 80%;
+  background-color: var(--green-color);
+  margin: auto;
+} */
+/* .shop-vegan-text h3{
+  box-shadow: 20px 20px 0px 0px var(--green-color); 
+  padding: 1rem;
+font-weight: 400;
+} */
+
+.cotton-img {
+  margin: 2rem;
+  padding-top: 2rem;
+}
+.uppercase-cotton p {
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+.cotton-text p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  text-transform: none;
+}
+.rpet-line-img {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: -3px;
+}
+.rpet-line-text p {
+  text-transform: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.uppercase-rpet-line {
+  margin-left: 2rem;
+}
+.shop-recycled-btn {
+  margin: 2rem;
+  text-align: center;
+  font-weight: 500;
+  /* background-color: var(--green-color); */
+}
+.shop-recycled-btn a {
+  text-decoration: none;
+}
+
+/* .shop-recycled-text{
+  outline: 8px solid var(--green-color);
+  width: 80%;
+  background-color: var(--green-color);
+  margin: auto;
+} */
+/* .shop-recycled-text h3{
+  box-shadow: 20px 20px 0px 0px var(--green-color); 
+  padding: 1rem;
+font-weight: 400;
+} */
+
+.leather {
+  padding-top: 2rem;
+  margin: 2rem;
+}
+.leather-img {
+  padding-bottom: 1rem;
+}
+.leather-text p {
+  text-transform: none;
+}
+.sustainability-shipping {
+  margin: 2rem;
+}
+.highlight-green-sus {
+  max-width: 40%;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+.sus-shipping-img {
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
+  margin: 2.5rem;
+  box-shadow: 20px -20px 0px 5px var(--yellow-color);
+}
+.sus-shipping-text p {
+  text-transform: none;
+}
+
+@media screen and (min-width: 1600px) {
+  #checkoutpage .information {
+    margin-right: 3rem;
+  }
+
+  #checkoutpage .shipping {
+    margin-right: 3rem;
+  }
+  #checkoutpage .payment {
+    margin-right: 3rem;
+  }
+
+  #checkoutpage .checkboxes {
+    margin-right: 3rem;
+  }
+
+  #checkoutpage .purchase-summary {
+    padding: 4rem 7rem 4rem 7rem;
+  }
+
+  #checkoutpage .purchase-summary .discount-code form button {
+    font-size: 1rem;
+  }
+
+  #checkoutpage .purchase-summary .item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0.7rem;
+  }
+
+  #checkoutpage #checkboxes form label {
+    line-height: 5rem;
+  }
+
+  #thankyoupage #checkemail {
+    margin: 0 20rem 0 20rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #thankyoupage #email {
+    margin-bottom: 0;
+  }
+  #thankyoupage #checkemail {
+    margin: 5rem 40rem 5rem 40rem;
+  }
+}
