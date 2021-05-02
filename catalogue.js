@@ -37,6 +37,10 @@ function showProduct(product) {
 
   clone.querySelector(".product-price").textContent = `${product.price} DKK`;
 
+  clone.querySelector(
+    ".product-card a"
+  ).href = `product-page.html?_id=${product._id}`;
+
   // if (product.colors.length > 1) {
   //     clone.querySelector(".color2").textContent = product.colors[1].name;
   //     clone.querySelector(".color")

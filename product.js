@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
+const id = urlParams.get("_id");
 
 //kea21-4d62.restdb.io/rest/silfenproducts??q={"colors": {"name" : {"$in": ["green"]}}}
 fetch("https://kea21-4d62.restdb.io/rest/silfenproducts/" + id, {
@@ -11,39 +11,37 @@ fetch("https://kea21-4d62.restdb.io/rest/silfenproducts/" + id, {
   .then((res) => res.json())
   .then((response) => {
     console.log(response);
-    showProducts(response);
+    showProduct(response);
   })
   .catch((err) => {
     console.error(err);
   });
 
-function showProducts(data) {
-  console.log(data);
-
-  data.forEach((product) => {
-    console.log(product);
-
-    showProduct(product);
-  });
-}
 function showProduct(product) {
-  const tempProd = document.querySelector("template").content;
-  const clone = tempProd.cloneNode(true);
+  document.querySelector(".producttitle").textContent = product.name;
+  document.querySelector("#product-title").textContent = product.name;
+  document.querySelector(".product-description").textContent =
+    product.description;
+  document.querySelector(".product-material").textContent = product.material;
+  document.querySelector(".product-measurements").textContent =
+    product.dimensions;
 
-  clone.querySelector(".product-name").textContent = product.name;
-  clone.querySelector(".product-name").textContent = product.name;
-  clone.querySelector(".product-image").src = product.images[1];
+  document.querySelector(".product-img img").src = product.images[0];
 
-  // clone.querySelector(".colors").textContent = product.colors[0].name;
+  document.querySelector(".small-product-img img").src = product.images[1];
+  document.querySelector(".small-product-img2 img").src = product.images[1];
+  document.querySelector(".small-product-img3 img").src = product.images[1];
 
-  clone.querySelector(".product-price").textContent = `${product.price} DKK`;
+  // document.querySelector(".colors").textContent = product.colors[0].name;
+
+  document.querySelector(".product-price").textContent = `${product.price} DKK`;
 
   // if (product.colors.length > 1) {
-  //     clone.querySelector(".color2").textContent = product.colors[1].name;
-  //     clone.querySelector(".color")
+  //     document.querySelector(".color2").textContent = product.colors[1].name;
+  //     document.querySelector(".color")
   //   }
 
-  var color_list = clone.querySelector(".product-colors");
+  var color_list = document.querySelector(".product-colors");
   var ul = document.createElement("ul");
   product.colors.forEach(function (color) {
     var li = document.createElement("li");
@@ -53,13 +51,10 @@ function showProduct(product) {
   });
   color_list.appendChild(ul);
 
-  //   btnEl = clone.querySelector("button");
+  //   btnEl = document.querySelector("button");
   //   // btnEl.dataset.id += product._id;
 
   //   btnEl.addEventListener("click", () => {
   //     cart.add(product);
   //   });
-
-  const prod = document.querySelector("#catalogue-products");
-  prod.appendChild(clone);
 }
