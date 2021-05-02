@@ -67,6 +67,9 @@ function displaySecondDrop () {
     
 }
 
+
+/* To adjust the position of the top menu when scrolling */
+
 window.onscroll = function() {moveMenu()};
 
 const header = document.querySelector("header");
@@ -81,4 +84,15 @@ function moveMenu () {
     }
 }
 
+/* For the search  */
 
+
+const form = document.querySelector("#searchbar form");
+document.querySelector("button").addEventListener("click", submitSearch);
+
+function submitSearch() {
+    const q = form.elements.query.value;
+    const url = "https://kea21-4d62.restdb.io/rest/silfenproducts?q={}&filter=" + q;
+    document.querySelector("#searchbar button a").href = "search.html?q=" + q;
+
+}
