@@ -1069,6 +1069,10 @@ input[type="number"] {
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
+.breadcrumbs {
+  display: none;
+}
+
 #about {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1451,8 +1455,8 @@ footer section {
   line-height: 34px;
   padding: 1.5rem;
 }
-.aboutsilfen-text p{
- text-align: left;
+.aboutsilfen-text p {
+  text-align: left;
   justify-content: left;
 }
 
@@ -1465,7 +1469,7 @@ footer section {
   margin: 1rem;
 }
 
-.founders h1{
+.founders h1 {
   margin-bottom: 2rem;
 }
 
@@ -1476,31 +1480,32 @@ footer section {
 .thefounders-text p {
   padding-top: 2rem;
   margin: 1rem;
-  text-align: left; 
+  text-align: left;
 }
 
-.meettheteam-title{
+.meettheteam-title {
   margin-top: 5rem;
 }
 
-.container-1{
-padding-top: 2rem;
+.container-1 {
+  padding-top: 2rem;
 }
 
-.container-1 h3, p{
+.container-1 h3,
+p {
   text-align: center;
 }
-.container-1 p{
+.container-1 p {
   font-weight: 300;
 }
 
-.container-1 div{
+.container-1 div {
   /* border: 1px #ccc solid; */
   margin: 2rem;
   padding-bottom: 1rem;
 }
 
-.theteam-img-daniel{
+.theteam-img-daniel {
   box-shadow: -26px -25px 0px 1px #bcd7e9;
   margin: 2rem;
 }
@@ -1891,53 +1896,54 @@ font-weight: 400;
   .recycled-wrapper {
     padding: 4rem;
   }
-    /*----ABOUT PAGE------*/
-    
-    .about-silfen-img, .about-sustainability-img{
-      width: 80%;
-      margin-bottom: -20px;
-    }
-    .about-sustainability{
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 1fr 1fr ;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      justify-items: center; 
-      align-items: center; 
-    } 
-.about-silfen{
+  /*----ABOUT PAGE------*/
+
+  .about-silfen-img,
+  .about-sustainability-img {
+    width: 80%;
+    margin-bottom: -20px;
+  }
+  .about-sustainability {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    justify-items: center; 
-    align-items: center; 
-}
-.about-silfen h2{
-  display: grid;
-  order: 1; 
-}
-.about-sustainability-img{
-  display: grid;
-  order: 2; 
-}
-.highlight-blue{
-  width: 120%; 
-}
-.about-silfen h2{
-  padding-left: 3rem;
-} 
-.highlight-green{
-width: 120%; 
-margin-left: 5rem;
-}
-.about-sustainability h2{
-  padding-left: 0.5rem;
-}
-/* ~~~~~~~About Silfen Page~~~~~~~ */
-  .container-1{
+    justify-items: center;
+    align-items: center;
+  }
+  .about-silfen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+  }
+  .about-silfen h2 {
+    display: grid;
+    order: 1;
+  }
+  .about-sustainability-img {
+    display: grid;
+    order: 2;
+  }
+  .highlight-blue {
+    width: 120%;
+  }
+  .about-silfen h2 {
+    padding-left: 3rem;
+  }
+  .highlight-green {
+    width: 120%;
+    margin-left: 5rem;
+  }
+  .about-sustainability h2 {
+    padding-left: 0.5rem;
+  }
+  /* ~~~~~~~About Silfen Page~~~~~~~ */
+  .container-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1946,26 +1952,32 @@ margin-left: 5rem;
     font-weight: 800;
   }
 
-  .container-1 div{
+  .container-1 div {
     padding-bottom: 1px;
   }
 
-  .box-1, .box-2, .box-3,
-  .box-4, .box-5, .box-6
-  {
-    width: 40%; 
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    width: 40%;
   }
 
-.theteam-img-daniel,
-.theteam-img-celine,  
-.theteam-img-nikolaj,
-.theteam-img-emma, 
-.theteam-img-siri,
-.theteam-img-yasmin
-{
-  box-shadow: none; 
-}
+  .theteam-img-daniel,
+  .theteam-img-celine,
+  .theteam-img-nikolaj,
+  .theteam-img-emma,
+  .theteam-img-siri,
+  .theteam-img-yasmin {
+    box-shadow: none;
+  }
 
+  .breadcrumbs {
+    display: inherit;
+    margin: 2rem;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -2495,19 +2507,19 @@ margin-left: 5rem;
     margin: 0 5rem 0 5rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
-  .highlight-green{
-    width: 120%; 
+  .highlight-green {
+    width: 120%;
     margin-left: 6rem;
-    }
-    .about-sustainability h2{
-      padding-left: 6rem;
-    }
-    .about-silfen h2{
-      padding-left: 6rem;
-    }
-    /* ~~~~~~~About Silfen Page~~~~~~~ */
+  }
+  .about-sustainability h2 {
+    padding-left: 6rem;
+  }
+  .about-silfen h2 {
+    padding-left: 6rem;
+  }
+  /* ~~~~~~~About Silfen Page~~~~~~~ */
 
-  .container-1{
+  .container-1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -2515,14 +2527,21 @@ margin-left: 5rem;
     font-weight: 800;
   }
 
-  .container-1 div{
+  .container-1 div {
     padding-bottom: 1px;
   }
 
-  .box-1, .box-2, .box-3,
-  .box-4, .box-5, .box-6
-  {
-    width: 25%; 
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    width: 25%;
+  }
+  .breadcrumbs {
+    display: inherit;
+    margin: 2rem;
   }
 }
 
@@ -2633,17 +2652,17 @@ margin-left: 5rem;
     margin: 0 7rem 0 7rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
-  .highlight-green{
-    width: 120%; 
+  .highlight-green {
+    width: 120%;
     margin-left: 12rem;
-    }
-    .about-sustainability h2{
-      padding-right: 5rem;
-      font-size: 2.5rem;
-    }
-    .about-silfen h2{
-      font-size: 2.5rem;
-    }
+  }
+  .about-sustainability h2 {
+    padding-right: 5rem;
+    font-size: 2.5rem;
+  }
+  .about-silfen h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -2794,46 +2813,45 @@ margin-left: 5rem;
     width: 1060px;
     grid-template-columns: 70% 30%;
   }
-   /* ~~~~ABOUT PAGE~~~~~ */
-   .highlight-green{
-    width: 120%; 
+  /* ~~~~ABOUT PAGE~~~~~ */
+  .highlight-green {
+    width: 120%;
     margin-left: 12rem;
-    }
-    .about-sustainability h2{
-      padding-left: 12rem;
-      font-size: 2.5rem;
-    }
-    /* ~~~~ABOUT SILFEN PAGE~~~~~ */
-    .grid-container{
-      display: grid; 
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-     }
-     .aboutsilfen-text p{
-      font-size: 1rem;
-     }
-     .grid-container2{
-      display: grid; 
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-     }
-     .thefounders-text p{
-      font-size: 1.1rem;
-    }
-     .thefounders-img{
-      box-shadow: none;
-      display: grid;
-      width: 80%; 
-      align-self: center;
-    }
-    .aboutsilfen-page-img{
-      box-shadow: none;
-      display: grid;
-      order: 2; 
-      width: 90%; 
-      align-self: center;
-    }
-
+  }
+  .about-sustainability h2 {
+    padding-left: 12rem;
+    font-size: 2.5rem;
+  }
+  /* ~~~~ABOUT SILFEN PAGE~~~~~ */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .aboutsilfen-text p {
+    font-size: 1rem;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .thefounders-text p {
+    font-size: 1.1rem;
+  }
+  .thefounders-img {
+    box-shadow: none;
+    display: grid;
+    width: 80%;
+    align-self: center;
+  }
+  .aboutsilfen-page-img {
+    box-shadow: none;
+    display: grid;
+    order: 2;
+    width: 90%;
+    align-self: center;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -2880,11 +2898,12 @@ margin-left: 5rem;
   #product-page .product-img:nth-child(1) {
     height: 600px;
     width: 450px;
-  .thefounders-img{
-    width: 70%; 
   }
-  .aboutsilfen-page-img{
-    width: 70%; 
+  .thefounders-img {
+    width: 70%;
+  }
+  .aboutsilfen-page-img {
+    width: 70%;
   }
 }
 
@@ -2952,22 +2971,22 @@ margin-left: 5rem;
   footer {
     margin: 2rem 17rem;
   }
-   /* ~~~~ABOUT PAGE~~~~~ */
-   .highlight-green{
-    width: 120%; 
+  /* ~~~~ABOUT PAGE~~~~~ */
+  .highlight-green {
+    width: 120%;
     margin-left: 12rem;
-    }
-    .about-sustainability h2{
-      padding-right: 5rem;
-      font-size: 3rem;
-    }
-    .about-silfen h2{
-      font-size: 3rem;
-    }
-    .highlight-green{
-      width: 120%; 
-      margin-left: 15rem;
-}
+  }
+  .about-sustainability h2 {
+    padding-right: 5rem;
+    font-size: 3rem;
+  }
+  .about-silfen h2 {
+    font-size: 3rem;
+  }
+  .highlight-green {
+    width: 120%;
+    margin-left: 15rem;
+  }
 }
 /*-------------------------------------  ----------------------------------------------- */
 /*------------------------------------ END ----------------------------------------------- */
