@@ -3118,6 +3118,18 @@ grid-gap: 2rem;}
 }
 
 @media screen and (min-width: 1600px) {
+ 
+  /* -----------------TOP MENU SEARCH -------------*/
+
+  #searchbar {
+
+  max-width: 70%;
+  line-height: 3rem;
+  }
+
+
+
+
   /* ----CHECKOUT PAGE---- */
   #checkoutpage .information {
     margin-right: 3rem;
@@ -3197,6 +3209,8 @@ grid-gap: 2rem;}
     width: 120%;
     margin-left: 15rem;
   }
+
+
 }
 /*-------------------------------------  ----------------------------------------------- */
 /*------------------------------------ END ----------------------------------------------- */
