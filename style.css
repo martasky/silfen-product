@@ -1102,6 +1102,34 @@ input[type="number"] {
   );
 }
 
+/* ~~~~~~~~~~~~Contact page~~~~~~~~~~~~ */
+
+#contact-page{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+
+.highlight-green-contact{
+  margin-top: 2rem;
+  /* max-width: 40%; */
+  width: max-content;
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+}
+
+.contact-img {
+  box-shadow: -30px -30px 0px 0px var(--green-color); 
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.contact-text{
+    text-transform: none;
+    padding-top: 1rem;
+}
+
+
 /*------------------------------------- CATALOGUE PAGE ----------------------------------------------- */
 /*------------------------------------- CATALOGUE PAGE ----------------------------------------------- */
 /*------------------------------------- CATALOGUE PAGE ----------------------------------------------- */
