@@ -1,3 +1,7 @@
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("color");
+
+//kea21-4d62.restdb.io/rest/silfenproducts??q={"colors": {"name" : {"$in": ["green"]}}}
 fetch("https://kea21-4d62.restdb.io/rest/silfenproducts", {
   method: "GET",
   headers: {
@@ -58,3 +62,27 @@ function showProduct(product) {
   const prod = document.querySelector("#catalogue-products");
   prod.appendChild(clone);
 }
+
+// document.querySelector("#loadMore").addEventListener("click", showMore());
+
+// function showMore() {
+
+// }
+
+// var currentindex = 0;
+// var items = Object.values(data);
+// function loadmore() {
+//   var maxresult = 2;
+
+//   for (var i = 0; i < maxresult.length; i++) {
+//     if (currentindex >= items.length) {
+//       $("#lmbutton").hide();
+//       return;
+//     }
+//     $("#catalogue-products").append(
+//       "<section>" + items[i + currentindex] + "</section"
+//     );
+//   }
+
+//   currentindex += maxresult;
+// }
