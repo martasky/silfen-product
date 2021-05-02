@@ -1158,11 +1158,15 @@ input[type="number"] {
   padding-bottom: 2rem;
 }
 #catalogue-products {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+
+  /* width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; */
 }
 #catalogue .product-card {
   width: 100%;
@@ -1171,7 +1175,7 @@ input[type="number"] {
   justify-content: center;
   border: 1px solid rgb(51, 51, 51);
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 #catalogue .product-name {
   padding: 2rem 0 0 0;
@@ -1519,7 +1523,7 @@ footer section {
 }
 
 .container-1 h3,
-p {
+.container-1 p {
   text-align: center;
 }
 .container-1 p {
