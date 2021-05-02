@@ -1244,6 +1244,23 @@ input[type="number"] {
   height: 11%;
   font-size: 1.2rem;
 }
+/* Dynamic colors */
+li {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.2rem;
+  border: 1px solid black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+
+/*------------------------------------- footer ----------------------------------------------- */
 
 /*------------------------------------- FOOTER ----------------------------------------------- */
 /*------------------------------------- FOOTER ----------------------------------------------- */

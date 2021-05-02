@@ -7,6 +7,11 @@
     <title>SILFEN STUDIO - Catalogue Page</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="robots" content="noindex, nofollow" />
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script> -->
   </head>
   <body id="catalogue">
     <header></header>
@@ -47,7 +52,24 @@
         </div>
       </section>
       <section id="catalogue-products">
-        <article class="product-card">
+        <template>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="assets/517310_Black.png"
+              alt="Product Name"
+            />
+            <p class="product-name">ulrikke recycled</p>
+            <p class="product-price">499 DKK</p>
+            <div class="product-colors">
+              <!-- <div class="color1"></div>
+              <div class="color2"></div>
+              <div class="color3"></div>
+              <div class="color4"></div> -->
+            </div>
+          </article>
+        </template>
+        <!-- <article class="product-card">
           <img
             class="product-image"
             src="assets/517310_Black.png"
@@ -92,38 +114,24 @@
             <div class="color4"></div>
           </div>
         </article>
-        <article class="product-card">
-          <img
-            class="product-image"
-            src="assets/517310_Black.png"
-            alt="Product Name"
-          />
-          <p class="product-name">ulrikke recycled</p>
-          <p class="product-price">499 DKK</p>
-          <div class="product-colors">
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div>
-            <div class="color4"></div>
-          </div>
-        </article>
-        <article class="product-card">
-          <img
-            class="product-image"
-            src="assets/517310_Black.png"
-            alt="Product Name"
-          />
-          <p class="product-name">ulrikke recycled</p>
-          <p class="product-price">499 DKK</p>
-          <div class="product-colors">
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div>
-            <div class="color4"></div>
-          </div>
-        </article>
+        <template>
+          <article class="product-card">
+            <img
+              class="product-image"
+              src="assets/517310_Black.png"
+              alt="Product Name"
+            />
+            <p class="product-name">ulrikke recycled</p>
+            <p class="product-price">499 DKK</p>
+            <div class="product-colors">
+              <div class="color1"></div>
+              <div class="color2"></div>
+              <div class="color3"></div>
+              <div class="color4"></div>
+            </div></article
+        ></template> -->
       </section>
-      <button class="button">load more</button>
+      <button id="loadMore" class="button">load more</button>
     </main>
     <footer>
       <section>
@@ -172,5 +180,6 @@
         <img src="assets/paymentmethods.png" alt="payment methods" />
       </div>
     </footer>
+    <script src="catalogue.js"></script>
   </body>
 </html>
