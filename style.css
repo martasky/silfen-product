@@ -127,6 +127,7 @@ header {
 
 header a {
   text-decoration: none;
+  color:black;
 }
 header a:visited {
   text-decoration: none;
@@ -229,6 +230,11 @@ header a:active {
   flex-direction: row;
   justify-content: flex-end; */
 }
+
+.search-hiden {
+  position:absolute;
+  top:-30rem;
+}
 .desktop-nav #searchbar form{
   display: grid;
   grid-template-columns: 8fr 3fr 1fr;
@@ -251,6 +257,17 @@ header a:active {
   width: 13px;
   height: 13px;
 }
+
+.desktop-nav #searchbar form button a{
+text-decoration: none;
+color:white;
+} 
+
+.desktop-nav #searchbar form button a:visited{
+  text-decoration: none;
+  color:white;
+  }     
+  
 
 
 
