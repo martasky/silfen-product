@@ -1,7 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("_id");
 
-//kea21-4d62.restdb.io/rest/silfenproducts??q={"colors": {"name" : {"$in": ["green"]}}}
 fetch("https://kea21-4d62.restdb.io/rest/silfenproducts/" + id, {
   method: "GET",
   headers: {
