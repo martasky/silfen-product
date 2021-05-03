@@ -30,6 +30,7 @@ const CART = {
       // document.querySelector(".thinline").remove();
     } else {
       document.querySelector("#total").classList.add("hidden");
+      document.querySelector("#totalline").classList.add("hidden");
       // document.querySelector(".thinline").classList.add("hidden");
       // document.querySelector(".thinline").classList.add("hidden");
       document.querySelector("#continueshopping").classList.remove("hidden");

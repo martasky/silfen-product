@@ -64,21 +64,16 @@ const CART = {
   init() {
     //_contents is a temporary string
     let _contents = localStorage.getItem(CART.KEY);
-
-    if (_contents.length == 0) {
-      //if there's anything there, turn it into JS objects, that we can access with the dot . notation
+    if (_contents.length != 0) {
       CART.contents = JSON.parse(_contents);
       console.log("We found the cart. Wuhuuuu!!!!");
     } else {
       CART.contents = [];
       console.log("Where are you?");
     }
-    //I want to update the
-    //this.updateDOM(); //lacj!!! use this when we're not hardcoding the contents, and the content is read from localStorage
     CART.sync();
   },
   sync() {
-    //turn CART contents array of objects into a string that we can write in localStorage
     let _cart = JSON.stringify(CART.contents);
     localStorage.setItem(CART.KEY, _cart);
   },
@@ -113,18 +108,24 @@ const CART = {
 
     CART.sync();
   },
-  // minusOne(id) {
-  //   const indexObj = CART.contents.find((element) => element._id == id);
-  //   indexObj.qty--;
-  //   console.log(indexObj);
-  //   CART.update(indexObj);
-  // },
-  // plusOne(id) {
-  //   const indexObj = CART.contents.find((element) => element._id == id);
-  //   indexObj.qty++;
-  //   console.log(indexObj);
-  //   CART.update(indexObj);
-  // },
+  minusOne(id) {
+    const indexObj = CART.contents.find((element) => element._id == id);
+    indexObj.qty--;
+    console.log(indexObj);
+    CART.update(indexObj);
+  },
+  deleteProduct(id) {
+    const indexObj = CART.contents.find((element) => element._id == id);
+    indexObj.qty = 0;
+    console.log(indexObj);
+    CART.update(indexObj);
+  },
+  plusOne(id) {
+    const indexObj = CART.contents.find((element) => element._id == id);
+    indexObj.qty++;
+    console.log(indexObj);
+    CART.update(indexObj);
+  },
 };
 
 CART.init();
