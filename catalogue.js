@@ -1,8 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("color");
+const q = urlParams.get("q");
+
 
 //kea21-4d62.restdb.io/rest/silfenproducts??q={"colors": {"name" : {"$in": ["green"]}}}
-fetch("https://kea21-4d62.restdb.io/rest/silfenproducts", {
+fetch("https://kea21-4d62.restdb.io/rest/silfenproducts?q={}&filter=" + q, {
   method: "GET",
   headers: {
     "x-apikey": "602e36c15ad3610fb5bb62b8",
@@ -18,7 +20,8 @@ fetch("https://kea21-4d62.restdb.io/rest/silfenproducts", {
   });
 
 function showProducts(data) {
-  console.log(data);
+  document.querySelector("#catalogue-title h2").textContent = q;
+  document.querySelector("a.cataloguepage").textContent = q;
 
   data.forEach((product) => {
     console.log(product);

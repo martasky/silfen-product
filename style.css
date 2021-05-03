@@ -92,6 +92,10 @@ button {
   font-family: var(--primary-font);
 }
 
+main {
+  margin-top: 5rem;
+}
+
 /* -------------------------------  TOP MENU ---------------------------- */
 /* -------------------------------  TOP MENU ---------------------------- */
 /* -------------------------------  TOP MENU ---------------------------- */
@@ -107,6 +111,7 @@ button {
 header {
   background-color: white;
   width: 100%;
+  z-index: 1;
 }
 
 .desktop-nav {
@@ -169,7 +174,7 @@ header a:active {
 }
 /* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
-  z-index: 1;
+  z-index: 2;
   grid-column: 1 / span 1;
   grid-row: 2 / span 2;
   margin-left: 0;
@@ -313,6 +318,8 @@ img {
   grid-column: 4 /5;
 } */
 /* newsletter popup */
+
+
 .newsletter-popup {
   width: 360px;
   padding: 1rem;
@@ -2823,7 +2830,7 @@ grid-gap: 2rem;}
   }
 
   .dropdown-content {
-    z-index: 1;
+    z-index: 2;
     margin-left: 0;
     padding-left: 0;
     margin: 1rem auto 0 auto;
@@ -2840,7 +2847,7 @@ grid-gap: 2rem;}
   }
 
   .dropdown-content-two {
-    z-index: 1;
+    z-index: 2;
     padding: 0;
     margin: 1rem auto 0 auto;
     position: absolute;

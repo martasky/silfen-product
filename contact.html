@@ -8,6 +8,52 @@
     <title>we are sustainable</title>
   </head>
   <body>
+    <header>
+      <nav class=desktop-nav>
+          <div class=logo><a href="index.html"><img src="assets/silfen-logo-black.svg" alt="Silfen logo"></a></div>
+          <div class=burger-menu-wrapper><div class=close-burguer><img src="assets/burger.png" alt="burger menu icon"></div>
+          <ul class="dont-display" id=pageslist>
+              <li><a href="catalogue.html">NEW ARRIVALS</a>
+              <li><a id=shop class=drop href="#">SHOP</a>
+              <ul class="dont-display dropdown-content">
+                <li><a href="catalogue.html?q=bags">ALL PRODUCTS</a></li>
+                <li id=collections class=drop-two><a href="#">COLLECTIONS</a>
+                  <ul  class="dont-display dropdown-secondary-content">
+                <li><a href="catalogue.html?q=snow queen">SNOW QUEEN</a></li>
+                <li><a href="catalogue.html?q=recycle">RECYCLE</a></li>
+                <li><a href="catalogue.html?q=classics">CLASSICS</a></li>
+                </ul>                    
+                </li>
+                <li id=bagsdrop class=drop-two><a href="#">BAGS</a>
+                  <ul id=bagsdropdown class="dont-display dropdown-bags">
+                    <li><a href="catalogue.html?q=shoulder bags">SHOULDER BAGS</a></li>
+                    <li><a href="catalogue.html?q=crossbody+bags">CROSSBODY BAGS</a></li>
+                    <li><a href="catalogue.html?q=tote+bags">TOTE BAGS</a></li>
+                    <li><a href="catalogue.html?q=mini+bags">MINI BAGS</a></li>
+                    <li><a href="catalogue.html?q=bumbags">BUMBAGS</a></li>
+                    </ul> </li>
+                <li><a href="catalogue.html?q=wallets">WALLETS</a></li>
+                <li><a href="catalogue.html?q=care+products">CARE PRODUCTS</a></li>
+              </ul></li>
+      
+              <li><a class=sale href="#">SALE</a></li>
+              <li id=aboutdrop class=drop><a href="#">ABOUT</a>
+                <ul class="dont-display dropdown-content-two">
+                  <li><a href="aboutsilfen.html">ABOUT SILFEN</a></li>
+                  <li><a href="sustainable.html">SUSTAINABILITY</a></li>
+                </ul></li>
+              <li><a href="#">CONTACT</a></li>
+          </ul>
+          <div class="nav-icons">
+              <div class="search"><img src="assets/search.png" alt="search icon"></div>
+              <div class="cart-icon"><a href="cart.html"><img src="assets/cart-icon.png" alt="cart icon"></a><div class=item-added></div>
+          </div></div></div>
+          <div id="searchbar" class="search-hiden">
+            <form action="" method="get" role="search"><input type="text" name="query" placeholder="Search for items, categories or collections" value="" required><button type="submit"><a href="">Search</a></button><div><img class=close src="assets/close.svg"></div></form>
+          </div>
+
+      </nav>
+  </header>
     <main>
         <section id="contact-page">
             <div class="contact-us">
@@ -90,6 +136,7 @@ DK-4000 Roskilde
                     <div>
                       <img src="assets/paymentmethods.png" alt="payment methods" />
                     </div>
+                    <script src="burger-menu.js"></script>
                   </footer>
                 </body>
               </html>
