@@ -24,8 +24,10 @@ const CART = {
 
     //If we have an empty array / an array with the length of 0
     if (CART.contents.length === 0) {
+      document.querySelector(".cart-icon img").src = "assets/cart-icon.png";
       cartcontentEl.innerHTML = "<h2>Your shopping cart is empty! :(</h2>";
     } else {
+      document.querySelector(".cart-icon img").src = "assets/cart-full.png";
       var price_sum = 0;
       CART.contents.forEach((element) => {
         price_sum += element.price * element.qty;
