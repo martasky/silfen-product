@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const q = urlParams.get("query");
 console.log(q)
 
-//kea21-4d62.restdb.io/rest/silfenproducts??q={"colors": {"name" : {"$in": ["green"]}}}
+
 fetch("https://kea21-4d62.restdb.io/rest/silfenproducts?q={}&filter=" + q, {
   method: "GET",
   headers: {
@@ -49,18 +49,10 @@ function showProduct(product) {
   var ul = document.createElement("ul");
   product.colors.forEach(function (color) {
     var li = document.createElement("li");
-    // li.textContent = color.name;
     li.style.backgroundColor = color.value;
     ul.appendChild(li);
   });
   color_list.appendChild(ul);
-
-  //   btnEl = clone.querySelector("button");
-  //   // btnEl.dataset.id += product._id;
-
-  //   btnEl.addEventListener("click", () => {
-  //     cart.add(product);
-  //   });
 
   const prod = document.querySelector("#search-products");
   prod.appendChild(clone);}
