@@ -1662,7 +1662,6 @@ footer section {
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
 #aboutsilfen-page {
-  text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 34px;
   padding: 1.5rem;
@@ -1673,7 +1672,6 @@ footer section {
 }
 
 .aboutsilfen-page-img {
-  box-shadow: 15px 30px 0px 0px #bcd7e9;
   margin: 2rem;
 }
 .aboutsilfen-text p {
@@ -1686,17 +1684,29 @@ footer section {
 }
 
 .thefounders-img {
-  box-shadow: 24px 9px 0px 5px #bcd7e9;
   margin: 2rem;
 }
 .thefounders-text p {
+  text-transform: none;
   padding-top: 2rem;
   margin: 1rem;
   text-align: left;
 }
 
-.meettheteam-title {
-  margin-top: 5rem;
+.meettheteam-title h1{
+  margin-top: 2rem;
+}
+
+.meettheteam-title h1{
+  font-size: 1.7rem;
+}
+
+.about-silfen-title h1{
+  font-size: 1.7rem;
+}
+
+.founders h1{
+  font-size: 1.7rem;
 }
 
 .container-1 {
@@ -1712,34 +1722,33 @@ footer section {
 }
 
 .container-1 div {
-  /* border: 1px #ccc solid; */
   margin: 2rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 .theteam-img-daniel {
-  box-shadow: -26px -25px 0px 1px #bcd7e9;
+  
   margin: 2rem;
 }
 
 .theteam-img-celine {
-  box-shadow: 26px -25px 0px 1px #bcd7e9;
+
   margin: 2rem;
 }
 .theteam-img-nikolaj {
-  box-shadow: -26px -25px 0px 1px #bcd7e9;
+  
   margin: 2rem;
 }
 .theteam-img-emma {
-  box-shadow: 26px -25px 0px 1px #bcd7e9;
+
   margin: 2rem;
 }
 .theteam-img-siri {
-  box-shadow: -26px -25px 0px 1px #bcd7e9;
+  
   margin: 2rem;
 }
 .theteam-img-yasmin {
-  box-shadow: 26px -25px 0px 1px #bcd7e9;
+
   margin: 2rem;
 }
 
@@ -2314,6 +2323,22 @@ font-size: 1.8rem;
     display: inherit;
     margin: 2rem;
   }
+
+  .meettheteam-title h1{
+    margin-left: 2rem; 
+    font-size: 2rem;
+  }
+  
+  .about-silfen-title h1{
+    margin-left: 2rem; 
+    font-size: 2rem;
+  }
+  
+  .founders h1{
+    margin-left: 2rem; 
+    font-size: 2rem;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -2967,6 +2992,17 @@ margin-left: 17rem;
     display: inherit;
     margin: 2rem;
   }
+
+  .thefounders-img {
+    padding-right: 10rem; 
+    padding-left: 10rem; 
+    /* width: 60%; */
+  }
+  .aboutsilfen-page-img {
+    margin-right: 8rem; 
+    margin-left: 8rem; 
+  }
+
   /* ~~~~~~~sustainable page~~~~~~~ */
   .sub-section-1 {
     display: grid;
@@ -3355,22 +3391,29 @@ margin-left: 17rem;
      font-size: 2.5rem; 
   }
   /* ~~~~ABOUT SILFEN PAGE~~~~~ */
+
+  .thefounders-img {
+    padding-right: 0rem; 
+    padding-left: 0rem; 
+    /* width: 60%; */
+  }
+  .aboutsilfen-page-img {
+    margin-right: 0rem; 
+    margin-left: 0rem; 
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-  .aboutsilfen-text p {
-    font-size: 1rem;
-  }
+
   .grid-container2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-  .thefounders-text p {
-    font-size: 1.1rem;
-  }
+ 
   .thefounders-img {
     box-shadow: none;
     display: grid;
@@ -3447,10 +3490,10 @@ margin-left: 17rem;
     border: 5px solid var(--light-blue-color);
   }
   .thefounders-img {
-    width: 70%;
+    width: 80%;
   }
   .aboutsilfen-page-img {
-    width: 70%;
+    width: 90%;
   }
   /* ~~~~sustainable page~~~~~ */
   .sustainability-text p {
@@ -3621,30 +3664,24 @@ margin-left: 17rem;
 /* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
 
 #aboutsilfen-page {
-  text-transform: uppercase;
+  text-transform:none; 
   letter-spacing: 2px;
   line-height: 34px;
   padding: 1.5rem;
 }
 
-.aboutsilfen-page-img {
-  box-shadow: 15px 30px 0px 0px #bcd7e9;
-  margin: 2rem;
-}
 .aboutsilfen-text p {
   padding-top: 2rem;
   margin: 1rem;
-  font-size: 1rem;
+  text-transform:none; 
 }
 
 .thefounders-img {
-  box-shadow: 24px 9px 0px 5px #bcd7e9;
   margin: 2rem;
 }
 .thefounders-text p {
-  padding-top: 2rem;
   margin: 1rem;
-  font-size: 1rem;
+  text-transform:none; 
 }
 
 .meettheteam-title h2 {
@@ -3654,33 +3691,33 @@ margin-left: 17rem;
 .team-boxes {
   display: inline-block;
   text-align: center;
-  text-transform: uppercase;
+  text-transform:none; 
   font-weight: 800;
   margin: 1rem;
 }
 
 .theteam-img-daniel {
-  box-shadow: 15px 30px 0px 0px #bcd7e9;
+  text-transform:none; 
   margin: 2rem;
 }
 .theteam-img-celine {
-  box-shadow: 26px -25px 0px 1px #bcd7e9;
+  text-transform:none; 
   margin: 2rem;
 }
 .theteam-img-nikolaj {
-  box-shadow: 0px 18px 0px 0px #bcd7e9;
+  text-transform:none; 
   margin: 2rem;
 }
 .theteam-img-emma {
-  box-shadow: 30px -40px 0px 1px #bcd7e9;
+  text-transform:none; 
   margin: 2rem;
 }
 .theteam-img-siri {
-  box-shadow: 8px 20px 0px 0px #bcd7e9;
+  text-transform:none; 
   margin: 2rem;
 }
 .theteam-img-yasmin {
-  box-shadow: 26px -25px 0px 0px #bcd7e9;
+  text-transform:none; 
   margin: 2rem;
 }
 
