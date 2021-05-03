@@ -279,44 +279,7 @@ header a:active {
 --------------------HOMEPAGE-----------------------
 --------------------HOMEPAGE----------------------- */
 
-/* .container {
-  width: 100%;
-  max-width: 500px;
-}
-img {
-  height: 300px;
-}
-.hero {
-  display: grid;
-  grid-template-columns: 30px 50px 70px 1fr 1fr;
-  grid-template-rows: 70px 70px 70px 70px 1fr;
-}
-.hero-img:first-of-type {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-  width: 350px;
-  height: 300px;
-  background: var(--green-color);
-}
-.hero-img:nth-child(2) {
-  width: 500px;
-  height: 300px;
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 2;
-}
-.hero-img:nth-child(3) {
-  grid-column: 3 / span 2;
-  grid-row: 3 / span 2;
-  border: 10px solid var(--green-color);
-  width: 500px;
-  height: 300px;
-}
-.hero-img:nth-child(4) {
-  grid-row: 4 / 5;
-  grid-column: 4 /5;
-} */
 /* newsletter popup */
-
 
 .newsletter-popup {
   width: 360px;
@@ -2700,6 +2663,11 @@ footer section {
     grid-column-start: 5;
     border-left: 3px solid var(--green-color);
   }
+  .newsletter-popup {
+    position: fixed;
+    right: 0;
+    top: 25%;
+  }
 
   /* ----------------THANK YoU PAGE------------------------ */
 
@@ -3050,6 +3018,11 @@ footer section {
     width: 1060px;
     grid-template-columns: 70% 30%;
   }
+  .newsletter-popup {
+    position: fixed;
+    right: 0;
+    top: 30%;
+  }
   /* ~~~~ABOUT PAGE~~~~~ */
   .highlight-green {
     width: 120%;
@@ -3166,6 +3139,13 @@ footer section {
     margin-right: 20rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
+  }
+
+  /* Newsletter pop up */
+  .newsletter-popup {
+    position: fixed;
+    right: 0;
+    top: 65%;
   }
 }
 
