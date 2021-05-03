@@ -57,9 +57,15 @@
   </header>
 
     <main>
-      <h1 class="half-highlight">YOUR CART</h1>
+      <section class="breadcrumbs">
+        <p>
+          <a href="index.html">Home</a> >
+          <a class="" href="">Your cart</a>
+        </p>
+      </section>
+      <h3 class="half-highlight">YOUR CART</h3>
       <section class="cartproducts">
-        <hr class="thinline" />
+        <!-- <hr class="thinline" /> -->
         <!--this will go into the template later on-->
         <template id="cart-item-template">
           <!-- <div class="cart-item">
@@ -79,6 +85,7 @@
               <p class="productcolor">WATERGREEN</p>
               <p class="price"><span>499,00</span>DKK</p>
               <div class="additems">
+                <div class="additems-wrapper">
                 <div class="buttonsadd">
                   <button class="minus" type="button">-</button>
                   <input
@@ -88,8 +95,8 @@
                     min="0"
                   />
                   <button class="plus" type="button">+</button>
-                </div>
-                <a class="remove" href="#"><p>REMOVE</p></a>
+                </div></div>
+                <div class="remove"><p>REMOVE</p></div>
               </div>
             </div> 
           </div>
@@ -101,9 +108,9 @@
             </div>
             
           </form>
-        
+       <button id="continueshopping"><a href="catalogue.html?q=bags">Continue shopping</a></button>
       
-        <hr class="thinline" />
+        <!-- <hr class="thinline" /> -->
         <!-- <div class="productwrapper">
           <img
           src=https://silfenstudio.com/wp-content/uploads/2021/01/517310_WATERGREEN_FRONT.jpg

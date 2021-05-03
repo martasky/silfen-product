@@ -1,7 +1,3 @@
-document.querySelector("#total").classList.add("hidden");
-document.querySelector(".thinline").classList.add("hidden");
-document.querySelector("hr").classList.add("hidden");
-
 const CART = {
   KEY: "basket",
   contents: [],
@@ -20,7 +16,24 @@ const CART = {
   sync() {
     let _cart = JSON.stringify(CART.contents);
     localStorage.setItem(CART.KEY, _cart);
+
     CART.updateDOM();
+
+    if (CART.contents.length > 0) {
+      document.querySelector("#total").classList.remove("hidden");
+
+      // document.querySelector(".thinline").classList.remove("hidden");
+      // document.querySelector(".thinline").classList.remove("hidden");
+      document.querySelector("#continueshopping").classList.add("hidden");
+      // document.querySelector("#total").remove();
+      // document.querySelector(".thinline").remove();
+      // document.querySelector(".thinline").remove();
+    } else {
+      document.querySelector("#total").classList.add("hidden");
+      // document.querySelector(".thinline").classList.add("hidden");
+      // document.querySelector(".thinline").classList.add("hidden");
+      document.querySelector("#continueshopping").classList.remove("hidden");
+    }
   },
   updateDOM() {
     const cartcontentEl = document.querySelector(".cart-content");
@@ -29,7 +42,7 @@ const CART = {
     //If we have an empty array / an array with the length of 0
     if (CART.contents.length === 0) {
       document.querySelector(".cart-icon img").src = "assets/cart-icon.png";
-      cartcontentEl.innerHTML = "<h2>Your shopping cart is empty! :(</h2>";
+      cartcontentEl.innerHTML = "<h2>Your shopping cart is empty! <br> :(</h2>";
     } else {
       document.querySelector(".cart-icon img").src = "assets/cart-full.png";
       var price_sum = 0;
@@ -53,6 +66,11 @@ const CART = {
         const minusBtn = itemcopy.querySelector(".minus");
         minusBtn.addEventListener("click", () => {
           CART.minusOne(id);
+        });
+
+        const deleteBtn = itemcopy.querySelector(".remove");
+        deleteBtn.addEventListener("click", () => {
+          CART.deleteProduct(id);
         });
 
         const inputEl = itemcopy.querySelector("input");
@@ -116,17 +134,18 @@ const CART = {
     CART.contents[index].qty = inputEl.valueAsNumber; */
       CART.contents[index].qty = obj.qty;
     }
-    if (CART.contents.length == 0) {
-      document.querySelector("#total").remove();
-      document.querySelector(".thinline").remove();
-      document.querySelector(".thinline").remove();
-    }
 
     CART.sync();
   },
   minusOne(id) {
     const indexObj = CART.contents.find((element) => element._id == id);
     indexObj.qty--;
+    console.log(indexObj);
+    CART.update(indexObj);
+  },
+  deleteProduct(id) {
+    const indexObj = CART.contents.find((element) => element._id == id);
+    indexObj.qty = 0;
     console.log(indexObj);
     CART.update(indexObj);
   },

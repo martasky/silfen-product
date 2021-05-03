@@ -770,11 +770,47 @@ input[type="number"] {
   text-align: center;
   margin-bottom: 3rem;
 }
+#cartpage p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+#cartpage h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 #cartpage .productwrapper {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  /* display: grid;
   grid-template-columns: 2fr 3fr;
   margin-top: 2rem;
-  grid-gap: 7vw;
+  grid-gap: 7vw; */
+}
+#cartpage .productwrapper img {
+  width: 120px;
+  height: 150px;
+  border: 1px solid black;
+  object-fit: cover;
+}
+.additems-wrapper {
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+.additems {
+  align-self: center;
+}
+.productinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.remove p {
+  color: black;
+  text-decoration: underline;
+  font-size: 0.8rem;
 }
 /* #cartpage img {
   border: solid black 1px;
@@ -800,12 +836,13 @@ input[type="number"] {
   display: flex;
   flex-direction: row;
 }
-#cartpage .remove p {
+/* #cartpage .remove p {
   font-size: 1rem;
-}
+} */
 #cartpage .additems .buttonsadd button {
   background-color: white;
   color: black;
+  padding: 0.2rem;
 }
 #cartpage #total {
   margin-top: 5vh;
@@ -825,15 +862,24 @@ input[type="number"] {
   height: 5px;
 }
 .cart-content h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   padding: 1rem;
+  margin-top: 2rem;
 }
 #addtocart a {
   text-decoration: none;
   color: white;
 }
-
+#continueshopping {
+  width: 250px;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+#continueshopping a {
+  text-decoration: none;
+  color: white;
+}
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
@@ -1914,7 +1960,7 @@ footer section {
 @media screen and (min-width: 700px) {
   /* ---CART PAGE---- */
   #cartpage main {
-    margin: 17rem 4rem 0 4rem;
+    margin: 2rem 6rem;
   }
   #cartpage #totalline {
     margin: 2rem 0 2rem 0;
@@ -1925,6 +1971,7 @@ footer section {
   #cartpage #total {
     margin-bottom: 6rem;
   }
+
   /* ----CATALOGUE PAGE---- */
   .product-card {
     width: 40%;
@@ -2144,12 +2191,12 @@ footer section {
 
 @media screen and (min-width: 900px) {
   /* ----CART PAGE----- */
-  #cartpage .thinline {
+  /* #cartpage .thinline {
     margin-top: 3rem;
     background-color: black;
     border: none;
     height: 1px;
-  }
+  } */
   #cartpage .productwrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -2195,6 +2242,12 @@ footer section {
   #cartpage #total button {
     margin: 0;
     max-width: 50%;
+  }
+  #cartpage .breadcrumbs a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
   }
   /* ----CATALOGUE PAGE---- */
   .product-card {
@@ -2822,7 +2875,7 @@ footer section {
   /*-------- CARTPAGE------------ */
 
   #cartpage main {
-    margin: 20rem 20rem 0 20rem;
+    margin: 2rem 6rem;
   }
   #cartpage #total h2 {
     font-size: 2rem;
@@ -2871,9 +2924,9 @@ footer section {
     margin: 0 5rem 0 5rem;
   }
 
-  #checkoutpage .purchase-summary hr {
+  /* #checkoutpage .purchase-summary hr {
     margin: 2rem 0 2rem 0;
-  }
+  } */
 
   footer {
     margin: 5rem 9rem;
@@ -2919,9 +2972,9 @@ footer section {
   #checkoutpage main {
     margin: 0 5rem 0 5rem;
   }
-  #checkoutpage .purchase-summary hr {
+  /* #checkoutpage .purchase-summary hr {
     margin: 2rem 0 2rem 0;
-  }
+  } */
   /* -----FOOTER----- */
   footer {
     margin: 5rem 9rem;
@@ -3122,6 +3175,7 @@ footer section {
     height: 600px;
     width: 540px;
     object-fit: cover;
+    border: 5px solid var(--green-color);
   }
   .thefounders-img {
     width: 70%;
