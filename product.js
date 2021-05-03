@@ -58,6 +58,21 @@ function showProduct(product) {
     console.log(CART);
   });
 }
+
+addBtn = document.querySelector("#addtocart");
+addBtn.addEventListener("click", showAddtocart);
+
+function showAddtocart() {
+  console.log("whyyy");
+  document.querySelector(".addtocart-popup").classList.remove("show-addtocart");
+}
+
+document.querySelector(".x-sign").addEventListener("click", closeAddtocart);
+
+function closeAddtocart() {
+  document.querySelector(".addtocart-popup").classList.add("hidden");
+}
+
 const CART = {
   KEY: "basket",
   contents: [],
