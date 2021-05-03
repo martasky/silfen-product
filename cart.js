@@ -1,3 +1,7 @@
+document.querySelector("#total").classList.add("hidden");
+document.querySelector(".thinline").classList.add("hidden");
+document.querySelector("hr").classList.add("hidden");
+
 const CART = {
   KEY: "basket",
   contents: [],
