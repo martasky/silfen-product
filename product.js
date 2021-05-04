@@ -65,12 +65,14 @@ addBtn.addEventListener("click", showAddtocart);
 function showAddtocart() {
   console.log("whyyy");
   document.querySelector(".addtocart-popup").classList.remove("show-addtocart");
+  document.querySelector(".cart-icon img").src = "assets/cart-full.png";
 }
 
 document.querySelector(".x-sign").addEventListener("click", closeAddtocart);
 
 function closeAddtocart() {
-  document.querySelector(".addtocart-popup").classList.add("hidden");
+  // document.querySelector(".addtocart-popup").classList.add("hidden");
+  document.querySelector(".addtocart-popup").classList.add("show-addtocart");
 }
 
 const CART = {

@@ -300,7 +300,7 @@ header a:active {
   justify-content: space-between;
   position: fixed;
   right: 0;
-  top: 15%;
+  top: 20%;
   background: white;
   z-index: 1;
 }
@@ -653,6 +653,9 @@ header a:active {
   margin-bottom: 3rem;
   margin-top: 2rem;
 }
+button.white-button {
+  font-weight: 600;
+}
 #homepage-sustainability article {
   background: var(--darker-green-color);
   padding: 1rem;
@@ -662,6 +665,7 @@ header a:active {
   font-size: 1rem;
   padding-bottom: 0.5rem;
   line-height: normal;
+  font-weight: 600;
 }
 #homepage-sustainability h3 {
   color: white;
@@ -906,6 +910,10 @@ input[type="number"] {
   text-decoration: none;
   color: white;
 }
+#checkoutbutton a {
+  text-decoration: none;
+  color: white;
+}
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
 /*------------------------------------- CHECKOUT PAGE----------------------------------------------- */
@@ -919,6 +927,7 @@ input[type="number"] {
 .payment {
   margin: 2rem 0 2rem 0;
 }
+
 #checkoutpage .shipping p {
   font-size: 0.7rem;
 }
@@ -1005,6 +1014,11 @@ input[type="number"] {
   grid-template-columns: 1fr 3fr;
   grid-gap: 0.7rem;
 }
+#checkoutpage .purchase-summary .item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
 #checkoutpage .purchase-summary .item .other-product-info {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1085,7 +1099,10 @@ input[type="number"] {
   letter-spacing: 2px;
   font-weight: 600;
 }
-
+#checkoutpage .checkboxes form button a {
+  text-decoration: none;
+  color: white;
+}
 /* --------------------------------THANK YOU PAGE----------------------- */
 /* --------------------------------THANK YOU PAGE----------------------- */
 /* --------------------------------THANK YOU PAGE------------------------- */
@@ -1538,7 +1555,7 @@ input[type="number"] {
   color: black;
 }
 .show-addtocart {
-  visibility: hidden;
+  display: none;
   animation: fadeIn 1s;
 }
 
@@ -2268,6 +2285,7 @@ footer section {
   #product-page #addtocart {
     margin-left: 0;
     width: 80%;
+
     height: 11%;
     font-size: 1.1rem;
   }
@@ -2293,6 +2311,7 @@ footer section {
     border: 5px solid var(--green-color);
     display: flex;
     flex-direction: column;
+
     width: 460px;
     margin-bottom: 2rem;
     position: relative;
@@ -2319,7 +2338,7 @@ footer section {
     color: black;
   }
   .show-addtocart {
-    visibility: hidden;
+    display: none;
     animation: fadeIn 1s;
   }
   /*---GIFT CARD PAGE----*/
@@ -2353,6 +2372,11 @@ footer section {
     object-fit: cover;
   }
   /*----HOMEPAGE------*/
+
+  .hero {
+    transform: scale(1.3, 1.3);
+    margin-bottom: 45px;
+  }
   #newsletter {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2407,6 +2431,12 @@ footer section {
   .recycled-wrapper {
     padding: 4rem;
   }
+  .newsletter-popup {
+    position: fixed;
+    right: 0;
+    top: 70%;
+  }
+
   /*----ABOUT PAGE------*/
 
   .about-silfen-img {
@@ -2620,7 +2650,8 @@ footer section {
   }
   /*---PRODUCT PAGE----*/
   #product-page main {
-    margin: 2rem 7rem;
+    margin: 2rem 1rem;
+    padding-top: 130px;
   }
   #product-page .left-side {
     width: 65%;
@@ -2656,11 +2687,12 @@ footer section {
     border: 5px solid var(--green-color);
     display: flex;
     flex-direction: column;
+    background-color: white;
     width: 460px;
     margin-bottom: 2rem;
     position: relative;
-    top: 12%;
-    left: 45%;
+    top: 10%;
+    left: 40%;
   }
   .addtocart-popup p {
     font-size: 0.8rem;
@@ -2686,7 +2718,7 @@ footer section {
     font-weight: normal;
   }
   .show-addtocart {
-    visibility: hidden;
+    display: none;
     animation: fadeIn 1s;
   }
   /*---GIFT CARD PAGE----*/
@@ -2790,12 +2822,16 @@ footer section {
   }
   #newsletter-form p {
     font-size: 0.8rem;
+    font-weight: bold;
     letter-spacing: 0.12px;
     padding-bottom: 1rem;
   }
   .newsletter-small-text {
     font-size: 0.5rem;
     margin-bottom: 0;
+  }
+  #shop-by-category h3 {
+    font-size: 1.8rem;
   }
   #silfen-stories {
     margin-left: 2rem;
@@ -2823,9 +2859,14 @@ footer section {
     width: max-content;
     margin-left: 3rem;
   }
-  .some-title h3.half-highlight-light-blue {
+  /* .some-title h3.half-highlight-light-blue {
     background: none;
     line-height: initial;
+  } */
+
+  #silfen-stories h3 {
+    font-size: 2rem;
+    letter-spacing: 2.24px;
   }
   #silfen-stories h4 {
     padding-top: 0;
@@ -2860,18 +2901,18 @@ footer section {
     padding: 2rem;
   }
   #homepage-sustainability h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
     padding-bottom: 1rem;
   }
   #homepage-sustainability p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   button.white-button {
     color: var(--darker-green-color);
   }
   #shop-by-category h3 {
-    display: initial;
+    display: inline-block;
   }
   .shop-by-category-container {
     display: grid;
@@ -3118,7 +3159,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 25%;
+    top: 70%;
   }
 
   /* ----------------THANK YoU PAGE------------------------ */
@@ -3448,6 +3489,7 @@ footer section {
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 9rem;
+    padding-top: 150px;
   }
   #product-page .product-colors {
     width: 27%;
@@ -3490,7 +3532,11 @@ footer section {
     margin-bottom: 2rem;
     position: relative;
     top: 12%;
-    left: 60%;
+    left: 50%;
+  }
+  .show-addtocart {
+    display: none;
+    animation: fadeIn 1s;
   }
   /*---GIFT CARD PAGE----*/
   #giftcard-page main {
@@ -3540,6 +3586,7 @@ footer section {
     grid-template-columns: 366px 40px 40px 100px 100px 200px 140px;
     grid-template-rows: 40px 40px 100px 60px 230px 100px;
     transform: scale(1, 1);
+    margin-bottom: 0;
   }
   /* .hero {
   display: grid;
@@ -3601,10 +3648,26 @@ footer section {
     grid-column-start: 5;
     border-left: 3px solid var(--green-color);
   }
+
+  #recycled-collection {
+    margin-bottom: 5rem;
+  }
+  #shop-by-category h3 {
+    font-size: 2.2rem;
+  }
+  .shop-by-category-container {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
   #homepage-video {
     padding: 2rem;
     height: 350px;
     padding-top: 1rem;
+  }
+  #newsletter {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 0;
   }
   .hp-video {
     width: 600px;
@@ -3621,7 +3684,19 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 30%;
+    top: 70%;
+  }
+  #silfen-stories h3 {
+    font-size: 2.2rem;
+  }
+  #silfen-stories h4 {
+    font-size: 1.6rem;
+  }
+  .some-wrapper {
+    margin-top: 3rem;
+  }
+  #homepage-sustainability p {
+    font-size: 1rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
 
@@ -3699,6 +3774,81 @@ footer section {
     align-content: center;
   }
 
+  #silfen-stories h3 {
+    font-size: 2.2rem;
+  }
+  #silfen-stories h4 {
+    font-size: 1.6rem;
+  }
+  .some-wrapper {
+    margin-top: 3rem;
+  }
+  #recycled-collection {
+    margin-bottom: 7rem;
+    height: 550px;
+  }
+  .recycled-wrapper {
+    padding: 8rem;
+  }
+  #recyced-collection h2 {
+    font-size: 3.6rem;
+  }
+  #recyced-collection p {
+    font-size: 2rem;
+    padding-top: 2em;
+  }
+  #shop-by-category h3 {
+    font-size: 2.5rem;
+  }
+  .shop-by-category-container {
+    transform: scale(1.2, 1.2);
+    padding-top: 2rem;
+  }
+  #shop-by-category {
+    margin-bottom: 6rem;
+  }
+  #homepage-sustainability {
+    height: 570px;
+  }
+  .hp-wrapper {
+    width: 100%;
+    max-width: 1400px;
+  }
+  .hp-video {
+    width: 800px;
+    height: 400px;
+  }
+  .hp-video-border {
+    height: 400px;
+    width: 800px;
+    border: 7px solid white;
+    transform: translate(20px, -380px);
+  }
+  #homepage-sustainability {
+    margin-bottom: 7rem;
+  }
+  #homepage-sustainability h3 {
+    font-size: 1.5rem;
+  }
+  #homepage-sustainability p {
+    font-size: 1.1rem;
+    line-height: 27px;
+    padding-bottom: 1.2rem;
+    font-weight: 600;
+  }
+  #homepage-sustainability article {
+    padding-right: 4rem;
+  }
+  button.white-button {
+    width: 100%;
+    color: var(--darker-green-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  #newsletter {
+    width: 55%;
+  }
   /* ----CATALOGUE PAGE---- */
   .product-card {
     width: 21%;
@@ -3715,6 +3865,10 @@ footer section {
     font-size: 1.1rem;
   }
   /*---PRODUCT PAGE----*/
+
+  #product-page main {
+    padding-top: 180px;
+  }
   #product-page .left-side {
     width: 60%;
   }
@@ -3799,7 +3953,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 65%;
+    top: 70%;
   }
   /* Cart page */
   #cartpage .productinfo {
@@ -3858,6 +4012,7 @@ footer section {
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 17rem;
+    padding-top: 200px;
   }
   #product-page .left-side {
     width: 65%;
@@ -3956,6 +4111,26 @@ footer section {
     width: 540px;
     object-fit: cover;
     border: 5px solid var(--light-blue-color);
+  }
+  /* Home page  */
+
+  #newsletter {
+    width: 50%;
+    transform: scale(1.3, 1.3);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .shop-by-category-container {
+    transform: scale(1.5, 1.5);
+  }
+  .hero {
+    transform: scale(1.2, 1.2);
+    padding-top: 2rem;
+    padding-bottom: 55px;
+  }
+  .addtocart-popup {
+    top: 12%;
+    left: 63%;
   }
 }
 /*-------------------------------------  ----------------------------------------------- */
