@@ -300,7 +300,7 @@ header a:active {
   justify-content: space-between;
   position: fixed;
   right: 0;
-  top: 20%;
+  top: 15%;
   background: white;
   z-index: 1;
 }
@@ -2434,7 +2434,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 70%;
+    top: 20%;
   }
 
   /*----ABOUT PAGE------*/
@@ -3159,7 +3159,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 70%;
+    top: 35%;
   }
 
   /* ----------------THANK YoU PAGE------------------------ */
@@ -3684,7 +3684,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 70%;
+    top: 40%;
   }
   #silfen-stories h3 {
     font-size: 2.2rem;
@@ -3953,7 +3953,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 70%;
+    top: 45%;
   }
   /* Cart page */
   #cartpage .productinfo {
