@@ -64,21 +64,21 @@
             <h2>Your information</h2>
             <p>Who is the package addressed to?</p>
             <form>
-                <label for="name">Name</label> <input type="text" id="name" name="customer-name">
-                <label for="surname">Surname</label> <input type="text" id="surname" name="customer-surname">
-                <label for="email">Email</label> <input type="email" id="email" name="customer-email">
+                <label for="name">Name</label> <input type="text" id="name" name="customer-name" placeholder="Enter your name" required>
+                <label for="surname">Surname</label> <input type="text" id="surname" name="customer-surname" placeholder="Enter your surname" required>
+                <label for="email">Email</label> <input type="email" id="email" name="customer-email" placeholder="e.g. email@email.com" required>
             </form>
         </section>
         <section class=shipping>
             <h2>Shipping</h2>
             <p>Where do you want your bag delivered?</p>
             <form>
-                <label for="street">Street</label> <input type="text" id="street" name="delivery-street">
-                <label for="street-number">Number</label> <input type="number" id="street-number" name="customer-street-number">
-                <label for="floor-apt">Floor/Apt</label> <input type="text" id="floor-apt" name="customer-floor-apt">
-                <label for="zip-code">ZIP code</label> <input type="number" id="zip-code" name="customer-zip-code">
-                <label for="city">City</label> <input type="text" id="city" name="customer-city">
-                <label for="country">Country</label> <input type="text" id="country" name="customer-country">
+                <label for="street">Street</label> <input type="text" id="street" name="delivery-street" placeholder="Enter your street's name" required>
+                <label for="street-number">Number</label> <input type="number" id="street-number" name="customer-street-number" placeholder="Nº" required>
+                <label for="floor-apt">Floor/Apt</label> <input type="text" id="floor-apt" name="customer-floor-apt" placeholder="e.g.Apt 1A">
+                <label for="zip-code">ZIP code</label> <input type="number" id="zip-code" name="customer-zip-code" placeholder="e.g.39040" required>
+                <label for="city">City</label> <input type="text" id="city" name="customer-city" placeholder="Enter your city">
+                <label for="country">Country</label> <input type="text" id="country" name="customer-country" placeholder="Enter your country" required>
             </form>
 
         </section>
@@ -101,7 +101,7 @@
         <hr>
         <div class=amounts>
             <div class=subtotal><p>Subtotal</p> <p><span>199,00</span> DKK</p></div>
-            <div class=shipping><p>Shipping</p> <p><span>7,00</span> DKK</p></div>
+            <div class=shipping><p>Shipping</p> <p><span>50,00</span> DKK</p></div>
         </div>
         <hr>
         <div class=total>
@@ -121,10 +121,10 @@
                    
   
     <div class=checkboxes>
-        <form>
-            <input required type="checkbox" id="terms-conditions" name="terms-accept"> <label for="terms-conditions">I have read and accept the <a href=terms-conditions.html>terms and conditions</a></label>
+        <form id=checkoutform action="order-complete.html">
+            <input type="checkbox" id="terms-conditions" name="terms-accept" required> <label for="terms-conditions">I have read and accept the <a href=terms.html>terms and conditions</a></label>
             <input type="checkbox" id="sign-up" name="newsletter-signup"> <label for="sign-up">I want Silfen to keep me posted about new collections, sales, and other commercial information.</a></label>
-            <button type="submit"><a href="order-complete.html">COMPLETE ORDER</a></button>
+            <button type="submit" onclick="validate('checkoutform')">COMPLETE ORDER</button>
         </form>
     </div>
     </main>
