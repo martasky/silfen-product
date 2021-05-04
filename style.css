@@ -92,8 +92,8 @@ button {
   font-family: var(--primary-font);
 }
 
-main {
-  margin-top: 10rem;
+main { 
+  padding-top:130px
 }
 
 /* -------------------------------  TOP MENU ---------------------------- */
@@ -113,6 +113,8 @@ header {
   width: 100%;
   z-index: 4;
   padding-bottom: 1rem;
+  position:fixed;
+  top: 0;
 }
 
 .desktop-nav {
@@ -157,21 +159,20 @@ header a:active {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-rows: 1fr;
-  margin: 0 2rem 0 0;
 }
 
 .desktop-nav .burger-menu-wrapper .burger-close {
   grid-column: 1/2;
   grid-row: 1;
+  margin-left:1rem;
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 0 2rem;
 }
 /* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
@@ -179,7 +180,7 @@ header a:active {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
   margin-left: 0;
-  padding-left: 1rem;
+  padding: 1rem 1rem;
 }
 .desktop-nav .burger-menu-wrapper #pageslist li {
   margin-left: 0;
@@ -187,7 +188,7 @@ header a:active {
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons .search {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .desktop-nav .logo {
@@ -227,6 +228,13 @@ header a:active {
 /* .sticky + main {
   padding-top: 10rem;
 } */
+
+.desktop-nav .close-burguer, .search, .cart-icon {
+  width:35px;
+  height:35px;
+}
+
+
 
 .desktop-nav #searchbar {
   width: 100%;
@@ -1078,7 +1086,7 @@ input[type="number"] {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin: 10rem 2rem 5rem 2rem;
+  margin: 2rem 2rem 5rem 2rem;
 }
 #thankyoupage h1 {
   text-align: center;
@@ -1995,6 +2003,28 @@ footer section {
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 @media screen and (min-width: 700px) {
+
+  /* -------------TOP MENU---------- */
+
+  .desktop-nav .logo a {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin:0;
+  }
+
+.desktop-nav .logo img{
+  max-width: 70%;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.desktop-nav .logo  {
+  margin-bottom: 0;
+  padding-bottom:0;
+ 
+}
+
   /* ---CART PAGE---- */
   #cartpage main {
     margin: 2rem 6rem;
@@ -2291,6 +2321,18 @@ footer section {
 }
 
 @media screen and (min-width: 900px) {
+
+/* -----  TOP MENU -----*/
+
+main {
+  padding-top: 10px;
+}
+
+.desktop-nav{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
   /* ----CART PAGE----- */
   /* #cartpage .thinline {
     margin-top: 3rem;
@@ -2896,10 +2938,6 @@ footer section {
 
   /* ----------------THANK YoU PAGE------------------------ */
 
-  #thankyoupage main {
-    margin-top: 15rem;
-  }
-
   #thankyoupage #checkemail {
     margin: 0 5rem 0 5rem;
   }
@@ -2986,15 +3024,29 @@ footer section {
   .desktop-nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem 1fr;
+    grid-template-rows: 2fr 1fr;
     background-color: white;
   }
+
+  .desktop-nav .logo img {
+    max-width:60%;
+  }
+  
   .desktop-nav .burger-menu-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  .desktop-nav ul {
+  
+  .desktop-nav .dropdown-content {
     font-weight: 800;
+    padding: 0 1rem;
+    margin: 1rem -1rem;
+  }
+
+  .desktop-nav .dropdown-content-two {
+    font-weight: 800;
+    padding: 0 1rem;
+    margin: 1rem -1rem;
   }
 
   .desktop-nav .burger-menu-wrapper #pageslist {
@@ -3080,7 +3132,7 @@ footer section {
 
   /* ----------THANKYOU PAGE-------------- */
   #thankyoupage main {
-    margin: 20rem 10rem 10rem 10rem;
+    margin: 2rem 10rem 10rem 10rem;
   }
 
   #thankyoupage #checkemail {
@@ -3320,6 +3372,20 @@ footer section {
 }
 
 @media screen and (min-width: 1300px) {
+
+  /*-------HOME PAGE-------------- */
+  .desktop-nav {
+    grid-gap: 1rem;
+  }
+
+  .desktop-nav .burger-menu-wrapper{
+    margin-right: 3rem;
+  }
+
+  .desktop-nav .burger-menu-wrapper .nav-icons{
+    align-content: center;
+  }
+
   /* ----CATALOGUE PAGE---- */
   .product-card {
     width: 21%;
@@ -3802,6 +3868,15 @@ font-weight: 400;
 }
 
 @media screen and (min-width: 1600px) {
+
+/* ------  TOP MENU--------- */
+/* .desktop-nav .burger-menu-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+} */
+
+
   #checkoutpage .information {
     margin-right: 3rem;
   }
