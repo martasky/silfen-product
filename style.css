@@ -387,7 +387,7 @@ header a:active {
 .hero {
   display: grid;
   grid-template-columns: 20px 30px 50px 50px 100px 70px;
-  grid-template-rows: 30px 40px 50px 30px 90px 1fr 1fr;
+  grid-template-rows: 30px 40px 50px 30px 90px 1fr 60px;
   justify-content: center;
 }
 /* .hero {
@@ -460,14 +460,82 @@ header a:active {
 /* h2 span {
   display: block;
 } */
-#recycled-collection {
+
+/* ---------slideshow------------ */
+
+.slides {
+  display: none;
+}
+
+#recycled-collection img {
+  vertical-align: middle;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+#recycled-collection .slides:nth-child(2) img {
+  object-position: 20% 80%;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: 0 auto;
+  /* margin-top: 2rem; */
+  margin-bottom: 3rem;
+}
+
+.text {
+  padding-top: 50px;
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.small-circle {
+  width: 14px;
+  height: 13px;
+  background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  /* transition: background-color 0.6s linear; */
+}
+.small-circle:nth-child(3) {
+  margin-right: 0;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.small-circle-container {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  padding-bottom: 10px;
+}
+
+/* #recycled-collection {
   background-image: url(assets/recycled-collection.webp);
   background-size: cover;
   background-position: 50% 50%;
   height: 250px;
   padding-top: 2rem;
   margin-bottom: 3rem;
-}
+} */
 #recycled-collection h2 {
   width: max-content;
   letter-spacing: 3.8px;
@@ -481,7 +549,7 @@ header a:active {
   margin: 1rem;
   color: var(--secondary-text-color);
 }
-.small-circle {
+/* .small-circle {
   width: 14px;
   height: 13px;
   background: rgba(255, 255, 255, 0.7) 0% 0% no-repeat padding-box;
@@ -495,7 +563,7 @@ header a:active {
   justify-content: center;
   align-items: flex-end;
   height: 100px;
-}
+} */
 #shop-by-category {
   width: 90%;
   display: block;
@@ -2160,6 +2228,13 @@ footer section {
   main {
     padding-top: 150px;
   }
+
+  .small-circle-container {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -2416,9 +2491,37 @@ footer section {
     font-size: 0.5rem;
     margin-bottom: 0;
   }
-  #recycled-collection {
+  /* #recycled-collection {
     height: 300px;
     background-position: 60% 40%;
+  } */
+  #recycled-collection img {
+    vertical-align: middle;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+  }
+  #recycled-collection .slides:nth-child(2) img {
+    vertical-align: middle;
+
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
+  }
+  .text {
+    padding-top: 80px;
+    padding-left: 30px;
+  }
+  .small-circle-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 10px;
+  }
+
+  .small-circle:nth-child(3) {
+    margin-right: 0;
   }
   #recycled-collection h2 {
     font-size: 3rem;
@@ -3068,9 +3171,29 @@ footer section {
     padding-bottom: 2rem;
   }
   #recycled-collection {
-    height: 400px;
-    background-position: 60% 40%;
+    margin-bottom: 4rem;
   }
+
+  #recycled-collection img {
+    vertical-align: middle;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+  }
+  .text {
+    padding-top: 120px;
+    padding-left: 80px;
+  }
+
+  #recycled-collection .slides:nth-child(2) img {
+    vertical-align: middle;
+
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
+  }
+
   #recycled-collection h2 {
     font-size: 3rem;
     align-self: center;
@@ -3652,6 +3775,25 @@ footer section {
   #recycled-collection {
     margin-bottom: 5rem;
   }
+  #recycled-collection img {
+    vertical-align: middle;
+
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+  }
+  #recycled-collection .slides:nth-child(2) img {
+    vertical-align: middle;
+
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
+  }
+  .text {
+    padding-top: 140px;
+    padding-left: 80px;
+  }
+
   #shop-by-category h3 {
     font-size: 2.2rem;
   }
@@ -3785,17 +3927,30 @@ footer section {
   }
   #recycled-collection {
     margin-bottom: 7rem;
-    height: 550px;
   }
+
+  #recycled-collection img {
+    vertical-align: middle;
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+  }
+
+  .text {
+    padding-top: 200px;
+    padding-left: 120px;
+  }
+
   .recycled-wrapper {
     padding: 8rem;
   }
-  #recyced-collection h2 {
+  #recycled-collection h2 {
     font-size: 3.6rem;
   }
-  #recyced-collection p {
+  #recycled-collection p {
     font-size: 2rem;
-    padding-top: 2em;
+    padding-top: 0.5em;
   }
   #shop-by-category h3 {
     font-size: 2.5rem;
