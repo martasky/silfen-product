@@ -5,7 +5,7 @@ function burgerMenu() {
 
 document.querySelector(".close-burguer").addEventListener("click", displayBurguer);
 function displayBurguer () {
-    document.querySelector(".close-burguer img").src = "assets/exit.png";
+    document.querySelector(".close-burguer img").src = "assets/close.svg";
     document.querySelector("header ul:first-of-type").classList.remove("dont-display");
     document.querySelector(".close-burguer").addEventListener("click", closeMenu);}
 
@@ -70,7 +70,7 @@ function displaySecondDrop () {
 
 /* To adjust the position of the top menu when scrolling */
 
-window.onscroll = function() {moveMenu()};
+/* window.onscroll = function() {moveMenu()};
 
 const header = document.querySelector("header");
 const sticky = header.offsetTop;
@@ -83,7 +83,7 @@ function moveMenu () {
         header.classList.remove("sitcky")
     }
 }
-
+ */
 /* For the search  */
 
 document.querySelector(".search").addEventListener("click", showSearch);

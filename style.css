@@ -93,8 +93,7 @@ button {
 }
 
 main {
-  margin-top: 10rem;
-    padding-top: 2rem;
+  padding-top: 130px;
 }
 
 /* -------------------------------  TOP MENU ---------------------------- */
@@ -114,6 +113,8 @@ header {
   width: 100%;
   z-index: 4;
   padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
 }
 
 .desktop-nav {
@@ -158,21 +159,20 @@ header a:active {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-rows: 1fr;
-  margin: 0 2rem 0 0;
 }
 
 .desktop-nav .burger-menu-wrapper .burger-close {
   grid-column: 1/2;
   grid-row: 1;
+  margin-left: 1rem;
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 0 2rem;
 }
 /* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
@@ -180,7 +180,7 @@ header a:active {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
   margin-left: 0;
-  padding-left: 1rem;
+  padding: 1rem 1rem;
 }
 .desktop-nav .burger-menu-wrapper #pageslist li {
   margin-left: 0;
@@ -188,7 +188,7 @@ header a:active {
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons .search {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .desktop-nav .logo {
@@ -228,6 +228,13 @@ header a:active {
 /* .sticky + main {
   padding-top: 10rem;
 } */
+
+.desktop-nav .close-burguer,
+.search,
+.cart-icon {
+  width: 35px;
+  height: 35px;
+}
 
 .desktop-nav #searchbar {
   width: 100%;
@@ -1091,7 +1098,7 @@ input[type="number"] {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin: 10rem 2rem 5rem 2rem;
+  margin: 2rem 2rem 5rem 2rem;
 }
 #thankyoupage h1 {
   text-align: center;
@@ -1164,26 +1171,26 @@ input[type="number"] {
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 
-.breadcrumbs{
+.breadcrumbs {
   display: none;
 }
 
-.box{
+.box {
   display: grid;
 }
 
 .box > * {
   grid-column: 1/-1;
-  grid-row: -1/1; 
+  grid-row: -1/1;
 }
 
-.about-silfen-img .border{
-  border: 6px solid var(--light-blue-color); 
+.about-silfen-img .border {
+  border: 6px solid var(--light-blue-color);
   transform: translate(-20px, -20px);
 }
 
-.about-sustainability-img .border{
-  border: 6px solid var(--green-color); 
+.about-sustainability-img .border {
+  border: 6px solid var(--green-color);
   transform: translate(-20px, -20px);
 }
 
@@ -1191,7 +1198,7 @@ input[type="number"] {
   transform: translate(20px, 20px);
 }
 
-.about-silfen h2{
+.about-silfen h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   width: max-content;
@@ -1199,7 +1206,7 @@ input[type="number"] {
   /* width: 115%;  */
 }
 
-.about-sustainability h2{
+.about-sustainability h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   text-align: left;
@@ -1215,7 +1222,7 @@ input[type="number"] {
   padding-bottom: 1rem;
 }
 
-.about-silfen-img{
+.about-silfen-img {
   /* margin-right: 3rem; */
   margin-left: 3rem;
   max-width: 70%;
@@ -1229,11 +1236,7 @@ input[type="number"] {
 .H-green-sus {
   /* width: max-content;  */
   height: max-content;
-  background: linear-gradient(
-    180deg,
-    transparent 60%,
-    var(--green-color) 40%
-  );
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
 
 .highlight-blue-about {
@@ -2058,6 +2061,26 @@ footer section {
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 @media screen and (min-width: 700px) {
+  /* -------------TOP MENU---------- */
+
+  .desktop-nav .logo a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  .desktop-nav .logo img {
+    max-width: 70%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .desktop-nav .logo {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
   /* ---CART PAGE---- */
   #cartpage main {
     margin: 2rem 6rem;
@@ -2271,25 +2294,25 @@ footer section {
   }
   /*----ABOUT PAGE------*/
 
-.about-silfen-img{
-  margin-right: 11rem; 
-  margin-left: 11rem; 
-  margin-bottom: 1rem;
-}
+  .about-silfen-img {
+    margin-right: 11rem;
+    margin-left: 11rem;
+    margin-bottom: 1rem;
+  }
 
-.about-sustainability-img{
-  margin-right: 10rem; 
-  margin-left: 10rem; 
-}
+  .about-sustainability-img {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
 
-.about-silfen h2{
-font-size: 1.8rem; 
-}
+  .about-silfen h2 {
+    font-size: 1.8rem;
+  }
 
-.about-sustainability h2{
-  font-size: 1.8rem; 
-}
-  
+  .about-sustainability h2 {
+    font-size: 1.8rem;
+  }
+
   /* ~~~~~~~About Silfen Page~~~~~~~ */
   .container-1 {
     display: flex;
@@ -2329,6 +2352,17 @@ font-size: 1.8rem;
 }
 
 @media screen and (min-width: 900px) {
+  /* -----  TOP MENU -----*/
+
+  main {
+    padding-top: 10px;
+  }
+
+  .desktop-nav {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   /* ----CART PAGE----- */
   /* #cartpage .thinline {
     margin-top: 3rem;
@@ -2934,24 +2968,19 @@ font-size: 1.8rem;
 
   /* ----------------THANK YoU PAGE------------------------ */
 
-  #thankyoupage main {
-    margin-top: 15rem;
-  }
-
   #thankyoupage #checkemail {
     margin: 0 5rem 0 5rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
-  .about-sustainability-img{
-margin-right: 15rem; 
-margin-left: 15rem; 
+  .about-sustainability-img {
+    margin-right: 15rem;
+    margin-left: 15rem;
   }
 
-  .about-silfen-img{
-    margin-right: 17rem; 
-margin-left: 17rem; 
+  .about-silfen-img {
+    margin-right: 17rem;
+    margin-left: 17rem;
   }
-
 
   /* ~~~~~~~About Silfen Page~~~~~~~ */
 
@@ -3018,6 +3047,10 @@ margin-left: 17rem;
     padding-bottom: 1rem;
   }
 
+  main {
+    padding-top: 200px;
+  }
+
   .desktop-nav .close-burguer {
     display: none;
   }
@@ -3025,15 +3058,29 @@ margin-left: 17rem;
   .desktop-nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem 1fr;
+    grid-template-rows: 2fr 1fr;
     background-color: white;
   }
+
+  .desktop-nav .logo img {
+    max-width: 60%;
+  }
+
   .desktop-nav .burger-menu-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  .desktop-nav ul {
+
+  .desktop-nav .dropdown-content {
     font-weight: 800;
+    padding: 0 1rem;
+    margin: 1rem -1rem;
+  }
+
+  .desktop-nav .dropdown-content-two {
+    font-weight: 800;
+    padding: 0 1rem;
+    margin: 1rem -1rem;
   }
 
   .desktop-nav .burger-menu-wrapper #pageslist {
@@ -3119,35 +3166,35 @@ margin-left: 17rem;
 
   /* ----------THANKYOU PAGE-------------- */
   #thankyoupage main {
-    margin: 20rem 10rem 10rem 10rem;
+    margin: 2rem 10rem 10rem 10rem;
   }
 
   #thankyoupage #checkemail {
     margin: 0 7rem 0 7rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
- 
-  .about-silfen-img{
-    margin-right: 0rem; 
-    margin-left: 0rem; 
+
+  .about-silfen-img {
+    margin-right: 0rem;
+    margin-left: 0rem;
     margin-bottom: 0rem;
   }
-  
-  .about-sustainability-img{
-    margin-right: 0rem; 
-    margin-left: 0rem; 
+
+  .about-sustainability-img {
+    margin-right: 0rem;
+    margin-left: 0rem;
   }
-  
+
   .about-sustainability h2 {
     margin-left: 15rem;
-    text-align: left; 
+    text-align: left;
     width: 120%;
   }
 
   .about-sustainability {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; 
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-items: center;
@@ -3156,31 +3203,29 @@ margin-left: 17rem;
   .about-silfen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-items: center;
     align-items: center;
   }
-  
+
   .about-silfen h2 {
     display: grid;
     order: 1;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .about-sustainability h2 {
     display: grid;
-    grid-column: 1/-2; 
-    font-size: 1.8rem; 
+    grid-column: 1/-2;
+    font-size: 1.8rem;
   }
 
-  .about-sustainability-img{
+  .about-sustainability-img {
     display: grid;
-    grid-column: 3; 
+    grid-column: 3;
   }
-
-
 }
 
 @media screen and (min-width: 1100px) {
@@ -3358,13 +3403,13 @@ margin-left: 17rem;
     /* padding-left: 12rem; */
     font-size: 2.5rem;
     width: max-content;
-    text-align: left; 
+    text-align: left;
   }
 
-  .about-silfen h2{
-    text-align: right; 
-     width: 120%; 
-     font-size: 2.5rem; 
+  .about-silfen h2 {
+    text-align: right;
+    width: 120%;
+    font-size: 2.5rem;
   }
   /* ~~~~ABOUT SILFEN PAGE~~~~~ */
   .grid-container {
@@ -3408,6 +3453,19 @@ margin-left: 17rem;
 }
 
 @media screen and (min-width: 1300px) {
+  /*-------HOME PAGE-------------- */
+  .desktop-nav {
+    grid-gap: 1rem;
+  }
+
+  .desktop-nav .burger-menu-wrapper {
+    margin-right: 3rem;
+  }
+
+  .desktop-nav .burger-menu-wrapper .nav-icons {
+    align-content: center;
+  }
+
   /* ----CATALOGUE PAGE---- */
   .product-card {
     width: 21%;
@@ -3490,14 +3548,14 @@ margin-left: 17rem;
   .about-sustainability h2 {
     margin-left: 30rem;
     width: 85%;
-    text-align: left; 
+    text-align: left;
     font-size: 2.8rem;
   }
-  
-  .about-silfen h2{
-    text-align: right; 
-     width: 125%; 
-     font-size: 2.8rem;
+
+  .about-silfen h2 {
+    text-align: right;
+    width: 125%;
+    font-size: 2.8rem;
   }
 }
 
@@ -3589,17 +3647,17 @@ margin-left: 17rem;
     margin-left: 15rem;
   }
 
-/* ~~~about page~~~~ */
-.about-sustainability h2 {
-  margin-left: 30rem;
-  width: 70%;
-  text-align: left; 
-}
+  /* ~~~about page~~~~ */
+  .about-sustainability h2 {
+    margin-left: 30rem;
+    width: 70%;
+    text-align: left;
+  }
 
-.about-silfen h2{
-  text-align: right; 
-   width: 125%; 
-}
+  .about-silfen h2 {
+    text-align: right;
+    width: 125%;
+  }
 
   /* -------product page-----  */
 
@@ -3916,6 +3974,13 @@ font-weight: 400;
 }
 
 @media screen and (min-width: 1600px) {
+  /* ------  TOP MENU--------- */
+  /* .desktop-nav .burger-menu-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+} */
+
   #checkoutpage .information {
     margin-right: 3rem;
   }
