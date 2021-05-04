@@ -65,6 +65,7 @@ addBtn.addEventListener("click", showAddtocart);
 function showAddtocart() {
   console.log("whyyy");
   document.querySelector(".addtocart-popup").classList.remove("show-addtocart");
+  document.querySelector(".cart-icon img").src = "assets/cart-full.png";
 }
 
 document.querySelector(".x-sign").addEventListener("click", closeAddtocart);

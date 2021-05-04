@@ -21,6 +21,7 @@ const CART = {
 
     if (CART.contents.length > 0) {
       document.querySelector("#total").classList.remove("hidden");
+      document.querySelector(".cart-icon img").src = "assets/cart-full.png";
 
       // document.querySelector(".thinline").classList.remove("hidden");
       // document.querySelector(".thinline").classList.remove("hidden");
@@ -29,6 +30,7 @@ const CART = {
       // document.querySelector(".thinline").remove();
       // document.querySelector(".thinline").remove();
     } else {
+      document.querySelector(".cart-icon img").src = "assets/cart-icon.png";
       document.querySelector("#total").classList.add("hidden");
       document.querySelector("#totalline").classList.add("hidden");
       // document.querySelector(".thinline").classList.add("hidden");
