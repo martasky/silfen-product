@@ -94,6 +94,7 @@ button {
 
 main {
   margin-top: 10rem;
+    padding-top: 2rem;
 }
 
 /* -------------------------------  TOP MENU ---------------------------- */
@@ -1162,8 +1163,48 @@ input[type="number"] {
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
-.breadcrumbs {
+
+.breadcrumbs{
   display: none;
+}
+
+.box{
+  display: grid;
+}
+
+.box > * {
+  grid-column: 1/-1;
+  grid-row: -1/1; 
+}
+
+.about-silfen-img .border{
+  border: 6px solid var(--light-blue-color); 
+  transform: translate(-20px, -20px);
+}
+
+.about-sustainability-img .border{
+  border: 6px solid var(--green-color); 
+  transform: translate(-20px, -20px);
+}
+
+.box:nth-child(odd) .border {
+  transform: translate(20px, 20px);
+}
+
+.about-silfen h2{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  width: max-content;
+  /* text-align: right; */
+  /* width: 115%;  */
+}
+
+.about-sustainability h2{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+  width: max-content;
+  /* width: 80%;  */
 }
 
 #about {
@@ -1171,23 +1212,33 @@ input[type="number"] {
   letter-spacing: 2px;
   line-height: 34px;
   padding: 1.5rem;
+  padding-bottom: 1rem;
 }
-.about-silfen-img {
-  box-shadow: 19px 19px 0px 0px #bcd7e9;
-  margin: 2rem;
+
+.about-silfen-img{
+  /* margin-right: 3rem; */
+  margin-left: 3rem;
+  max-width: 70%;
 }
 
 .about-sustainability-img {
-  box-shadow: -19px 19px 0px 0px #d6ead8;
-  margin: 2rem;
+  margin-right: 3rem;
+  /* margin-left: 2rem; */
+  max-width: 70%;
 }
-.highlight-green {
-  max-width: 90%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-  width: max-content;
+.H-green-sus {
+  /* width: max-content;  */
+  height: max-content;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--green-color) 40%
+  );
 }
-.highlight-blue {
-  width: max-content;
+
+.highlight-blue-about {
+  /* width: max-content;  */
+  height: max-content;
   background: linear-gradient(
     180deg,
     transparent 60%,
@@ -2220,50 +2271,25 @@ footer section {
   }
   /*----ABOUT PAGE------*/
 
-  .about-silfen-img,
-  .about-sustainability-img {
-    width: 80%;
-    margin-bottom: -20px;
-  }
-  .about-sustainability {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-items: center;
-    align-items: center;
-  }
-  .about-silfen {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-items: center;
-    align-items: center;
-  }
-  .about-silfen h2 {
-    display: grid;
-    order: 1;
-  }
-  .about-sustainability-img {
-    display: grid;
-    order: 2;
-  }
-  .highlight-blue {
-    width: 120%;
-  }
-  .about-silfen h2 {
-    padding-left: 3rem;
-  }
-  .highlight-green {
-    width: 120%;
-    margin-left: 5rem;
-  }
-  .about-sustainability h2 {
-    padding-left: 0.5rem;
-  }
+.about-silfen-img{
+  margin-right: 11rem; 
+  margin-left: 11rem; 
+  margin-bottom: 1rem;
+}
+
+.about-sustainability-img{
+  margin-right: 10rem; 
+  margin-left: 10rem; 
+}
+
+.about-silfen h2{
+font-size: 1.8rem; 
+}
+
+.about-sustainability h2{
+  font-size: 1.8rem; 
+}
+  
   /* ~~~~~~~About Silfen Page~~~~~~~ */
   .container-1 {
     display: flex;
@@ -2916,16 +2942,17 @@ footer section {
     margin: 0 5rem 0 5rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
-  .highlight-green {
-    width: 120%;
-    margin-left: 6rem;
+  .about-sustainability-img{
+margin-right: 15rem; 
+margin-left: 15rem; 
   }
-  .about-sustainability h2 {
-    padding-left: 6rem;
+
+  .about-silfen-img{
+    margin-right: 17rem; 
+margin-left: 17rem; 
   }
-  .about-silfen h2 {
-    padding-left: 6rem;
-  }
+
+
   /* ~~~~~~~About Silfen Page~~~~~~~ */
 
   .container-1 {
@@ -3099,17 +3126,61 @@ footer section {
     margin: 0 7rem 0 7rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
-  .highlight-green {
-    width: 120%;
-    margin-left: 12rem;
+ 
+  .about-silfen-img{
+    margin-right: 0rem; 
+    margin-left: 0rem; 
+    margin-bottom: 0rem;
   }
+  
+  .about-sustainability-img{
+    margin-right: 0rem; 
+    margin-left: 0rem; 
+  }
+  
   .about-sustainability h2 {
-    padding-right: 5rem;
-    font-size: 2.5rem;
+    margin-left: 15rem;
+    text-align: left; 
+    width: 120%;
   }
+
+  .about-sustainability {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+  }
+  .about-silfen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+  }
+  
   .about-silfen h2 {
-    font-size: 2.5rem;
+    display: grid;
+    order: 1;
+    font-size: 1.8rem; 
   }
+
+  .about-sustainability h2 {
+    display: grid;
+    grid-column: 1/-2; 
+    font-size: 1.8rem; 
+  }
+
+  .about-sustainability-img{
+    display: grid;
+    grid-column: 3; 
+  }
+
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -3282,13 +3353,18 @@ footer section {
     top: 30%;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
-  .highlight-green {
-    width: 120%;
-    margin-left: 12rem;
-  }
+
   .about-sustainability h2 {
-    padding-left: 12rem;
+    /* padding-left: 12rem; */
     font-size: 2.5rem;
+    width: max-content;
+    text-align: left; 
+  }
+
+  .about-silfen h2{
+    text-align: right; 
+     width: 120%; 
+     font-size: 2.5rem; 
   }
   /* ~~~~ABOUT SILFEN PAGE~~~~~ */
   .grid-container {
@@ -3410,6 +3486,19 @@ footer section {
   #cartpage .productinfo {
     grid-column-gap: 150px;
   }
+  /* ~~~about page~~~~ */
+  .about-sustainability h2 {
+    margin-left: 30rem;
+    width: 85%;
+    text-align: left; 
+    font-size: 2.8rem;
+  }
+  
+  .about-silfen h2{
+    text-align: right; 
+     width: 125%; 
+     font-size: 2.8rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -3499,6 +3588,19 @@ footer section {
     width: 120%;
     margin-left: 15rem;
   }
+
+/* ~~~about page~~~~ */
+.about-sustainability h2 {
+  margin-left: 30rem;
+  width: 70%;
+  text-align: left; 
+}
+
+.about-silfen h2{
+  text-align: right; 
+   width: 125%; 
+}
+
   /* -------product page-----  */
 
   #product-page .product-img:nth-child(1) img {
