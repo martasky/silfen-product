@@ -999,25 +999,33 @@ input[type="number"] {
 
 #checkoutpage .shipping p {
   font-size: 0.7rem;
+  line-height: 2rem;
+  margin: 1rem 0;
 }
 #checkoutpage .information p {
   font-size: 0.7rem;
+  margin: 1rem 0;
+  line-height: 2rem;
 }
 #checkoutpage .information form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas: "form input";
   grid-gap: 0.5rem;
 }
+
+#checkoutpage .information input {
+  width: 100%;
+}
+
 #checkoutpage .shipping form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
   grid-gap: 0.5rem;
 }
 #checkoutpage .shipping input {
-  height: 4vh;
+  line-height: 2rem;
   width: 100%;
-  font-size: 4rem;
 }
 #checkoutpage .shipping label:first-of-type {
   grid-column: 1 / span 1;
@@ -1136,31 +1144,28 @@ input[type="number"] {
 }
 #checkoutpage .checkboxes form {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 0.5rem;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
   margin: 1.5rem 0 1.5rem 0;
 }
 #checkoutpage .checkboxes #terms-conditions {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  height: 4vh;
 }
 #checkoutpage .checkboxes form #sign-up {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  height: 4vh;
 }
 #checkoutpage .checkboxes form label:first-of-type {
   grid-column: 2 / span 2;
   grid-row: 1;
-  font-size: 0.8rem;
 }
+
 #checkoutpage .checkboxes form label:nth-of-type(2) {
   grid-column: 2 / span 2;
   grid-row: 2;
-  font-size: 0.8rem;
 }
+
 #checkoutpage .checkboxes form button {
   grid-column: 1 / span 3;
   grid-row: 3;
@@ -2329,7 +2334,7 @@ footer section {
   }
   #checkoutpage .shipping p {
     font-size: 1rem;
-    line-height: 2;
+    line-height: 2rem;
   }
   #checkoutpage .payment p {
     font-size: 1rem;
@@ -2853,13 +2858,12 @@ footer section {
   /* -------------CHECKOUT PAGE--------- */
   #checkoutpage .information form {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-gap: 0.5rem;
   }
   #checkoutpage main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
     grid-gap: 2rem;
   }
   #checkoutpage .breadcrumbs {
@@ -2890,7 +2894,7 @@ footer section {
     grid-row: 5 / span 1;
   }
   #checkoutpage .information {
-    line-height: 3rem;
+    line-height: 2rem;
   }
   #checkoutpage .shipping form {
     margin: 0;
@@ -3598,14 +3602,8 @@ footer section {
 }
 
 @media screen and (min-width: 1100px) {
-  /* -------------CHECKOUT PAGE--------- */
-  #checkoutpage main {
-    margin: 0 5rem 0 5rem;
-  }
 
-  /* #checkoutpage .purchase-summary hr {
-    margin: 2rem 0 2rem 0;
-  } */
+
 
   footer {
     margin: 5rem 9rem;
@@ -3687,7 +3685,7 @@ footer section {
 
   /* -------CHECKOUT PAGE------- */
   #checkoutpage main {
-    margin: 0 5rem 0 5rem;
+    margin: 0 10rem 0 10rem;
   }
   /* #checkoutpage .purchase-summary hr {
     margin: 2rem 0 2rem 0;
