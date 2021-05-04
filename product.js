@@ -66,10 +66,13 @@ addBtn = document.querySelector("#addtocart");
 addBtn.addEventListener("click", showAddtocart);
 
 function showAddtocart() {
-  console.log("whyyy");
-
   document.querySelector(".addtocart-popup").classList.remove("show-addtocart");
   document.querySelector(".cart-icon img").src = "assets/cart-full.png";
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 document.querySelector(".x-sign").addEventListener("click", closeAddtocart);
