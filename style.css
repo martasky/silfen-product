@@ -1258,16 +1258,12 @@ input[type="number"] {
 }
 
 .highlight-green-contact {
-  margin-top: 2rem;
-  /* max-width: 40%; */
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
 
 .contact-img {
-  box-shadow: -30px -30px 0px 0px var(--green-color);
-  margin-top: 3rem;
-  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .contact-text {
@@ -1812,19 +1808,19 @@ footer section {
   text-align: left;
 }
 
-.meettheteam-title h1{
+.meettheteam-title h1 {
   margin-top: 2rem;
 }
 
-.meettheteam-title h1{
+.meettheteam-title h1 {
   font-size: 1.7rem;
 }
 
-.about-silfen-title h1{
+.about-silfen-title h1 {
   font-size: 1.7rem;
 }
 
-.founders h1{
+.founders h1 {
   font-size: 1.7rem;
 }
 
@@ -1846,28 +1842,22 @@ footer section {
 }
 
 .theteam-img-daniel {
-  
   margin: 2rem;
 }
 
 .theteam-img-celine {
-
   margin: 2rem;
 }
 .theteam-img-nikolaj {
-  
   margin: 2rem;
 }
 .theteam-img-emma {
-
   margin: 2rem;
 }
 .theteam-img-siri {
-  
   margin: 2rem;
 }
 .theteam-img-yasmin {
-
   margin: 2rem;
 }
 
@@ -2020,7 +2010,6 @@ footer section {
 }
 .rpet-line-text p {
   text-transform: none;
-
 }
 /* .uppercase-rpet-line {
   margin-right: 0rem;
@@ -2147,11 +2136,10 @@ footer section {
 
 @media screen and (min-width: 500px) {
   /* -------------TOP MENU---------- */
-main {
-  padding-top: 150px
+  main {
+    padding-top: 150px;
+  }
 }
-}
-
 
 @media screen and (min-width: 700px) {
   /* -------------TOP MENU---------- */
@@ -2473,26 +2461,32 @@ main {
     margin: 2rem;
   }
 
-  .meettheteam-title h1{
-      margin-left: 2rem; 
-    font-size: 2rem;
-  }
-  
-  .about-silfen-title h1{
-    margin-left: 2rem; 
-    font-size: 2rem;
-  }
-  
-  .founders h1{
-    margin-left: 2rem; 
+  .meettheteam-title h1 {
+    margin-left: 2rem;
     font-size: 2rem;
   }
 
+  .about-silfen-title h1 {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  .founders h1 {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  /* ~~~contact page~~~~ */
+
+  .contact-img {
+    margin-right: 2rem;
+    margin-left: 6rem;
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 900px) {
   /* -----  TOP MENU -----*/
-
 
   .desktop-nav {
     padding-left: 4rem;
@@ -3167,13 +3161,13 @@ main {
   }
 
   .thefounders-img {
-    padding-right: 10rem; 
-    padding-left: 10rem; 
+    padding-right: 10rem;
+    padding-left: 10rem;
     /* width: 60%; */
   }
   .aboutsilfen-page-img {
-    margin-right: 8rem; 
-    margin-left: 8rem; 
+    margin-right: 8rem;
+    margin-left: 8rem;
   }
 
   /* ~~~~~~~sustainable page~~~~~~~ */
@@ -3186,6 +3180,20 @@ main {
     order: 1;
     box-shadow: 0px;
     margin: 2rem;
+  }
+
+  /* ~~~~ contact page ~~~~~ */
+
+  .contact-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 2rem;
+  }
+
+  .contact-img {
+    margin-left: 10rem;
+    width: 60%;
   }
 
   /* ----------------------------SEARCH PAGE -------------------*/
@@ -3398,6 +3406,26 @@ main {
     display: grid;
     grid-column: 3;
   }
+
+  /* ~~~~ contact page ~~~~~ */
+
+  .contact-us h2 {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .contact-img {
+    width: 150%;
+    order: 3;
+    display: grid;
+    margin-left: 2rem;
+  }
+
+  .container-contact {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -3608,13 +3636,13 @@ main {
   /* ~~~~ABOUT SILFEN PAGE~~~~~ */
 
   .thefounders-img {
-    padding-right: 0rem; 
-    padding-left: 0rem; 
+    padding-right: 0rem;
+    padding-left: 0rem;
     /* width: 60%; */
   }
   .aboutsilfen-page-img {
-    margin-right: 0rem; 
-    margin-left: 0rem; 
+    margin-right: 0rem;
+    margin-left: 0rem;
   }
 
   .grid-container {
@@ -3628,7 +3656,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
- 
+
   .thefounders-img {
     box-shadow: none;
     display: grid;
@@ -3949,7 +3977,7 @@ main {
 /* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
 
 #aboutsilfen-page {
-  text-transform:none; 
+  text-transform: none;
   letter-spacing: 2px;
   line-height: 34px;
   padding: 1.5rem;
@@ -3958,7 +3986,7 @@ main {
 .aboutsilfen-text p {
   padding-top: 2rem;
   margin: 1rem;
-  text-transform:none; 
+  text-transform: none;
 }
 
 .thefounders-img {
@@ -3966,7 +3994,7 @@ main {
 }
 .thefounders-text p {
   margin: 1rem;
-  text-transform:none; 
+  text-transform: none;
 }
 
 .meettheteam-title h2 {
@@ -3976,33 +4004,33 @@ main {
 .team-boxes {
   display: inline-block;
   text-align: center;
-  text-transform:none; 
+  text-transform: none;
   font-weight: 800;
   margin: 1rem;
 }
 
 .theteam-img-daniel {
-  text-transform:none; 
+  text-transform: none;
   margin: 2rem;
 }
 .theteam-img-celine {
-  text-transform:none; 
+  text-transform: none;
   margin: 2rem;
 }
 .theteam-img-nikolaj {
-  text-transform:none; 
+  text-transform: none;
   margin: 2rem;
 }
 .theteam-img-emma {
-  text-transform:none; 
+  text-transform: none;
   margin: 2rem;
 }
 .theteam-img-siri {
-  text-transform:none; 
+  text-transform: none;
   margin: 2rem;
 }
 .theteam-img-yasmin {
-  text-transform:none; 
+  text-transform: none;
   margin: 2rem;
 }
 
@@ -4013,7 +4041,7 @@ main {
   line-height: 34px;
 }
 
-#sustainability-page p{
+#sustainability-page p {
   font-size: 1rem;
 }
 
@@ -4021,27 +4049,27 @@ main {
   padding: 1rem;
 }
 
-.about-sustainable h1{
-  font-size: 1.5rem; 
+.about-sustainable h1 {
+  font-size: 1.5rem;
 }
 
-.care-sustainability h1{
-  font-size: 1.5rem; 
+.care-sustainability h1 {
+  font-size: 1.5rem;
 }
 
-.water h1{
-  font-size: 1.5rem; 
+.water h1 {
+  font-size: 1.5rem;
 }
 
-.working-conditions h1{
-  font-size: 1rem; 
+.working-conditions h1 {
+  font-size: 1rem;
 }
 
-.materials h1{
-  font-size: 1.5rem; 
+.materials h1 {
+  font-size: 1.5rem;
 }
 
-.sustainability-shipping h1{
+.sustainability-shipping h1 {
   font-size: 1.5rem;
 }
 
@@ -4101,7 +4129,7 @@ main {
 }
 
 .water-text p {
-    text-transform: none;
+  text-transform: none;
 }
 
 .highlight-yellow-working {
@@ -4116,7 +4144,7 @@ main {
   text-transform: none;
 }
 
-.working-conditions h1{
+.working-conditions h1 {
   padding-top: 2rem;
 }
 
@@ -4166,7 +4194,6 @@ main {
 }
 .rpet-line-text p {
   text-transform: none;
-
 }
 .uppercase-rpet-line {
   margin-left: 2rem;
