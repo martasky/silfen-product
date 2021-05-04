@@ -1834,59 +1834,39 @@ footer section {
   padding: 1.5rem;
   margin-top: 5rem;
 }
-.highlight-blue-care {
+/* .highlight-blue-care {
   width: max-content;
   background: linear-gradient(
     180deg,
     transparent 60%,
     var(--light-blue-color) 40%
   );
-}
+} */
 
 .water-img {
   margin: 2rem;
 }
-.water-text {
-  margin: 1rem;
-}
 .water-text p {
-  margin: 1rem;
   text-transform: none;
 }
 .working-conditions {
   padding: 1.5rem;
 }
-.highlight-yellow-working {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
-}
+
 .working-img {
   margin: 2rem;
 }
-.working-text {
-  margin: 1rem;
-}
 .working-text p {
-  margin: 1rem;
   text-transform: none;
 }
-.materials h3 {
+.materials h1 {
   margin: 1.5rem;
 }
-.highlight-green-materials {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
+
 .materials-img {
-  box-shadow: 20px -20px 0px 0px var(--green-color);
-  margin: 2.5rem;
+  margin: 2rem;
 }
-.materials-text {
-  margin: 1rem;
-}
-.materials-text p {
-  margin: 1rem;
-}
+
 .materials-text p {
   text-transform: none;
 }
@@ -1903,31 +1883,16 @@ footer section {
 }
 
 .cotton-img {
-  margin: 2rem;
   padding-top: 2rem;
 }
 .uppercase-cotton p {
-  margin-left: 2rem;
   text-transform: uppercase;
 }
-.cotton-text p {
-  margin-right: 2rem;
-  margin-left: 2rem;
-  text-transform: none;
-}
-.rpet-line-img {
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-top: -3px;
-}
+
 .rpet-line-text p {
   text-transform: none;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
-.uppercase-rpet-line {
-  margin-left: 2rem;
-}
+
 .shop-recycled-btn {
   margin: 2rem;
   text-align: center;
@@ -1939,7 +1904,6 @@ footer section {
 
 .leather {
   padding-top: 2rem;
-  margin: 2rem;
 }
 .leather-img {
   padding-bottom: 1rem;
@@ -1947,19 +1911,14 @@ footer section {
 .leather-text p {
   text-transform: none;
 }
-.sustainability-shipping {
-  margin: 2rem;
-}
-.highlight-green-sus {
-  /* max-width: 40%; */
+
+/* .highlight-green-sus {
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
+} */
 .sus-shipping-img {
-  /* padding-top: 2rem;
-  padding-bottom: 2rem; */
+
   margin: 2.5rem;
-  box-shadow: 20px -20px 0px 5px var(--yellow-color);
 }
 .sus-shipping-text p {
   text-transform: none;
@@ -3780,42 +3739,29 @@ margin-left: 17rem;
 .water {
   padding: 1.5rem;
 }
-.highlight-blue-care {
+/* .highlight-blue-care {
   max-width: 40%;
   background: linear-gradient(
     180deg,
     transparent 60%,
     var(--light-blue-color) 40%
   );
-}
+} */
 .water-img {
   margin: 2rem;
 }
-.water-text {
-  margin: 1rem;
-}
 .water-text p {
-  /* font-size: 1.2rem; */
-  margin: 1rem;
   text-transform: none;
 }
-.working-conditions {
-  padding: 1.5rem;
+.working-conditions h1{
+  margin-top:2rem;
 }
 
-.highlight-yellow-working {
-  max-width: 80%;
-  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
-}
 .working-img {
   margin: 2rem;
 }
-.working-text {
-  margin: 1rem;
-}
+
 .working-text p {
-  /* font-size: 1.2rem; */
-  margin: 1rem;
   text-transform: none;
 }
 
@@ -3823,99 +3769,40 @@ margin-left: 17rem;
   margin: 1.5rem;
 }
 
-.highlight-green-materials {
-  max-width: 40%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
-
-.materials-img {
-  box-shadow: 20px -20px 0px 0px var(--green-color);
-  margin: 2.5rem;
-}
-.materials-text {
-  margin: 1rem;
-}
-.materials-text p {
-  margin: 1rem;
-}
-.materials-text p {
-  text-transform: none;
-}
-.uppercase-vegan p {
-  text-transform: uppercase;
-}
-.shop-vegan-btn {
-  margin: 2rem;
-  text-align: center;
-  font-weight: 500;
-}
-.shop-vegan-btn a {
-  text-decoration: none;
-}
-
-/* .shop-vegan-text{
-  outline: 8px solid var(--green-color);
-  width: 80%;
-  background-color: var(--green-color);
-  margin: auto;
-} */
-/* .shop-vegan-text h3{
-  box-shadow: 20px 20px 0px 0px var(--green-color); 
-  padding: 1rem;
-font-weight: 400;
-} */
-
 .cotton-img {
   margin: 2rem;
   padding-top: 2rem;
 }
 .uppercase-cotton p {
-  margin-left: 2rem;
   text-transform: uppercase;
 }
 .cotton-text p {
-  margin-right: 2rem;
-  margin-left: 2rem;
   text-transform: none;
 }
 .rpet-line-img {
   margin-right: 2rem;
   margin-left: 2rem;
-  margin-top: -3px;
+margin-top: 2rem; 
 }
 .rpet-line-text p {
   text-transform: none;
-  margin-left: 2rem;
-  margin-right: 2rem;
+
 }
 .uppercase-rpet-line {
-  margin-left: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
 }
 .shop-recycled-btn {
   margin: 2rem;
   text-align: center;
   font-weight: 500;
-  /* background-color: var(--green-color); */
 }
 .shop-recycled-btn a {
   text-decoration: none;
 }
 
-/* .shop-recycled-text{
-  outline: 8px solid var(--green-color);
-  width: 80%;
-  background-color: var(--green-color);
-  margin: auto;
-} */
-/* .shop-recycled-text h3{
-  box-shadow: 20px 20px 0px 0px var(--green-color); 
-  padding: 1rem;
-font-weight: 400;
-} */
-
 .leather {
   padding-top: 2rem;
-  margin: 2rem;
 }
 .leather-img {
   padding-bottom: 1rem;
@@ -3923,18 +3810,13 @@ font-weight: 400;
 .leather-text p {
   text-transform: none;
 }
-.sustainability-shipping {
-  margin: 2rem;
+
+.sustainability-shipping h1{
+  margin-top: 2rem; 
 }
-.highlight-green-sus {
-  max-width: 40%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
+
 .sus-shipping-img {
-  /* padding-top: 2rem;
-  padding-bottom: 2rem; */
-  margin: 2.5rem;
-  box-shadow: 20px -20px 0px 5px var(--yellow-color);
+  margin: 2rem;
 }
 .sus-shipping-text p {
   text-transform: none;
