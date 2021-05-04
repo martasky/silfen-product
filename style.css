@@ -1941,43 +1941,43 @@ footer section {
 .water {
   margin-top: 5rem;
 }
-.highlight-blue-care {
+/* .highlight-blue-care {
   width: max-content;
   background: linear-gradient(
     180deg,
     transparent 60%,
     var(--light-blue-color) 40%
   );
-}
+} */
 
 .water-img {
-  margin: 1rem;
+  margin: 2rem;
 }
-
 .water-text p {
   text-transform: none;
 }
 .working-conditions {
   padding: 1rem;
 }
-.highlight-yellow-working {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
-}
-.working-img {
-  margin: 1rem;
-}
 
-.working-text p {
-  text-transform: none;
+.working-img {
+  margin: 2rem;
 }
 
 .highlight-green-materials {
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
+
+.working-text p {
+  text-transform: none;
+}
+.materials h1 {
+  margin: 1.5rem;
+}
+
 .materials-img {
-  margin: 2.5rem;
+  margin: 2rem;
 }
 
 .materials-text p {
@@ -1996,7 +1996,6 @@ footer section {
 }
 
 .cotton-img {
-  margin: 1rem;
   padding-top: 2rem;
 }
 .uppercase-cotton p {
@@ -2014,6 +2013,11 @@ footer section {
 /* .uppercase-rpet-line {
   margin-right: 0rem;
 } */
+
+.rpet-line-text p {
+  text-transform: none;
+}
+
 .shop-recycled-btn {
   margin: 2rem;
   text-align: center;
@@ -2033,12 +2037,12 @@ footer section {
   text-transform: none;
 }
 
-.highlight-green-sus {
+/* .highlight-green-sus {
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
+} */
 .sus-shipping-img {
-  margin: 1rem;
+  margin: 2.5rem;
 }
 .sus-shipping-text p {
   text-transform: none;
@@ -4116,28 +4120,26 @@ footer section {
 
 .water {
 }
-.highlight-blue-care {
+/* .highlight-blue-care {
   max-width: 40%;
   background: linear-gradient(
     180deg,
     transparent 60%,
     var(--light-blue-color) 40%
   );
-}
+} */
 .water-img {
-  margin: 1rem;
+  margin: 2rem;
 }
-
 .water-text p {
   text-transform: none;
 }
-
-.highlight-yellow-working {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--yellow-color) 40%);
+.working-conditions h1 {
+  margin-top: 2rem;
 }
+
 .working-img {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .working-text p {
@@ -4181,7 +4183,6 @@ footer section {
   padding-top: 2rem;
 }
 .uppercase-cotton p {
-  margin-left: 2rem;
   text-transform: uppercase;
 }
 .cotton-text p {
@@ -4190,39 +4191,26 @@ footer section {
 .rpet-line-img {
   margin-right: 2rem;
   margin-left: 2rem;
-  margin-top: -3px;
+  margin-top: 2rem;
 }
 .rpet-line-text p {
   text-transform: none;
 }
 .uppercase-rpet-line {
-  margin-left: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
 }
 .shop-recycled-btn {
   margin: 2rem;
   text-align: center;
   font-weight: 500;
-  /* background-color: var(--green-color); */
 }
 .shop-recycled-btn a {
   text-decoration: none;
 }
 
-/* .shop-recycled-text{
-  outline: 8px solid var(--green-color);
-  width: 80%;
-  background-color: var(--green-color);
-  margin: auto;
-} */
-/* .shop-recycled-text h3{
-  box-shadow: 20px 20px 0px 0px var(--green-color); 
-  padding: 1rem;
-font-weight: 400;
-} */
-
 .leather {
   padding-top: 2rem;
-  margin: 2rem;
 }
 .leather-img {
   padding-bottom: 1rem;
@@ -4230,18 +4218,13 @@ font-weight: 400;
 .leather-text p {
   text-transform: none;
 }
-.sustainability-shipping {
-  margin: 2rem;
+
+.sustainability-shipping h1 {
+  margin-top: 2rem;
 }
-.highlight-green-sus {
-  max-width: 40%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
+
 .sus-shipping-img {
-  /* padding-top: 2rem;
-  padding-bottom: 2rem; */
-  margin: 2.5rem;
-  box-shadow: 20px -20px 0px 5px var(--yellow-color);
+  margin: 2rem;
 }
 .sus-shipping-text p {
   text-transform: none;
