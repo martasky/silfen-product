@@ -70,7 +70,8 @@ function showAddtocart() {
 document.querySelector(".x-sign").addEventListener("click", closeAddtocart);
 
 function closeAddtocart() {
-  document.querySelector(".addtocart-popup").classList.add("hidden");
+  // document.querySelector(".addtocart-popup").classList.add("hidden");
+  document.querySelector(".addtocart-popup").classList.add("show-addtocart");
 }
 
 const CART = {

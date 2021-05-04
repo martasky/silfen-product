@@ -1543,7 +1543,7 @@ input[type="number"] {
   color: black;
 }
 .show-addtocart {
-  visibility: hidden;
+  display: none;
   animation: fadeIn 1s;
 }
 /*------------------------------------- footer ----------------------------------------------- */
@@ -2208,6 +2208,7 @@ footer section {
     border: 5px solid var(--green-color);
     display: flex;
     flex-direction: column;
+
     width: 460px;
     margin-bottom: 2rem;
     position: relative;
@@ -2234,7 +2235,7 @@ footer section {
     color: black;
   }
   .show-addtocart {
-    visibility: hidden;
+    display: none;
     animation: fadeIn 1s;
   }
   /*----HOMEPAGE------*/
@@ -2523,10 +2524,11 @@ footer section {
     border: 5px solid var(--green-color);
     display: flex;
     flex-direction: column;
+    background-color: white;
     width: 460px;
     margin-bottom: 2rem;
     position: relative;
-    top: 30%;
+    top: 10%;
     left: 40%;
   }
   .addtocart-popup p {
@@ -2553,7 +2555,7 @@ footer section {
     font-weight: normal;
   }
   .show-addtocart {
-    visibility: hidden;
+    display: none;
     animation: fadeIn 1s;
   }
   /* -----FOOTER----- */
@@ -3289,6 +3291,10 @@ footer section {
     position: relative;
     top: 12%;
     left: 50%;
+  }
+  .show-addtocart {
+    display: none;
+    animation: fadeIn 1s;
   }
 
   /* -------CHECKOUT PAGE------- */
