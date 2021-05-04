@@ -505,7 +505,7 @@ header a:active {
   margin-right: 0;
 }
 .active {
-  background-color: #717171;
+  background-color: var(--third-text-color);
 }
 .fade {
   animation-name: fade;
@@ -548,6 +548,7 @@ header a:active {
   font-size: 1rem;
   margin: 1rem;
   color: var(--secondary-text-color);
+  font-weight: 600;
 }
 /* .small-circle {
   width: 14px;
@@ -2502,7 +2503,7 @@ footer section {
     object-fit: cover;
     object-position: 60% 40%;
   }
-  #recycled-collection .slides:nth-child(2) img {
+  #recycled-collection .slides:nth-child(2) img a {
     vertical-align: middle;
 
     width: 100%;
