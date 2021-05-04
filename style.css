@@ -1244,16 +1244,12 @@ input[type="number"] {
 }
 
 .highlight-green-contact {
-  margin-top: 2rem;
-  /* max-width: 40%; */
   width: max-content;
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
 }
 
 .contact-img {
-  box-shadow: -30px -30px 0px 0px var(--green-color);
-  margin-top: 3rem;
-  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .contact-text {
@@ -2319,11 +2315,6 @@ font-size: 1.8rem;
     box-shadow: none;
   }
 
-  .breadcrumbs {
-    display: inherit;
-    margin: 2rem;
-  }
-
   .meettheteam-title h1{
     margin-left: 2rem; 
     font-size: 2rem;
@@ -2338,6 +2329,14 @@ font-size: 1.8rem;
     margin-left: 2rem; 
     font-size: 2rem;
   }
+
+/* ~~~contact page~~~~ */
+
+.contact-img {
+  margin-right: 2rem ;
+  margin-left: 6rem; 
+  width: 70%; 
+}
 
 }
 
@@ -3015,6 +3014,21 @@ margin-left: 17rem;
     margin: 2rem;
   }
 
+  /* ~~~~ contact page ~~~~~ */
+
+  .contact-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    margin:2rem; 
+  }
+
+  .contact-img {
+    margin-left: 10rem; 
+    width: 60%; 
+  }
+
+
   /* ----------------------------SEARCH PAGE -------------------*/
 
   #search-page #empty-search img {
@@ -3203,6 +3217,28 @@ margin-left: 17rem;
     display: grid;
     grid-column: 3; 
   }
+
+
+  /* ~~~~ contact page ~~~~~ */
+
+.contact-us h2{
+  margin-left: 2rem; 
+  font-size: 2.5rem; 
+}
+
+  .contact-img {
+    width: 150%; 
+    order:3; 
+    display: grid;
+    margin-left: 2rem; 
+  }
+
+  .container-contact{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+  }
+
 
 
 }
