@@ -653,6 +653,9 @@ header a:active {
   margin-bottom: 3rem;
   margin-top: 2rem;
 }
+button.white-button {
+  font-weight: 600;
+}
 #homepage-sustainability article {
   background: var(--darker-green-color);
   padding: 1rem;
@@ -662,6 +665,7 @@ header a:active {
   font-size: 1rem;
   padding-bottom: 0.5rem;
   line-height: normal;
+  font-weight: 600;
 }
 #homepage-sustainability h3 {
   color: white;
@@ -2239,6 +2243,11 @@ footer section {
     animation: fadeIn 1s;
   }
   /*----HOMEPAGE------*/
+
+  .hero {
+    transform: scale(1.3, 1.3);
+    margin-bottom: 45px;
+  }
   #newsletter {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2644,12 +2653,16 @@ footer section {
   }
   #newsletter-form p {
     font-size: 0.8rem;
+    font-weight: bold;
     letter-spacing: 0.12px;
     padding-bottom: 1rem;
   }
   .newsletter-small-text {
     font-size: 0.5rem;
     margin-bottom: 0;
+  }
+  #shop-by-category h3 {
+    font-size: 1.8rem;
   }
   #silfen-stories {
     margin-left: 2rem;
@@ -2677,9 +2690,14 @@ footer section {
     width: max-content;
     margin-left: 3rem;
   }
-  .some-title h3.half-highlight-light-blue {
+  /* .some-title h3.half-highlight-light-blue {
     background: none;
     line-height: initial;
+  } */
+
+  #silfen-stories h3 {
+    font-size: 2rem;
+    letter-spacing: 2.24px;
   }
   #silfen-stories h4 {
     padding-top: 0;
@@ -2714,18 +2732,18 @@ footer section {
     padding: 2rem;
   }
   #homepage-sustainability h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
     padding-bottom: 1rem;
   }
   #homepage-sustainability p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   button.white-button {
     color: var(--darker-green-color);
   }
   #shop-by-category h3 {
-    display: initial;
+    display: inline-block;
   }
   .shop-by-category-container {
     display: grid;
@@ -3328,6 +3346,7 @@ footer section {
     grid-template-columns: 366px 40px 40px 100px 100px 200px 140px;
     grid-template-rows: 40px 40px 100px 60px 230px 100px;
     transform: scale(1, 1);
+    margin-bottom: 0;
   }
   /* .hero {
   display: grid;
@@ -3389,10 +3408,26 @@ footer section {
     grid-column-start: 5;
     border-left: 3px solid var(--green-color);
   }
+
+  #recycled-collection {
+    margin-bottom: 5rem;
+  }
+  #shop-by-category h3 {
+    font-size: 2.2rem;
+  }
+  .shop-by-category-container {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
   #homepage-video {
     padding: 2rem;
     height: 350px;
     padding-top: 1rem;
+  }
+  #newsletter {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 0;
   }
   .hp-video {
     width: 600px;
@@ -3410,6 +3445,18 @@ footer section {
     position: fixed;
     right: 0;
     top: 70%;
+  }
+  #silfen-stories h3 {
+    font-size: 2.2rem;
+  }
+  #silfen-stories h4 {
+    font-size: 1.6rem;
+  }
+  .some-wrapper {
+    margin-top: 3rem;
+  }
+  #homepage-sustainability p {
+    font-size: 1rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
 
@@ -3480,6 +3527,81 @@ footer section {
     align-content: center;
   }
 
+  #silfen-stories h3 {
+    font-size: 2.2rem;
+  }
+  #silfen-stories h4 {
+    font-size: 1.6rem;
+  }
+  .some-wrapper {
+    margin-top: 3rem;
+  }
+  #recycled-collection {
+    margin-bottom: 7rem;
+    height: 550px;
+  }
+  .recycled-wrapper {
+    padding: 8rem;
+  }
+  #recyced-collection h2 {
+    font-size: 3.6rem;
+  }
+  #recyced-collection p {
+    font-size: 2rem;
+    padding-top: 2em;
+  }
+  #shop-by-category h3 {
+    font-size: 2.5rem;
+  }
+  .shop-by-category-container {
+    transform: scale(1.2, 1.2);
+    padding-top: 2rem;
+  }
+  #shop-by-category {
+    margin-bottom: 6rem;
+  }
+  #homepage-sustainability {
+    height: 570px;
+  }
+  .hp-wrapper {
+    width: 100%;
+    max-width: 1400px;
+  }
+  .hp-video {
+    width: 800px;
+    height: 400px;
+  }
+  .hp-video-border {
+    height: 400px;
+    width: 800px;
+    border: 7px solid white;
+    transform: translate(20px, -380px);
+  }
+  #homepage-sustainability {
+    margin-bottom: 7rem;
+  }
+  #homepage-sustainability h3 {
+    font-size: 1.5rem;
+  }
+  #homepage-sustainability p {
+    font-size: 1.1rem;
+    line-height: 27px;
+    padding-bottom: 1.2rem;
+    font-weight: 600;
+  }
+  #homepage-sustainability article {
+    padding-right: 4rem;
+  }
+  button.white-button {
+    width: 100%;
+    color: var(--darker-green-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  #newsletter {
+    width: 55%;
+  }
   /* ----CATALOGUE PAGE---- */
   .product-card {
     width: 21%;
@@ -3685,6 +3807,22 @@ footer section {
     width: 540px;
     object-fit: cover;
     border: 5px solid var(--light-blue-color);
+  }
+  /* Home page  */
+
+  #newsletter {
+    width: 50%;
+    transform: scale(1.3, 1.3);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .shop-by-category-container {
+    transform: scale(1.5, 1.5);
+  }
+  .hero {
+    transform: scale(1.2, 1.2);
+    padding-top: 2rem;
+    padding-bottom: 55px;
   }
 }
 /*-------------------------------------  ----------------------------------------------- */
