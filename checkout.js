@@ -122,8 +122,3 @@ function edit_color_name(str) {
   });
   return result;
 }
-
-document.querySelector("#submitBtn").addEventListener("click", orderComplete);
-function orderComplete() {
-  window.location.href = "order-complete.html";
-}
