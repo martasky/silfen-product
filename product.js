@@ -91,6 +91,11 @@ const CART = {
   sync() {
     let _cart = JSON.stringify(CART.contents);
     localStorage.setItem(CART.KEY, _cart);
+    if (CART.contents.length === 0) {
+      document.querySelector(".cart-icon img").src = "assets/cart-icon.png";}
+     else {
+        document.querySelector(".cart-icon img").src = "assets/cart-full.png";
+      }
   },
   add(obj) {
     const index = CART.contents.findIndex((element) => element._id == obj._id);

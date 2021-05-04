@@ -4,6 +4,8 @@ const q = urlParams.get("q");
 
 
 //kea21-4d62.restdb.io/rest/silfenproducts??q={"colors": {"name" : {"$in": ["green"]}}}
+
+// kea21-4d62.restdb.io/rest/silfenproducts?q={"category": "bags"}
 fetch("https://kea21-4d62.restdb.io/rest/silfenproducts?q={}&filter=" + q, {
   method: "GET",
   headers: {

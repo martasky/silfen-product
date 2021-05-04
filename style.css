@@ -2060,6 +2060,15 @@ footer section {
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
 /*------------------------------------- MEDIA QUERIES ----------------------------------------------- */
+
+@media screen and (min-width: 500px) {
+  /* -------------TOP MENU---------- */
+main {
+  padding-top: 150px
+}
+}
+
+
 @media screen and (min-width: 700px) {
   /* -------------TOP MENU---------- */
 
@@ -2354,9 +2363,6 @@ footer section {
 @media screen and (min-width: 900px) {
   /* -----  TOP MENU -----*/
 
-  main {
-    padding-top: 10px;
-  }
 
   .desktop-nav {
     padding-left: 4rem;
@@ -3060,6 +3066,10 @@ footer section {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     background-color: white;
+  }
+
+  .desktop-nav ul {
+    font-weight: 800;
   }
 
   .desktop-nav .logo img {
