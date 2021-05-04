@@ -76,7 +76,7 @@ const CART = {
       document.querySelector(
         ".purchase-summary .subtotal p span"
       ).textContent = price_sum;
-      document.querySelector(".total p span").textContent = price_sum + 7;
+      document.querySelector(".total p span").textContent = price_sum + 50;
     }
   },
   add(obj) {
@@ -122,5 +122,3 @@ function edit_color_name(str) {
   });
   return result;
 }
-
-
