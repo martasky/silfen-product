@@ -26,8 +26,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-body {
-}
 h1,
 h2,
 h3,
@@ -755,8 +753,6 @@ button.white-button {
   font-size: 1.875rem;
   text-transform: uppercase;
   text-align: center;
-}
-#homepage-video {
 }
 .hp-video {
   background-image: url(assets/ecogif.gif);
@@ -2337,10 +2333,6 @@ footer section {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .desktop-nav .logo {
-    /*     margin-bottom: 0;
-    padding-bottom: 0; */
-  }
 
   /* ---CART PAGE---- */
   #cartpage main {
@@ -3697,7 +3689,6 @@ footer section {
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 9rem;
-    padding-top: 150px;
   }
   #product-page .product-colors {
     width: 27%;
@@ -3992,9 +3983,6 @@ footer section {
 
 @media screen and (min-width: 1300px) {
   /*-------HOME PAGE-------------- */
-  .desktop-nav {
-    /* grid-gap: 1rem; */
-  }
   .desktop-nav .logo img {
     max-width: 52%;
   }
@@ -4109,10 +4097,6 @@ footer section {
     font-size: 1.1rem;
   }
   /*---PRODUCT PAGE----*/
-
-  #product-page main {
-    padding-top: 180px;
-  }
   #product-page .left-side {
     width: 60%;
   }
@@ -4259,7 +4243,6 @@ footer section {
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 17rem;
-    padding-top: 200px;
   }
   #product-page .left-side {
     width: 65%;
@@ -4538,9 +4521,6 @@ footer section {
 .box4 h2 {
   margin: 2rem;
   font-weight: 500;
-}
-
-.water {
 }
 /* .highlight-blue-care {
   max-width: 40%;
