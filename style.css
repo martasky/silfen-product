@@ -1915,22 +1915,7 @@ footer section {
   background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
   width: max-content;
 }
-/* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
 
-#aboutsilfen-page {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 34px;
-  padding: 1.5rem;
-}
-.highlight-blue-aboutsilfen {
-  width: max-content;
-  background: linear-gradient(
-    180deg,
-    transparent 60%,
-    var(--light-blue-color) 40%
-  );
-}
 
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
@@ -2023,6 +2008,172 @@ footer section {
 /*------------------------------------- ABOUT SUSTAINABILITY ----------------------------------------------- */
 /*------------------------------------- ABOUT SUSTAINABILITY ----------------------------------------------- */
 /*------------------------------------- ABOUT SUSTAINABILITY ----------------------------------------------- */
+
+#aboutsilfen-page {
+  text-transform: none;
+  letter-spacing: 2px;
+  line-height: 34px;
+  padding: 1.5rem;
+}
+
+.aboutsilfen-text p {
+  padding-top: 2rem;
+  text-transform: none;
+}
+
+.highlight-green-suspage {
+  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
+  width: max-content;
+}
+
+.thefounders-img {
+  margin: 2rem;
+}
+.thefounders-text p {
+  margin: 1rem;
+  text-transform: none;
+}
+
+.meettheteam-title h2 {
+  padding-top: 1rem;
+}
+
+.team-boxes {
+  display: inline-block;
+  text-align: center;
+  text-transform: none;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.theteam-img-daniel {
+  text-transform: none;
+  margin: 2rem;
+}
+.theteam-img-celine {
+  text-transform: none;
+  margin: 2rem;
+}
+.theteam-img-nikolaj {
+  text-transform: none;
+  margin: 2rem;
+}
+.theteam-img-emma {
+  text-transform: none;
+  margin: 2rem;
+}
+.theteam-img-siri {
+  text-transform: none;
+  margin: 2rem;
+}
+.theteam-img-yasmin {
+  text-transform: none;
+  margin: 2rem;
+}
+
+
+.about-sustainable {
+  padding: 1rem;
+}
+
+.about-sustainable h1 {
+  font-size: 1.5rem;
+}
+
+.sustainability-text p {
+  text-transform: none;
+}
+.care-sustainability {
+  padding: 1.5rem;
+}
+
+.we-care-boxes {
+  margin: 2rem;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.box1 h2 {
+  margin: 2rem;
+  font-weight: 500;
+}
+.box2 h2 {
+  margin: 3rem;
+  font-weight: 500;
+}
+.box3 h2 {
+  font-weight: 500;
+}
+.box4 h2 {
+  margin: 2rem;
+  font-weight: 500;
+}
+.shop-vegan-btn {
+  margin: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.shop-vegan-btn a {
+  text-decoration: none;
+}
+
+.cotton-img {
+  margin: 1rem;
+  padding-top: 2rem;
+}
+.uppercase-cotton p {
+  text-transform: uppercase;
+}
+.cotton-text p {
+  text-transform: none;
+}
+.rpet-line-img {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.rpet-line-text p {
+  margin: 2rem; 
+  text-transform: none;
+}
+.uppercase-rpet-line {
+  margin-top: 2rem;
+  margin-left: 2rem ;
+  text-transform: uppercase;
+}
+.shop-recycled-btn {
+  margin: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.shop-recycled-btn a {
+  text-decoration: none;
+}
+
+.leather {
+  padding-top: 2rem;
+}
+.leather-img {
+  padding-bottom: 1rem;
+}
+.leather-text p {
+  margin: 2rem; 
+  text-transform: none;
+}
+
+.sustainability-shipping h1 {
+  margin-top: 2rem;
+  margin: 1rem; 
+}
+
+.sus-shipping-img {
+  margin: 2rem;
+}
+.sus-shipping-text p {
+  margin: 2rem; 
+  text-transform: none;
+}
+
 #sustainability-page {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2054,7 +2205,7 @@ footer section {
   text-transform: none;
 }
 .we-care-boxes h2 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   line-height: 3rem;
   justify-content: center;
   align-items: center;
@@ -2116,23 +2267,18 @@ footer section {
   text-transform: none;
 }
 .working-conditions {
-  padding: 1rem;
+  margin-top: 2rem;
 }
 
 .working-img {
   margin: 2rem;
 }
 
-.highlight-green-materials {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
-
 .working-text p {
   text-transform: none;
 }
 .materials h1 {
-  margin: 1.5rem;
+  margin-top: 2rem;
 }
 
 .materials-img {
@@ -2143,6 +2289,7 @@ footer section {
   text-transform: none;
 }
 .uppercase-vegan p {
+  font-weight: bold;
   text-transform: uppercase;
 }
 .shop-vegan-btn {
@@ -2162,9 +2309,6 @@ footer section {
 }
 .cotton-text p {
   text-transform: none;
-}
-.rpet-line-img {
-  margin-top: -3px;
 }
 .rpet-line-text p {
   text-transform: none;
@@ -2192,14 +2336,7 @@ footer section {
 .leather-img {
   padding-bottom: 1rem;
 }
-.leather-text p {
-  text-transform: none;
-}
 
-/* .highlight-green-sus {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-} */
 .sus-shipping-img {
   margin: 2.5rem;
 }
@@ -2308,6 +2445,11 @@ footer section {
     bottom: 0;
     left: 45%;
     padding-bottom: 10px;
+  }
+  /* ~~~~sustainable page~~~~~~ */
+  .working-img{
+margin-left: 8rem; 
+margin-right: 8rem; 
   }
 }
 
@@ -2702,6 +2844,54 @@ footer section {
     margin-left: 2rem;
     font-size: 2rem;
   }
+
+  /* ~~~~sustainable page~~~~ */
+
+.about-sustainable h1{
+  font-size: 2.5rem;
+}
+
+  .we-care-boxes h2 {
+    width: 85%; 
+    font-size: 2rem;
+    line-height: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .working-img{
+    margin-right: 12rem; 
+    margin-left: 12rem; 
+  }
+
+  .water-img{
+    margin-right: 10rem; 
+    margin-left: 10rem; 
+  }
+
+  .shop-vegan-btn {
+    /* margin: 2rem; */
+    margin-left: 7rem; 
+    margin-right: 7rem; 
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+  .shop-recycled-btn{
+    margin-left: 7rem; 
+    margin-right: 7rem; 
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+    .working-img{
+      margin-left: 13rem; 
+      margin-right: 13rem; 
+        }
+
 
   /* ~~~contact page~~~~ */
 
@@ -3446,6 +3636,76 @@ footer section {
     margin: 2rem;
   }
 
+  #sustainability-page .breadcrumbs {
+    display: inherit;
+    margin: 2rem;
+  }
+
+    /* ~~~~sustainable page~~~~ */
+
+
+  .we-care-boxes h2 {
+    width: 90%; 
+    font-size: 1.8rem;
+    line-height: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .working-img{
+    margin-right: 17rem; 
+    margin-left: 17rem; 
+  }
+
+  .water-img{
+    margin-right: 15rem; 
+    margin-left: 15rem; 
+  }
+
+  .shop-vegan-btn {
+    margin: 2rem; 
+    margin-left: 7rem; 
+    margin-right: 7rem; 
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+  .shop-recycled-btn{
+    margin-left: 7rem; 
+    margin-right: 7rem; 
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+  } 
+
+  .sus-shipping-img {
+    margin-left: 10rem; 
+    margin-right: 10rem; 
+  }
+
+.materials-img{
+  margin-left: 8rem; 
+    margin-right: 8rem; 
+}
+
+.cotton-img{
+  margin-left: 8rem; 
+  margin-right: 8rem; 
+}
+
+.rpet-line-img{
+  margin-left: 8rem; 
+  margin-right: 8rem; 
+}
+
+.leather-img{
+  margin-left: 8rem; 
+  margin-right: 8rem; 
+}
+
+
   /* ~~~~ contact page ~~~~~ */
 
   .contact-text {
@@ -3982,14 +4242,129 @@ footer section {
     align-self: center;
   }
   /* ~~~~~~Sustainable Page~~~~~~~~ */
+
+  .materials h1{
+    margin-top: 5rem; 
+    margin-bottom: 2rem;
+  }
+  .water h1{
+    margin-bottom: 2rem;
+  }
+
+  .working-conditions h1{
+    margin-top: 4rem; 
+    margin-bottom: 2rem;
+  }
+  
   .grid-water {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
   .water-img {
-    align-self: center;
+    margin: 0; 
+    width: 90%; 
   }
+
+  .grid-working {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .working-img {
+    margin: 0;
+    padding: 0;
+    width: 70%; 
+    order: 2; 
+  }
+  .working-text p{
+    width: 80%; 
+  }
+
+  .material-text {
+    grid-column: 1;
+  }
+
+  .grid-material{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+  }
+
+.materials-text p{
+  width: 90%; 
+}
+  .materials-img{
+    align-self: center;
+    width: 70%; 
+  }
+  .grid-cotton{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+  }
+.cotton-img{
+  order: 1; 
+  width: 70%; 
+  align-items: center;
+}
+
+.grid-cotton{
+margin-top: 4rem;
+}
+
+.rpet-line-text {
+  width: 90%; 
+  grid-column: 2;
+}
+
+.grid-rpet-line{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; 
+}
+
+.rpet-line-text p{
+width: 90%; 
+}
+.rpet-line-img{
+  align-self: center;
+  width: 70%; 
+}
+.shop-recycled-btn{
+  grid-column: 2;
+  margin-top: -0.5rem; 
+}
+.shop-vegan-btn{
+  grid-column: 2;
+}
+
+.grid-leather{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr; 
+}
+.leather-img{
+order: 2; 
+width: 65%; 
+align-self: center;
+margin-left: 1rem; 
+}
+
+.grid-sus-shipping{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr; 
+}
+
+.sus-shipping-text p{
+width: 85%; 
+}
+.sus-shipping-img{
+  align-self: center;
+  width: 55%; 
+}
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -4384,10 +4759,7 @@ footer section {
 /*-----------------------------------  END ----------------------------------------------- */
 
 /* ---------WHERE IS THIS FROM??? --------*/
-.highlight-green {
-  max-width: 90%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
+
 
 .highlight-blue {
   background: linear-gradient(
@@ -4398,257 +4770,6 @@ footer section {
   max-width: 60%;
 }
 
-/* ~~~~~~~~~~~~about silfen page~~~~~~~~~~~~ */
-
-#aboutsilfen-page {
-  text-transform: none;
-  letter-spacing: 2px;
-  line-height: 34px;
-  padding: 1.5rem;
-}
-
-.aboutsilfen-text p {
-  padding-top: 2rem;
-  margin: 1rem;
-  text-transform: none;
-}
-
-.thefounders-img {
-  margin: 2rem;
-}
-.thefounders-text p {
-  margin: 1rem;
-  text-transform: none;
-}
-
-.meettheteam-title h2 {
-  padding-top: 1rem;
-}
-
-.team-boxes {
-  display: inline-block;
-  text-align: center;
-  text-transform: none;
-  font-weight: 800;
-  margin: 1rem;
-}
-
-.theteam-img-daniel {
-  text-transform: none;
-  margin: 2rem;
-}
-.theteam-img-celine {
-  text-transform: none;
-  margin: 2rem;
-}
-.theteam-img-nikolaj {
-  text-transform: none;
-  margin: 2rem;
-}
-.theteam-img-emma {
-  text-transform: none;
-  margin: 2rem;
-}
-.theteam-img-siri {
-  text-transform: none;
-  margin: 2rem;
-}
-.theteam-img-yasmin {
-  text-transform: none;
-  margin: 2rem;
-}
-
-/* ~~~~~~~~~~~~about sustainability page~~~~~~~~~~~~ */
-#sustainability-page {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 34px;
-}
-
-#sustainability-page p {
-  font-size: 1rem;
-}
-
-.about-sustainable {
-  padding: 1rem;
-}
-
-.about-sustainable h1 {
-  font-size: 1.5rem;
-}
-
-.care-sustainability h1 {
-  font-size: 1.5rem;
-}
-
-.water h1 {
-  font-size: 1.5rem;
-}
-
-.working-conditions h1 {
-  font-size: 1rem;
-}
-
-.materials h1 {
-  font-size: 1.5rem;
-}
-
-.sustainability-shipping h1 {
-  font-size: 1.5rem;
-}
-
-.sustainability-text {
-  margin: 1rem;
-}
-.sustainability-text p {
-  margin: 1rem;
-  text-transform: none;
-}
-.care-sustainability {
-  padding: 1.5rem;
-}
-
-.highlight-green-care {
-  max-width: 40%;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
-.we-care-boxes {
-  margin: 2rem;
-  font-weight: 500;
-  text-transform: none;
-}
-.box1-border {
-  outline: 5px solid #2cabff;
-  outline-offset: 10px;
-}
-
-.box1 h2 {
-  margin: 2rem;
-  font-weight: 500;
-}
-.box2 h2 {
-  margin: 3rem;
-  font-weight: 500;
-}
-.box3 h2 {
-  font-weight: 500;
-}
-.box4 h2 {
-  margin: 2rem;
-  font-weight: 500;
-}
-
-.water {
-}
-/* .highlight-blue-care {
-  max-width: 40%;
-  background: linear-gradient(
-    180deg,
-    transparent 60%,
-    var(--light-blue-color) 40%
-  );
-} */
-.water-img {
-  margin: 2rem;
-}
-.water-text p {
-  text-transform: none;
-}
-.working-conditions h1 {
-  margin-top: 2rem;
-}
-
-.working-img {
-  margin: 2rem;
-}
-
-.working-text p {
-  text-transform: none;
-}
-
-.working-conditions h1 {
-  padding-top: 2rem;
-}
-
-.materials h1 {
-  margin-top: 2rem;
-}
-
-.highlight-green-materials {
-  width: max-content;
-  background: linear-gradient(180deg, transparent 60%, var(--green-color) 40%);
-}
-
-.materials-img {
-  margin: 1rem;
-}
-
-.materials-text p {
-  text-transform: none;
-}
-.uppercase-vegan p {
-  text-transform: uppercase;
-}
-.shop-vegan-btn {
-  margin: 2rem;
-  text-align: center;
-  font-weight: 500;
-}
-.shop-vegan-btn a {
-  text-decoration: none;
-}
-
-.cotton-img {
-  margin: 1rem;
-  padding-top: 2rem;
-}
-.uppercase-cotton p {
-  text-transform: uppercase;
-}
-.cotton-text p {
-  text-transform: none;
-}
-.rpet-line-img {
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-top: 2rem;
-}
-.rpet-line-text p {
-  text-transform: none;
-}
-.uppercase-rpet-line {
-  margin-top: 2rem;
-  text-transform: uppercase;
-}
-.shop-recycled-btn {
-  margin: 2rem;
-  text-align: center;
-  font-weight: 500;
-}
-.shop-recycled-btn a {
-  text-decoration: none;
-}
-
-.leather {
-  padding-top: 2rem;
-}
-.leather-img {
-  padding-bottom: 1rem;
-}
-.leather-text p {
-  text-transform: none;
-}
-
-.sustainability-shipping h1 {
-  margin-top: 2rem;
-}
-
-.sus-shipping-img {
-  margin: 2rem;
-}
-.sus-shipping-text p {
-  text-transform: none;
-}
 
 @media screen and (min-width: 1600px) {
   /* ------  TOP MENU--------- */
