@@ -93,7 +93,7 @@ button {
 }
 
 main {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 /* -------------------------------  TOP MENU ---------------------------- */
@@ -127,6 +127,7 @@ header {
   list-style-type: none;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.8rem;
 }
 .desktop-nav .sale {
   max-width: 90%;
@@ -159,6 +160,7 @@ header a:active {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-rows: 1fr;
+  align-items: baseline;
 }
 
 .desktop-nav .burger-menu-wrapper .burger-close {
@@ -166,13 +168,19 @@ header a:active {
   grid-row: 1;
   margin-left: 1rem;
 }
+.desktop-nav #bagsdropdown {
+  margin-left: 0;
+}
+.desktop-nav .dropdown-secondary-content {
+  padding-top: 0.4rem;
+}
 
 .desktop-nav .burger-menu-wrapper .nav-icons {
   grid-column: 4/5;
   grid-row: 1;
   display: flex;
   flex-direction: row;
-  margin: 0 1rem 0 2rem;
+  align-items: center;
 }
 /* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
@@ -180,11 +188,11 @@ header a:active {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
   margin-left: 0;
-  padding: 1rem 1rem;
+  padding: 0;
 }
 .desktop-nav .burger-menu-wrapper #pageslist li {
   margin-left: 0;
-  padding-left: 0;
+  padding: 0.8rem 0;
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons .search {
@@ -192,12 +200,13 @@ header a:active {
 }
 
 .desktop-nav .logo {
-  margin: 1rem auto 1rem auto;
-  max-width: 40%;
+  margin: 1.3rem auto 0 auto;
+  max-width: 26%;
+  height: auto;
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons img {
-  max-width: 70%;
+  max-width: 77%;
 }
 
 .desktop-nav .nav-icons .cart-icon {
@@ -229,13 +238,18 @@ header a:active {
   padding-top: 10rem;
 } */
 
-.desktop-nav .close-burguer,
-.search,
-.cart-icon {
-  width: 35px;
-  height: 35px;
+.desktop-nav .search {
+  width: 25px;
+  height: 25px;
 }
-
+.desktop-nav .cart-icon {
+  width: 40%;
+  height: 39px;
+}
+.desktop-nav .close-burguer {
+  width: 26px;
+  height: 26px;
+}
 .desktop-nav #searchbar {
   width: 100%;
   grid-row: 3;
@@ -2299,10 +2313,6 @@ footer section {
 
 @media screen and (min-width: 500px) {
   /* -------------TOP MENU---------- */
-  main {
-    padding-top: 150px;
-  }
-
   .small-circle-container {
     position: absolute;
     bottom: 0;
@@ -2328,8 +2338,8 @@ footer section {
     padding-bottom: 0;
   }
   .desktop-nav .logo {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    /*     margin-bottom: 0;
+    padding-bottom: 0; */
   }
 
   /* ---CART PAGE---- */
@@ -3419,7 +3429,7 @@ footer section {
   .box-6 {
     width: 25%;
   }
-  .breadcrumbs {
+  #about-silfen .breadcrumbs {
     display: inherit;
     margin: 2rem;
   }
@@ -3484,68 +3494,60 @@ footer section {
   header {
     background-color: white;
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
-
-  main {
-    padding-top: 200px;
-  }
-
   .desktop-nav .close-burguer {
     display: none;
   }
-
   .desktop-nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1.8fr 0.4fr;
     background-color: white;
   }
-
-  .desktop-nav ul {
-    font-weight: 800;
-  }
-
   .desktop-nav .logo img {
     max-width: 60%;
   }
-
+  .desktop-nav .search {
+    margin-right: 1.2rem;
+  }
+  #searchbar > form:nth-child(1) > input:nth-child(1) {
+    padding-left: 1rem;
+    height: 2.6rem;
+  }
+  #searchbar > form:nth-child(1) > button:nth-child(2) {
+    align-content: center;
+  }
   .desktop-nav .burger-menu-wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    align-items: baseline;
   }
-
   .desktop-nav .dropdown-content {
-    font-weight: 800;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 1rem -1rem;
   }
-
   .desktop-nav .dropdown-content-two {
-    font-weight: 800;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 1rem -1rem;
   }
-
   .desktop-nav .burger-menu-wrapper #pageslist {
     grid-column: 1;
     grid-row: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
   }
-
   .desktop.nav .burger-menu-wrapper .nav-icons {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    align-items: center;
   }
-
   .desktop.nav #shop {
     position: absolute;
     margin: 0 1rem 0 1rem;
   }
-
   .dropdown-content {
     z-index: 5;
     margin-left: 0;
@@ -3555,14 +3557,11 @@ footer section {
     flex-flow: nowrap;
     background-color: white;
     font-size: 0.7em;
-    line-height: 2rem;
   }
-
   .desktop.nav #aboutdrop {
     position: absolute;
     margin: 0 1rem 0 1rem;
   }
-
   .dropdown-content-two {
     z-index: 5;
     padding: 0;
@@ -3571,7 +3570,6 @@ footer section {
     flex-flow: nowrap;
     background-color: white;
     font-size: 0.7em;
-    line-height: 2rem;
   }
 
   /*-------- CARTPAGE------------ */
