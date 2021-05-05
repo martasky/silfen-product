@@ -26,8 +26,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-body {
-}
 h1,
 h2,
 h3,
@@ -93,7 +91,7 @@ button {
 }
 
 main {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 /* -------------------------------  TOP MENU ---------------------------- */
@@ -127,6 +125,7 @@ header {
   list-style-type: none;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.8rem;
 }
 .desktop-nav .sale {
   max-width: 90%;
@@ -159,6 +158,7 @@ header a:active {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   grid-template-rows: 1fr;
+  align-items: baseline;
 }
 
 .desktop-nav .burger-menu-wrapper .burger-close {
@@ -166,13 +166,19 @@ header a:active {
   grid-row: 1;
   margin-left: 1rem;
 }
+.desktop-nav #bagsdropdown {
+  margin-left: 0;
+}
+.desktop-nav .dropdown-secondary-content {
+  padding-top: 0.4rem;
+}
 
 .desktop-nav .burger-menu-wrapper .nav-icons {
   grid-column: 4/5;
   grid-row: 1;
   display: flex;
   flex-direction: row;
-  margin: 0 1rem 0 2rem;
+  align-items: center;
 }
 /* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
@@ -180,11 +186,11 @@ header a:active {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
   margin-left: 0;
-  padding: 1rem 1rem;
+  padding: 0;
 }
 .desktop-nav .burger-menu-wrapper #pageslist li {
   margin-left: 0;
-  padding-left: 0;
+  padding: 0.8rem 0;
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons .search {
@@ -192,12 +198,13 @@ header a:active {
 }
 
 .desktop-nav .logo {
-  margin: 1rem auto 1rem auto;
-  max-width: 40%;
+  margin: 1.3rem auto 0 auto;
+  max-width: 26%;
+  height: auto;
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons img {
-  max-width: 70%;
+  max-width: 77%;
 }
 
 .desktop-nav .nav-icons .cart-icon {
@@ -229,13 +236,18 @@ header a:active {
   padding-top: 10rem;
 } */
 
-.desktop-nav .close-burguer,
-.search,
-.cart-icon {
-  width: 35px;
-  height: 35px;
+.desktop-nav .search {
+  width: 25px;
+  height: 25px;
 }
-
+.desktop-nav .cart-icon {
+  width: 40%;
+  height: 39px;
+}
+.desktop-nav .close-burguer {
+  width: 26px;
+  height: 26px;
+}
 .desktop-nav #searchbar {
   width: 100%;
   grid-row: 3;
@@ -300,7 +312,7 @@ header a:active {
   justify-content: space-between;
   position: fixed;
   right: 0;
-  top: 15%;
+  top: 66%;
   background: white;
   z-index: 1;
 }
@@ -741,8 +753,6 @@ button.white-button {
   font-size: 1.875rem;
   text-transform: uppercase;
   text-align: center;
-}
-#homepage-video {
 }
 .hp-video {
   background-image: url(assets/ecogif.gif);
@@ -1916,7 +1926,6 @@ footer section {
   width: max-content;
 }
 
-
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
 /*------------------------------------- ABOUT SILFEN ----------------------------------------------- */
@@ -1932,7 +1941,7 @@ footer section {
     transparent 60%,
     var(--light-blue-color) 40%
   );
-  width: max-content; 
+  width: max-content;
 }
 
 .aboutsilfen-text p {
@@ -2081,7 +2090,6 @@ footer section {
   margin: 2rem;
 }
 
-
 .about-sustainable {
   padding: 1rem;
 }
@@ -2143,12 +2151,12 @@ footer section {
   margin-top: 2rem;
 }
 .rpet-line-text p {
-  margin: 2rem; 
+  margin: 2rem;
   text-transform: none;
 }
 .uppercase-rpet-line {
   margin-top: 2rem;
-  margin-left: 2rem ;
+  margin-left: 2rem;
   text-transform: uppercase;
 }
 .shop-recycled-btn {
@@ -2167,20 +2175,20 @@ footer section {
   padding-bottom: 1rem;
 }
 .leather-text p {
-  margin: 2rem; 
+  margin: 2rem;
   text-transform: none;
 }
 
 .sustainability-shipping h1 {
   margin-top: 2rem;
-  margin: 1rem; 
+  margin: 1rem;
 }
 
 .sus-shipping-img {
   margin: 2rem;
 }
 .sus-shipping-text p {
-  margin: 2rem; 
+  margin: 2rem;
   text-transform: none;
 }
 
@@ -2188,7 +2196,7 @@ footer section {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 34px;
-  margin: 2rem; 
+  margin: 2rem;
 }
 #sustainability-page p {
   text-align: left;
@@ -2447,10 +2455,6 @@ footer section {
 
 @media screen and (min-width: 500px) {
   /* -------------TOP MENU---------- */
-  main {
-    padding-top: 150px;
-  }
-
   .small-circle-container {
     position: absolute;
     bottom: 0;
@@ -2458,9 +2462,9 @@ footer section {
     padding-bottom: 10px;
   }
   /* ~~~~sustainable page~~~~~~ */
-  .working-img{
-margin-left: 8rem; 
-margin-right: 8rem; 
+  .working-img {
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 }
 
@@ -2477,10 +2481,6 @@ margin-right: 8rem;
 
   .desktop-nav .logo img {
     max-width: 70%;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  .desktop-nav .logo {
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -2780,7 +2780,7 @@ margin-right: 8rem;
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 20%;
+    top: 69%;
   }
 
   /*----ABOUT PAGE------*/
@@ -2858,12 +2858,12 @@ margin-right: 8rem;
 
   /* ~~~~sustainable page~~~~ */
 
-.about-sustainable h1{
-  font-size: 2.5rem;
-}
+  .about-sustainable h1 {
+    font-size: 2.5rem;
+  }
 
   .we-care-boxes h2 {
-    width: 85%; 
+    width: 85%;
     font-size: 2rem;
     line-height: 3rem;
     justify-content: center;
@@ -2871,47 +2871,46 @@ margin-right: 8rem;
     padding: 2rem;
   }
 
-  .working-img{
-    margin-right: 12rem; 
-    margin-left: 12rem; 
+  .working-img {
+    margin-right: 12rem;
+    margin-left: 12rem;
   }
 
-  .water-img{
-    margin-right: 10rem; 
-    margin-left: 10rem; 
+  .water-img {
+    margin-right: 10rem;
+    margin-left: 10rem;
   }
 
   .shop-vegan-btn {
     /* margin: 2rem; */
-    margin-left: 7rem; 
-    margin-right: 7rem; 
+    margin-left: 7rem;
+    margin-right: 7rem;
     text-align: center;
     justify-content: center;
     font-weight: 500;
   }
 
-  .shop-recycled-btn{
-    margin-left: 7rem; 
-    margin-right: 7rem; 
+  .shop-recycled-btn {
+    margin-left: 7rem;
+    margin-right: 7rem;
     text-align: center;
     justify-content: center;
     font-weight: 500;
   }
 
-    .working-img{
-      margin-left: 13rem; 
-      margin-right: 13rem; 
-        }
+  .working-img {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
 
-        .we-care-boxes{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr;
-        }
-        .box2{
-          order: 1; 
-        }
-
+  .we-care-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .box2 {
+    order: 1;
+  }
 
   /* ~~~contact page~~~~ */
 
@@ -3588,7 +3587,7 @@ margin-right: 8rem;
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 35%;
+    top: 68%;
   }
 
   /* ----------------THANK YoU PAGE------------------------ */
@@ -3629,7 +3628,7 @@ margin-right: 8rem;
   .box-6 {
     width: 25%;
   }
-  .breadcrumbs {
+  #about-silfen .breadcrumbs {
     display: inherit;
     margin: 2rem;
   }
@@ -3661,11 +3660,10 @@ margin-right: 8rem;
     margin: 2rem;
   }
 
-    /* ~~~~sustainable page~~~~ */
-
+  /* ~~~~sustainable page~~~~ */
 
   .we-care-boxes h2 {
-    width: 90%; 
+    width: 90%;
     font-size: 1.8rem;
     line-height: 2rem;
     justify-content: center;
@@ -3673,58 +3671,57 @@ margin-right: 8rem;
     padding: 2rem;
   }
 
-  .working-img{
-    margin-right: 17rem; 
-    margin-left: 17rem; 
+  .working-img {
+    margin-right: 17rem;
+    margin-left: 17rem;
   }
 
-  .water-img{
-    margin-right: 15rem; 
-    margin-left: 15rem; 
+  .water-img {
+    margin-right: 15rem;
+    margin-left: 15rem;
   }
 
   .shop-vegan-btn {
-    margin: 2rem; 
-    margin-left: 7rem; 
-    margin-right: 7rem; 
+    margin: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
     text-align: center;
     justify-content: center;
     font-weight: 500;
   }
 
-  .shop-recycled-btn{
-    margin-left: 7rem; 
-    margin-right: 7rem; 
+  .shop-recycled-btn {
+    margin-left: 7rem;
+    margin-right: 7rem;
     text-align: center;
     justify-content: center;
     font-weight: 500;
-  } 
+  }
 
   .sus-shipping-img {
-    margin-left: 10rem; 
-    margin-right: 10rem; 
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
-.materials-img{
-  margin-left: 8rem; 
-    margin-right: 8rem; 
-}
+  .materials-img {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
 
-.cotton-img{
-  margin-left: 8rem; 
-  margin-right: 8rem; 
-}
+  .cotton-img {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
 
-.rpet-line-img{
-  margin-left: 8rem; 
-  margin-right: 8rem; 
-}
+  .rpet-line-img {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
 
-.leather-img{
-  margin-left: 8rem; 
-  margin-right: 8rem; 
-}
-
+  .leather-img {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
 
   /* ~~~~ contact page ~~~~~ */
 
@@ -3764,69 +3761,60 @@ margin-right: 8rem;
   header {
     background-color: white;
     width: 100%;
-
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
-
-  main {
-    padding-top: 200px;
-  }
-
   .desktop-nav .close-burguer {
     display: none;
   }
-
   .desktop-nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1.5fr 0.4fr;
     background-color: white;
   }
-
-  .desktop-nav ul {
-    font-weight: 800;
-  }
-
   .desktop-nav .logo img {
     max-width: 60%;
   }
-
+  .desktop-nav .search {
+    margin-right: 1.2rem;
+  }
+  #searchbar > form:nth-child(1) > input:nth-child(1) {
+    padding-left: 1rem;
+    height: 2.6rem;
+  }
+  #searchbar > form:nth-child(1) > button:nth-child(2) {
+    align-content: center;
+  }
   .desktop-nav .burger-menu-wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    align-items: baseline;
   }
-
   .desktop-nav .dropdown-content {
-    font-weight: 800;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 1rem -1rem;
   }
-
   .desktop-nav .dropdown-content-two {
-    font-weight: 800;
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin: 1rem -1rem;
   }
-
   .desktop-nav .burger-menu-wrapper #pageslist {
     grid-column: 1;
     grid-row: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
   }
-
   .desktop.nav .burger-menu-wrapper .nav-icons {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    align-items: center;
   }
-
   .desktop.nav #shop {
     position: absolute;
     margin: 0 1rem 0 1rem;
   }
-
   .dropdown-content {
     z-index: 5;
     margin-left: 0;
@@ -3836,14 +3824,11 @@ margin-right: 8rem;
     flex-flow: nowrap;
     background-color: white;
     font-size: 0.7em;
-    line-height: 2rem;
   }
-
   .desktop.nav #aboutdrop {
     position: absolute;
     margin: 0 1rem 0 1rem;
   }
-
   .dropdown-content-two {
     z-index: 5;
     padding: 0;
@@ -3852,7 +3837,6 @@ margin-right: 8rem;
     flex-flow: nowrap;
     background-color: white;
     font-size: 0.7em;
-    line-height: 2rem;
   }
 
   /*-------- CARTPAGE------------ */
@@ -3971,7 +3955,6 @@ margin-right: 8rem;
     grid-template-columns: 3fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
 }
 
 @media screen and (min-width: 1100px) {
@@ -3981,7 +3964,6 @@ margin-right: 8rem;
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 9rem;
-    padding-top: 150px;
   }
   #product-page .product-colors {
     width: 27%;
@@ -4198,7 +4180,7 @@ margin-right: 8rem;
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 40%;
+    top: 69%;
   }
   #silfen-stories h3 {
     font-size: 2.2rem;
@@ -4265,33 +4247,32 @@ margin-right: 8rem;
   }
   /* ~~~~~~Sustainable Page~~~~~~~~ */
 
-.we-care-boxes{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-
-  .materials h1{
-    margin-top: 5rem; 
-    margin-bottom: 2rem;
-  }
-  .water h1{
-    margin-bottom: 2rem;
+  .we-care-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .working-conditions h1{
-    margin-top: 4rem; 
+  .materials h1 {
+    margin-top: 5rem;
     margin-bottom: 2rem;
   }
-  
+  .water h1 {
+    margin-bottom: 2rem;
+  }
+
+  .working-conditions h1 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
   .grid-water {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
   .water-img {
-    margin: 0; 
-    width: 90%; 
+    margin: 0;
+    width: 90%;
   }
 
   .grid-working {
@@ -4302,124 +4283,120 @@ margin-right: 8rem;
   .working-img {
     margin: 0;
     padding: 0;
-    width: 70%; 
-    order: 2; 
+    width: 70%;
+    order: 2;
   }
-  .working-text p{
-    width: 80%; 
+  .working-text p {
+    width: 80%;
   }
 
   .material-text {
     grid-column: 1;
   }
 
-  .grid-material{
+  .grid-material {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; 
+    grid-template-rows: 1fr;
   }
 
-.materials-text p{
-  width: 90%; 
-}
-  .materials-img{
+  .materials-text p {
+    width: 90%;
+  }
+  .materials-img {
     align-self: center;
-    width: 70%; 
+    width: 70%;
   }
-  .grid-cotton{
+  .grid-cotton {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; 
+    grid-template-rows: 1fr;
   }
-.cotton-img{
-  order: 1; 
-  width: 70%; 
-  align-items: center;
-}
+  .cotton-img {
+    order: 1;
+    width: 70%;
+    align-items: center;
+  }
 
-.grid-cotton{
-margin-top: 4rem;
-}
+  .grid-cotton {
+    margin-top: 4rem;
+  }
 
-.rpet-line-text {
-  width: 90%; 
-  grid-column: 2;
-}
+  .rpet-line-text {
+    width: 90%;
+    grid-column: 2;
+  }
 
-.grid-rpet-line{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr; 
-}
+  .grid-rpet-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 
-.rpet-line-text p{
-width: 90%; 
-}
-.rpet-line-img{
-  align-self: center;
-  width: 70%; 
-}
-.shop-recycled-btn{
-  grid-column: 2;
-  margin-top: -0.5rem; 
-}
-.shop-vegan-btn{
-  grid-column: 2;
-}
+  .rpet-line-text p {
+    width: 90%;
+  }
+  .rpet-line-img {
+    align-self: center;
+    width: 70%;
+  }
+  .shop-recycled-btn {
+    grid-column: 2;
+    margin-top: -0.5rem;
+  }
+  .shop-vegan-btn {
+    grid-column: 2;
+  }
 
-.grid-leather{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr; 
-}
-.leather-img{
-order: 2; 
-width: 65%; 
-align-self: center;
-margin-left: 1rem; 
-}
+  .grid-leather {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .leather-img {
+    order: 2;
+    width: 65%;
+    align-self: center;
+    margin-left: 1rem;
+  }
 
-.grid-sus-shipping{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr; 
-}
+  .grid-sus-shipping {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
 
-.sus-shipping-text p{
-width: 85%; 
-}
-.sus-shipping-img{
-  align-self: center;
-  width: 55%; 
-}
+  .sus-shipping-text p {
+    width: 85%;
+  }
+  .sus-shipping-img {
+    align-self: center;
+    width: 55%;
+  }
 
-/* ~~~~privacy page~~~~~ */
+  /* ~~~~privacy page~~~~~ */
 
-#privacy p{
-  width: 95%; 
-}
+  #privacy p {
+    width: 95%;
+  }
 
-#delivery-return p{
-  width: 90%; 
-}
+  #delivery-return p {
+    width: 90%;
+  }
 
-#terms p{
-  width: 90%; 
-}
-
-
+  #terms p {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
   /*-------HOME PAGE-------------- */
-  .desktop-nav {
-    grid-gap: 1rem;
+  .desktop-nav .logo img {
+    max-width: 52%;
   }
-
   .desktop-nav .burger-menu-wrapper {
     margin-right: 3rem;
   }
-
   .desktop-nav .burger-menu-wrapper .nav-icons {
     align-content: center;
   }
@@ -4528,10 +4505,6 @@ width: 85%;
     font-size: 1.1rem;
   }
   /*---PRODUCT PAGE----*/
-
-  #product-page main {
-    padding-top: 180px;
-  }
   #product-page .left-side {
     width: 60%;
   }
@@ -4612,7 +4585,7 @@ width: 85%;
     margin-top: 5rem;
   }
 
-  .we-care-boxes{
+  .we-care-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -4621,7 +4594,7 @@ width: 85%;
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 45%;
+    top: 69%;
   }
   /* Cart page */
   #cartpage .productinfo {
@@ -4648,6 +4621,9 @@ width: 85%;
   #searchbar {
     max-width: 70%;
     line-height: 3rem;
+  }
+  .desktop-nav .logo img {
+    max-width: 41%;
   }
 
   /* ----CHECKOUT PAGE---- */
@@ -4680,7 +4656,6 @@ width: 85%;
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 17rem;
-    padding-top: 200px;
   }
   #product-page .left-side {
     width: 65%;
