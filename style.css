@@ -314,7 +314,7 @@ header a:active {
   justify-content: space-between;
   position: fixed;
   right: 0;
-  top: 15%;
+  top: 66%;
   background: white;
   z-index: 1;
 }
@@ -2637,7 +2637,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 20%;
+    top: 69%;
   }
 
   /*----ABOUT PAGE------*/
@@ -3388,7 +3388,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 35%;
+    top: 68%;
   }
 
   /* ----------------THANK YoU PAGE------------------------ */
@@ -3502,7 +3502,7 @@ footer section {
   .desktop-nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.8fr 0.4fr;
+    grid-template-rows: 1.5fr 0.4fr;
     background-color: white;
   }
   .desktop-nav .logo img {
@@ -3914,7 +3914,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 40%;
+    top: 69%;
   }
   #silfen-stories h3 {
     font-size: 2.2rem;
@@ -3993,13 +3993,14 @@ footer section {
 @media screen and (min-width: 1300px) {
   /*-------HOME PAGE-------------- */
   .desktop-nav {
-    grid-gap: 1rem;
+    /* grid-gap: 1rem; */
   }
-
+  .desktop-nav .logo img {
+    max-width: 52%;
+  }
   .desktop-nav .burger-menu-wrapper {
     margin-right: 3rem;
   }
-
   .desktop-nav .burger-menu-wrapper .nav-icons {
     align-content: center;
   }
@@ -4196,7 +4197,7 @@ footer section {
   .newsletter-popup {
     position: fixed;
     right: 0;
-    top: 45%;
+    top: 69%;
   }
   /* Cart page */
   #cartpage .productinfo {
@@ -4223,6 +4224,9 @@ footer section {
   #searchbar {
     max-width: 70%;
     line-height: 3rem;
+  }
+  .desktop-nav .logo img {
+    max-width: 41%;
   }
 
   /* ----CHECKOUT PAGE---- */
