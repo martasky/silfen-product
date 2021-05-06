@@ -372,9 +372,10 @@ header a:active {
   font-size: 0.875;
 }
 .x-sign {
-  width: 13px;
+  width: 19px;
   align-self: flex-end;
   cursor: pointer;
+  padding-right: 6px;
 }
 
 #homepage {
@@ -865,8 +866,17 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-#cartpage {
-  margin: 0 1.2rem 0 1.2rem;
+
+#cartpage main {
+  margin: 2rem 1rem;
+}
+#cartpage .breadcrumbs p,
+#cartpage .breadcrumbs a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
 }
 
 #cartpage h1 {
@@ -956,6 +966,7 @@ input[type="number"] {
 }
 #cartpage #total p {
   text-transform: initial;
+  line-height: 1.4rem;
 }
 #cartpage #total #checkoutbutton {
   margin-top: 2vh;
@@ -1014,7 +1025,7 @@ input[type="number"] {
 }
 #checkoutpage .information p {
   font-size: 0.7rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0 0 0;
   line-height: 2rem;
 }
 #checkoutpage .information form {
@@ -1026,6 +1037,7 @@ input[type="number"] {
 
 #checkoutpage .information input {
   width: 100%;
+  padding-left: 1rem;
 }
 
 #checkoutpage .shipping form {
@@ -1036,6 +1048,7 @@ input[type="number"] {
 #checkoutpage .shipping input {
   line-height: 2rem;
   width: 100%;
+  padding-left: 1rem;
 }
 #checkoutpage .shipping label:first-of-type {
   grid-column: 1 / span 1;
@@ -1118,10 +1131,12 @@ input[type="number"] {
   margin: 2vh 0 2vh 0;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 #checkoutpage .purchase-summary .discount-code form input {
   max-width: 100%;
-  height: 4vh;
+  height: 6vh;
+  padding-left: 1rem;
 }
 #checkoutpage .purchase-summary .discount-code form button {
   text-transform: uppercase;
@@ -1130,9 +1145,10 @@ input[type="number"] {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 2px;
+  height: 74%;
 }
 #checkoutpage .purchase-summary .amounts {
-  margin: 1vh 0 1vh 0;
+  margin: 4vh 0 0 0;
 }
 #checkoutpage .purchase-summary .amounts .subtotal {
   display: flex;
@@ -1150,13 +1166,15 @@ input[type="number"] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
+  margin: 2rem 0;
+  font-weight: bold;
 }
 #checkoutpage .checkboxes form {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 1.5rem 0 1.5rem 0;
+  font-size: 0.8rem;
 }
 #checkoutpage .checkboxes #terms-conditions {
   grid-column: 1 / span 1;
@@ -1181,11 +1199,14 @@ input[type="number"] {
   grid-row: 3;
   width: 100%;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-size: 1.3rem;
 }
 #checkoutpage .checkboxes form button a {
   text-decoration: none;
   color: white;
+}
+#checkoutpage hr {
+  margin: 1rem 0;
 }
 /* --------------------------------THANK YOU PAGE----------------------- */
 /* --------------------------------THANK YOU PAGE----------------------- */
@@ -1202,16 +1223,16 @@ input[type="number"] {
   margin: 2rem 2rem 5rem 2rem;
 }
 #thankyoupage h1 {
-  text-align: center;
+  margin: 0 auto;
 }
 #thankyoupage main img {
   display: block;
-  max-width: 30%;
-  margin: 2rem auto 2rem auto;
+  max-width: 8%;
+  margin: 2rem auto 1rem auto;
 }
 #thankyoupage h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #thankyoupage #checkemail {
   grid-row: 2;
@@ -1237,7 +1258,7 @@ input[type="number"] {
   margin-top: 2rem;
   border: solid #f6fe7f 5px;
   background-color: white;
-  padding: 2rem 2rem 27rem 2rem;
+  padding: 2rem 2rem 13rem 2rem;
   grid-column: 1;
   grid-row: 1;
   height: 15vh;
@@ -1255,25 +1276,24 @@ input[type="number"] {
 #thankyoupage #checkemail #content-wrapper img {
   grid-column: 1;
   grid-row: 2 / span 1;
-  max-width: 20%;
+  max-width: 12%;
   padding: 0;
 }
 #thankyoupage #checkemail #content-wrapper #text {
   grid-column: 1;
   grid-row: 3 / span 1;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
 }
 #thankyoupage #checkemail #content-wrapper #text p {
-  line-height: 2;
+  line-height: 1.5;
   margin: 0;
+  font-size: 0.9rem;
+  padding-bottom: 0.7rem;
 }
 
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~about page~~~~~~~~~~~~ */
-#about-silfen .breadcrumbs {
-  display: none;
-}
 
 .box {
   display: grid;
@@ -1282,6 +1302,9 @@ input[type="number"] {
 .box > * {
   grid-column: 1/-1;
   grid-row: -1/1;
+}
+#about-silfen main {
+  padding-top: 136px;
 }
 
 .about-silfen-img .border {
@@ -2512,11 +2535,8 @@ footer section {
     display: inline-flex;
     justify-content: center;
   }
-  #total p {
-    font-size: 1rem;
-  }
   #cartpage #total p:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
   #total h2 {
     font-size: 2rem;
@@ -2836,9 +2856,14 @@ footer section {
     box-shadow: none;
   }
 
-  #about-silfen .breadcrumbs {
-    display: inherit;
-    margin: 2rem;
+  #about-silfen .breadcrumbs a,
+  #about-silfen .breadcrumbs p {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
   }
 
   .meettheteam-title h1 {
@@ -3053,7 +3078,6 @@ footer section {
   /*---PRODUCT PAGE----*/
   #product-page main {
     margin: 2rem 1rem;
-    padding-top: 130px;
   }
   #product-page .left-side {
     width: 65%;
@@ -3112,6 +3136,7 @@ footer section {
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5rem;
+    align-items: center;
   }
   #addtocart-popup-button {
     font-size: 1rem;
@@ -3159,16 +3184,22 @@ footer section {
   #checkoutpage .information form {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
   }
   #checkoutpage main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+    width: 77%;
   }
   #checkoutpage .breadcrumbs {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
   }
   #checkoutpage .information {
     grid-column: 1 / span 1;
@@ -3200,13 +3231,13 @@ footer section {
     margin: 0;
   }
   #checkoutpage .shipping p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0 1.5rem 0;
   }
   #checkoutpage .payment #epay {
     margin: 0;
   }
   #checkoutpage .payment p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0 1rem 0;
   }
   /*----------HOMEPAGE--------*/
   #newsletter {
@@ -3628,10 +3659,6 @@ footer section {
   .box-6 {
     width: 25%;
   }
-  #about-silfen .breadcrumbs {
-    display: inherit;
-    margin: 2rem;
-  }
 
   .thefounders-img {
     padding-right: 10rem;
@@ -3654,10 +3681,13 @@ footer section {
     box-shadow: 0px;
     margin: 2rem;
   }
-
-  #sustainability-page .breadcrumbs {
-    display: inherit;
-    margin: 2rem;
+  #sustainability-page .breadcrumbs p,
+  #sustainability-page .breadcrumbs a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
   }
 
   /* ~~~~sustainable page~~~~ */
@@ -3771,6 +3801,8 @@ footer section {
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 0.4fr;
     background-color: white;
+    padding-left: 9rem;
+    padding-right: 6rem;
   }
   .desktop-nav .logo img {
     max-width: 60%;
@@ -3842,7 +3874,7 @@ footer section {
   /*-------- CARTPAGE------------ */
 
   #cartpage main {
-    margin: 2rem 6rem;
+    margin: 2.5rem 10rem;
   }
   #cartpage #total h2 {
     font-size: 2rem;
@@ -3863,7 +3895,7 @@ footer section {
     padding: 1.2rem 1.2rem;
   }
   #catalogue main {
-    margin: 2rem 6rem;
+    margin: 2rem 10rem;
   }
   .product-colors {
     width: 55%;
@@ -3875,11 +3907,11 @@ footer section {
 
   /* ----------THANKYOU PAGE-------------- */
   #thankyoupage main {
-    margin: 2rem 10rem 10rem 10rem;
+    margin: 2.5rem 10rem;
   }
 
   #thankyoupage #checkemail {
-    margin: 0 7rem 0 7rem;
+    margin: 0 11rem;
   }
   /* ~~~~ABOUT PAGE~~~~~ */
 
@@ -3958,12 +3990,9 @@ footer section {
 }
 
 @media screen and (min-width: 1100px) {
-  footer {
-    margin: 5rem 9rem;
-  }
   /*---PRODUCT PAGE----*/
   #product-page main {
-    margin: 2rem 9rem;
+    margin: 2.5rem 10rem;
   }
   #product-page .product-colors {
     width: 27%;
@@ -4008,8 +4037,8 @@ footer section {
     width: max-content;
     margin-bottom: 2rem;
     position: relative;
-    top: 12%;
-    left: 50%;
+    top: -1%;
+    left: 54%;
   }
   .show-addtocart {
     display: none;
@@ -4040,14 +4069,14 @@ footer section {
 
   /* -------CHECKOUT PAGE------- */
   #checkoutpage main {
-    margin: 0 10rem 0 10rem;
+    margin: 2.5rem 10rem;
   }
   /* #checkoutpage .purchase-summary hr {
     margin: 2rem 0 2rem 0;
   } */
   /* -----FOOTER----- */
   footer {
-    margin: 5rem 9rem;
+    margin: 5rem 10rem;
   }
   /*--------homepage----------*/
   .container {
@@ -4495,7 +4524,7 @@ footer section {
     padding: 1.2rem 1.2rem;
   }
   #catalogue main {
-    margin: 2rem 9rem;
+    margin: 2.5rem 10rem;
   }
   .product-colors {
     width: 55%;
