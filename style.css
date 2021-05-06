@@ -179,6 +179,7 @@ header a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 /* positioning the dropdown menu in the menu-wrapper grid*/
 .desktop-nav .burger-menu-wrapper #pageslist {
@@ -195,6 +196,7 @@ header a:active {
 
 .desktop-nav .burger-menu-wrapper .nav-icons .search {
   margin-right: 0.5rem;
+  display: flex;
 }
 
 .desktop-nav .logo {
@@ -204,7 +206,8 @@ header a:active {
 }
 
 .desktop-nav .burger-menu-wrapper .nav-icons img {
-  max-width: 77%;
+  max-width: 60%;
+  align-content: baseline;
 }
 
 .desktop-nav .nav-icons .cart-icon {
@@ -237,12 +240,13 @@ header a:active {
 } */
 
 .desktop-nav .search {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: auto;
 }
 .desktop-nav .cart-icon {
   width: 40%;
   height: 39px;
+  align-content: center;
 }
 .desktop-nav .close-burguer {
   width: 26px;
@@ -1258,7 +1262,7 @@ input[type="number"] {
   margin-top: 2rem;
   border: solid #f6fe7f 5px;
   background-color: white;
-  padding: 2rem 2rem 13rem 2rem;
+  padding: 2rem 2rem 15rem 2rem;
   grid-column: 1;
   grid-row: 1;
   height: 15vh;
@@ -3802,7 +3806,7 @@ footer section {
     grid-template-rows: 1.5fr 0.4fr;
     background-color: white;
     padding-left: 9rem;
-    padding-right: 6rem;
+    padding-right: 9rem;
   }
   .desktop-nav .logo img {
     max-width: 60%;
